@@ -7,7 +7,7 @@ data "digitalocean_ssh_key" "example" {
 }
 
 resource "digitalocean_vpc" "vpc" {
-  name     = "example-project-network"
+  name     = "sporteezone-project-network"
   region   = var.region
   ip_range = "10.1.0.0/16"
 }
@@ -38,7 +38,7 @@ resource "digitalocean_droplet" "server" {
 }
 
 resource "digitalocean_database_cluster" "mysql" {
-  name       = "example-mysql-cluster"
+  name       = "sporteezone-mysql-cluster"
   engine     = "mysql"
   version    = "8"
   size       = "db-s-1vcpu-1gb"
@@ -48,7 +48,7 @@ resource "digitalocean_database_cluster" "mysql" {
 }
 
 resource "digitalocean_project" "czechitas-do-deployment" {
-  name        = "czechitas-do-deployment"
+  name        = "sporteezone-do-deployment"
   environment = "Development"
   resources   = [
     digitalocean_droplet.server.urn,

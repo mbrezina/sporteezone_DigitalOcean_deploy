@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-docker run --rm -d -p 8080:8080 --name da-projekt-do-deploy-java da-projekt-do-deploy-java:1.0.0
+docker run --rm -d -p 8080:8080 --name da-sporteezone da-sporteezone-java:1.0.0
 #docker run --rm -d -p 8080:8080 --name da-projekt-do-deploy-java da-projekt-do-deploy-java:1.0.0
 #docker run --rm -d -p 8082:8082 --name da-projekt-do-deploy-python da-projekt-do-deploy-python:1.0.0
 
-
+###da-projekt-do-deploy-java = da-sporteezone
 
 #<groupId>cz.diribet.czechitas</groupId>
 #	<artifactId>do-deploy-java-service</artifactId>
