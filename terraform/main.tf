@@ -31,7 +31,7 @@ resource "digitalocean_droplet" "server" {
   provisioner "remote-exec" {
     script = "install-docker.sh"
   }
-    
+
   provisioner "remote-exec" {
     script = "run-docker-containers.sh"
   }
