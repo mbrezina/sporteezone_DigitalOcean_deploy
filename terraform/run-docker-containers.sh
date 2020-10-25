@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-docker run --restart always -d -p 8080:8080 --name java sporteezone/da-sporteezone-java:1.0.0
+docker run --restart always -d -p 8080:8080 --name java martiik/da-sporteezone-java:1.0.0
 
 ##docker run --restart always -d -p 8083:8083 --name java dolejs/da-projekt-do-deploy-java:1.0.0
 

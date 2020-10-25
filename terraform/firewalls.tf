@@ -11,21 +11,17 @@ resource "digitalocean_firewall" "fw" {
 
   inbound_rule {
     protocol         = "tcp"
-    port_range       = "8081"
+    port_range       = "8080"
     source_addresses = ["0.0.0.0/0", "::/0"]
   }
 
-  inbound_rule {
-    protocol         = "tcp"
-    port_range       = "8082"
-    source_addresses = ["0.0.0.0/0", "::/0"]
-  }
 
-  inbound_rule {
-    protocol         = "tcp"
-    port_range       = "8083"
-    source_addresses = ["0.0.0.0/0", "::/0"]
-  }
+  #inbound_rule {
+  #  protocol         = "tcp"
+  #  port_range       = "8082"
+  #  source_addresses = ["0.0.0.0/0", "::/0"]
+  #}
+
 }
 
 resource "digitalocean_database_firewall" "db-fw" {
