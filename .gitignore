@@ -36,5 +36,4 @@ build/
 python-service
 js-service
 
-
 terraform/variables.tf
