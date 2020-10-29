@@ -14,7 +14,7 @@ resource "digitalocean_vpc" "vpc" {
 
 resource "digitalocean_droplet" "server" {
   image  = "ubuntu-20-04-x64"
-  name   = "server-1"
+  name   = "server-sporteezones"
   region = var.region
   size   = "s-2vcpu-2gb"
   vpc_uuid = digitalocean_vpc.vpc.id
