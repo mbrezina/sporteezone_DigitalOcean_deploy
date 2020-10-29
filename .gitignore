@@ -32,6 +32,3 @@ build/
 !**/src/test/**/build/
 
 
-### DevOps ###
-python-service
-js-service

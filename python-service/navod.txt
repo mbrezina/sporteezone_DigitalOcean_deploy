@@ -1,0 +1,6 @@
+
+aktivace:
+. venv/bin/activate
+
+deaktivace:
+deactivate

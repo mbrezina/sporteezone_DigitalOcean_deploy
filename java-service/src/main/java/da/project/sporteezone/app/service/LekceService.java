@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -30,15 +31,29 @@ public class LekceService {
     }
 
     public List<Lekce> pridejVicLekci(List<Lekce> noveLekce) {
-        lekceRepository.saveAll(noveLekce);
-        return noveLekce;
+        ArrayList<Lekce> ulozeneLekce = new ArrayList();
+        log.info(String.valueOf(noveLekce));
+        for (Lekce jednaLekce : noveLekce) {
+            Lekce moznaShoda = lekceRepository.findByZacatek(jednaLekce.getZacatek());
+            if (moznaShoda == null) {
+                lekceRepository.saveAndFlush(jednaLekce);
+                ulozeneLekce.add(jednaLekce);
+            } else {
+                if (!jednaLekce.lekceEquals(moznaShoda)) {
+                    lekceRepository.saveAndFlush(jednaLekce);
+                    ulozeneLekce.add(jednaLekce);
+                } else {
+                    log.debug("Lekce " + jednaLekce + " už v DB je jako " + moznaShoda);
+                }
+            }
+        }
+        return ulozeneLekce;
     }
 
-    public List<Lekce> najdiLekce(LocalDateTime zacatek, LocalDateTime konec) {
-        log.debug("datum je " + zacatek);
-        log.debug(String.valueOf(zacatek.getClass()));
-        return lekceRepository.findAllByZacatekBetween(zacatek, konec);
+        public List<Lekce> najdiLekce (LocalDateTime zacatek, LocalDateTime konec){
+            log.debug("datum je " + zacatek);
+            log.debug(String.valueOf(zacatek.getClass()));
+            return lekceRepository.findAllByZacatekBetween(zacatek, konec);
+        }
     }
-
-}
 
