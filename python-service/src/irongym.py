@@ -1,10 +1,10 @@
+# -*- coding: utf-8 -*-
+
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
 import datetime
 from datetime import date, timedelta
-
-from send_data_to_api import send_data
 
 def mesicnik(date):
     if 'ledna' in date:
@@ -67,15 +67,18 @@ def scraping():
             date_iso.append(
                 datetime.datetime.strptime(mesicnik(datumy) + hod.get_text().strip(), '%d. %B %Y%H:%M').isoformat())
 
-        # nadpisy = ['název', 'kapacita', 'začátek']
-        nadpisy = ['id_fitka', 'nazev', 'obsazeno', 'kapacita', 'zacatek']
+        # je třeba dodat číslo fitka:
         IRONGYM_ID = 999999
+        # s číslem fitka: nadpisy = ['id_fitka', 'nazev', 'obsazeno', 'kapacita', 'zacatek']
+        nadpisy = ['název', 'kapacita', 'začátek']
+
         i = i + timedelta(1)
 
     df1 = pd.DataFrame(data=(lesson, obsazeno, capacity, date_iso), index=nadpisy)
 
     vysledek = df1.T.to_json(force_ascii=False, orient='records')
-    send_data(vysledek) ######################
+    return vysledek
+
 
 # toto je způsob, jak odlišit program spuštěný přímo nebo z importu:
 if __name__ == "__main__":
