@@ -7,4 +7,4 @@ RUN cd /usr/src/python-service && pip install -r requirements.txt --no-cache-dir
 
 WORKDIR "/usr/src/python-service"
 
-CMD [ "python", "./src/main.py" ]
+CMD [ "python3", "./src/main.py" ]
