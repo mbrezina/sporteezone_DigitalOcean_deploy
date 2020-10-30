@@ -30,30 +30,53 @@ public class LekceService {
         return novaLekce;
     }
 
+
     public List<Lekce> pridejVicLekci(List<Lekce> noveLekce) {
-        ArrayList<Lekce> ulozeneLekce = new ArrayList();
-        log.info(String.valueOf(noveLekce));
+        ArrayList<Lekce> ukladaneLekce = new ArrayList();
+        log.debug(String.valueOf(noveLekce));
+
         for (Lekce jednaLekce : noveLekce) {
-            Lekce moznaShoda = lekceRepository.findByZacatek(jednaLekce.getZacatek());
-            if (moznaShoda == null) {
+            //List<Lekce> shodneZacatky = lekceRepository.findByZacatek(jednaLekce.getZacatek());
+            Lekce shodnaLekce = lekceRepository.najdiStejnouLekci(jednaLekce.getZacatek(), jednaLekce.getNazev(), jednaLekce.getKodFitko());
+            //lekceRepository.najdiStejnouLekci(LocalDateTime zacatek, String nazev, Integer kodFitka)
+            log.debug("shodné lekce: " + String.valueOf(shodnaLekce));
+        }
+        return ukladaneLekce;
+    }
+
+
+    /*
+    public List<Lekce> pridejVicLekci(List<Lekce> noveLekce) {
+        ArrayList<Lekce> ukladaneLekce = new ArrayList();
+        log.debug(String.valueOf(noveLekce));
+
+        for (Lekce jednaLekce : noveLekce) {
+            List<Lekce> shodneZacatky = lekceRepository.findByZacatek(jednaLekce.getZacatek());
+            if (shodneZacatky.size() == 0) {
                 lekceRepository.saveAndFlush(jednaLekce);
-                ulozeneLekce.add(jednaLekce);
+                ukladaneLekce.add(jednaLekce);
             } else {
-                if (!jednaLekce.lekceEquals(moznaShoda)) {
-                    lekceRepository.saveAndFlush(jednaLekce);
-                    ulozeneLekce.add(jednaLekce);
-                } else {
-                    log.debug("Lekce " + jednaLekce + " už v DB je jako " + moznaShoda);
+                for (Lekce moznaShoda : shodneZacatky) {
+                    if (!jednaLekce.lekceEquals(moznaShoda)) {
+                        lekceRepository.saveAndFlush(jednaLekce);
+                        ukladaneLekce.add(jednaLekce);
+                    } else {
+                        log.debug("Lekce " + jednaLekce + " už v DB je jako " + moznaShoda);
+                    }
                 }
             }
         }
-        return ulozeneLekce;
+        return ukladaneLekce;
     }
+    */
 
-        public List<Lekce> najdiLekce (LocalDateTime zacatek, LocalDateTime konec){
-            log.debug("datum je " + zacatek);
-            log.debug(String.valueOf(zacatek.getClass()));
-            return lekceRepository.findAllByZacatekBetween(zacatek, konec);
-        }
+
+
+
+    public List<Lekce> najdiLekce(LocalDateTime zacatek, LocalDateTime konec) {
+        log.debug("datum je " + zacatek);
+        log.debug(String.valueOf(zacatek.getClass()));
+        return lekceRepository.findAllByZacatekBetween(zacatek, konec);
     }
+}
 
