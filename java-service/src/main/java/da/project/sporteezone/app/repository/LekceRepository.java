@@ -20,6 +20,16 @@ import java.util.Optional;
 public interface LekceRepository extends JpaRepository <Lekce, Integer> {
 
     List<Lekce> findAllByZacatekBetween(LocalDateTime zacatek, LocalDateTime konec);
-    Lekce findByZacatek(LocalDateTime zacatek);
+
+    List<Lekce> findByZacatek(LocalDateTime zacatek);
     Lekce findByKodFitko(Integer kodFitko);
+
+    @Query("SELECT l FROM Lekce l WHERE l.zacatek = ?1 AND l.nazev = ?2 AND l.kodFitko = ?3")
+    Lekce najdiStejnouLekci(LocalDateTime zacatek, String nazev, Integer kodFitka);
+
+    //@Query("SELECT u FROM User u WHERE u.status = ?1 and u.name = ?2")
+    //User findUserByStatusAndName(Integer status, String name);
+
+
+
 }
