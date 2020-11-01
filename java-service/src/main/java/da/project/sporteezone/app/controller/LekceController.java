@@ -1,6 +1,7 @@
 package da.project.sporteezone.app.controller;
 
 import da.project.sporteezone.app.entity.Lekce;
+import da.project.sporteezone.app.entity.Trener;
 import da.project.sporteezone.app.repository.LekceRepository;
 import da.project.sporteezone.app.repository.TrenerRepository;
 import da.project.sporteezone.app.service.LekceService;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 
 
 @Slf4j
@@ -43,6 +45,14 @@ public class LekceController {
         log.debug("datum je " + zacatek);
         log.debug(String.valueOf(zacatek.getClass()));
         return lekceService.najdiLekce(zacatek, konec);
+    }
+
+    @GetMapping(path = "/byTrener")
+    public @ResponseBody
+    List<Lekce> findLekceByTrener(
+        @RequestParam("jmeno") String jmeno) {
+        log.info("toto je jméno: " + jmeno);
+        return lekceService.najdiLekcePodleTrenera(jmeno);
     }
 
     @PostMapping(path = "/addOne", consumes = "application/json")

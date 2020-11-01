@@ -29,7 +29,6 @@ public interface LekceRepository extends JpaRepository <Lekce, Integer> {
 
     Lekce findByZacatekAndNazevAndKodFitko(LocalDateTime zacatek, String nazev, Integer kodFitko);
 
-    Lekce findByNazevAndKodFitko(String nazev, Integer kodFitka);
-
+    List<Lekce> findByJmenoTrener(String jmenoTrener);
 
 }
