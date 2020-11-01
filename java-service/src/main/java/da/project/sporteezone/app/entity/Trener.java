@@ -10,7 +10,6 @@ import java.util.List;
 
 @Entity
 @Data
-@Table(name = "treneri")
 public class Trener {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -22,9 +21,8 @@ public class Trener {
     @Column(name="kod_fitko")
     private Integer kodFitko;
 
-
-    @OneToMany(mappedBy = "trener", fetch = FetchType.LAZY)
-    private List<Lekce> seznamLekci;
+    //@OneToMany(mappedBy = "trener", fetch = FetchType.EAGER)
+    //private List<Lekce> seznamLekci;
 
 }
 

@@ -30,15 +30,18 @@ public class Lekce {
     @Column(name = "kod_fitko")
     private Integer kodFitko;
 
-    //@Column(name = "kod_trener")
-    //private Integer kodTrener;
+    @Column(name = "jmeno_trener")
+    private String jmenoTrener;
 
+
+    /*
     @EqualsAndHashCode.Exclude
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "kod_trener")
     @JsonIgnore
     private Trener trener;
 
+    */
 
 }
 
