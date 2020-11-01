@@ -54,7 +54,7 @@ public class LekceController {
 
     @PostMapping(path = "/addMore", consumes = "application/json")
     public @ResponseBody
-    List<Lekce> pridejVicLekci(@RequestBody List<Lekce> noveLekce) {
+    String pridejVicLekci(@RequestBody List<Lekce> noveLekce) {
         log.debug("jsem v kontroleru");
         log.debug("toto jsou nové lekci, které projdou funckí pro přidání_:" + noveLekce.toString());
         return lekceService.pridejVicLekci(noveLekce);
