@@ -30,46 +30,31 @@ public class LekceService {
         return novaLekce;
     }
 
-
-    public List<Lekce> pridejVicLekci(List<Lekce> noveLekce) {
-        ArrayList<Lekce> ukladaneLekce = new ArrayList();
+    public String pridejVicLekci(List<Lekce> noveLekce) {
         log.debug(String.valueOf(noveLekce));
+        Integer ulozeneLekce = 0;
+        Integer updatovaneLekce = 0;
 
-        for (Lekce jednaLekce : noveLekce) {
-            //List<Lekce> shodneZacatky = lekceRepository.findByZacatek(jednaLekce.getZacatek());
-            Lekce shodnaLekce = lekceRepository.najdiStejnouLekci(jednaLekce.getZacatek(), jednaLekce.getNazev(), jednaLekce.getKodFitko());
-            //lekceRepository.najdiStejnouLekci(LocalDateTime zacatek, String nazev, Integer kodFitka)
-            log.debug("shodné lekce: " + String.valueOf(shodnaLekce));
-        }
-        return ukladaneLekce;
-    }
-
-
-    /*
-    public List<Lekce> pridejVicLekci(List<Lekce> noveLekce) {
-        ArrayList<Lekce> ukladaneLekce = new ArrayList();
-        log.debug(String.valueOf(noveLekce));
-
-        for (Lekce jednaLekce : noveLekce) {
-            List<Lekce> shodneZacatky = lekceRepository.findByZacatek(jednaLekce.getZacatek());
-            if (shodneZacatky.size() == 0) {
-                lekceRepository.saveAndFlush(jednaLekce);
-                ukladaneLekce.add(jednaLekce);
+        for (Lekce novaLekce : noveLekce) {
+            Lekce shodnaLekce = lekceRepository.findByZacatekAndNazevAndKodFitko(novaLekce.getZacatek(), novaLekce.getNazev(), novaLekce.getKodFitko());
+            if (shodnaLekce == null) {
+                lekceRepository.saveAndFlush(novaLekce);
+                ulozeneLekce++;
             } else {
-                for (Lekce moznaShoda : shodneZacatky) {
-                    if (!jednaLekce.lekceEquals(moznaShoda)) {
-                        lekceRepository.saveAndFlush(jednaLekce);
-                        ukladaneLekce.add(jednaLekce);
-                    } else {
-                        log.debug("Lekce " + jednaLekce + " už v DB je jako " + moznaShoda);
-                    }
+
+                Boolean stejny_trener = shodnaLekce.getTrener().equals(novaLekce.getTrener());
+                Boolean stejna_obsazenost = shodnaLekce.getObsazenost().equals(novaLekce.getObsazenost());
+
+                if (!stejna_obsazenost || !stejny_trener) {
+                    shodnaLekce.setObsazenost(novaLekce.getObsazenost());
+                    shodnaLekce.setTrener(novaLekce.getTrener());
+                    lekceRepository.saveAndFlush(shodnaLekce);
+                    updatovaneLekce++;
                 }
             }
         }
-        return ukladaneLekce;
+        return "Počet uložených lekcí: " + ulozeneLekce + ", počet updatovaných lekcí: " + updatovaneLekce;
     }
-    */
-
 
 
 
