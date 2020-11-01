@@ -3,7 +3,6 @@ package da.project.sporteezone.app.service;
 import da.project.sporteezone.app.UserPrincipal;
 import da.project.sporteezone.app.entity.User;
 import da.project.sporteezone.app.repository.UserRepository;
-import javassist.bytecode.stackmap.BasicBlock;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
