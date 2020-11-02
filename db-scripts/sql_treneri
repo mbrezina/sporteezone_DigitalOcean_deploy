@@ -15,13 +15,13 @@ USE Sporteezone;
 
 DROP table treneri;
 
-CREATE TABLE treneri
+CREATE TABLE trener
      (id INT PRIMARY KEY AUTO_INCREMENT,
      trener_jmeno VARCHAR(50),
      kod_fitko INT);
 
 
-INSERT INTO treneri (trener_jmeno, kod_fitko) VALUES
+INSERT INTO trener (trener_jmeno, kod_fitko) VALUES
 
 
 ('Michal Jakubík', 1), ('Pavel Zdráhal', 2), ('Kamila Klvačová', 3),
