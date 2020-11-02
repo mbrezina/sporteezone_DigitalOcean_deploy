@@ -24,14 +24,14 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashSet;
 import java.util.Set;
 
-@Order(1)
+//@Order(1)
 @Configuration
-@RestController
+//@RestController
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    @Configuration
-    public static class WebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
+    //@Override
+    //protected static class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         @Override
         protected void configure(HttpSecurity http) throws Exception {
@@ -48,6 +48,21 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
             http
                 .authorizeRequests()
+                .antMatchers("/", "/home").permitAll()
+                .anyRequest().authenticated()
+                .and()
+                .oauth2Login()
+                .loginPage("/login")
+                .permitAll()
+                .and()
+                .logout()
+                .permitAll();
+
+
+            /*
+            http
+
+                .authorizeRequests()
 
                 // allow anonymous access to the root page
                 .antMatchers("/").permitAll()
@@ -60,8 +75,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
                 // enable OAuth2/OIDC
                 .and().oauth2Login();
-
-
 
 /*
             http
@@ -95,7 +108,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/", "/guest/**", "/logout/**").permitAll(); */
 
         }
-    }
+
 
 
     //pro SpringBoot 2 a vyšší je potřeba password encoder a je třeba ho použít pro zakódování hesel uživatelů
