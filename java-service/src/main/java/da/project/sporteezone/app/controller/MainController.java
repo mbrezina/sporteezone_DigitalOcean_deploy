@@ -15,23 +15,24 @@ import java.util.Optional;
 
 @Slf4j
 @Controller
-//@RequestMapping(path = "/")
+@RequestMapping(path = "/")
 public class MainController {
 
-    @Autowired
-    private FitnessService fitnessService;
+    //@Autowired
+    //private FitnessService fitnessService;
 
-    @RequestMapping("/")
+    @RequestMapping("")
     public ModelAndView showRate() throws IOException {
         ModelAndView dataHolder = new ModelAndView("index");
-        dataHolder.addObject("message", "hello");
+        log.info("jsem v '/'");
+        //dataHolder.addObject("message", "hello");
         return dataHolder;
     }
 
-    @RequestMapping("/restricted")
+    @RequestMapping("restricted")
     public ModelAndView showRestricted() throws IOException {
         ModelAndView dataHolder = new ModelAndView("restricted");
-        dataHolder.addObject("message", "restricted");
+        //dataHolder.addObject("message", "restricted");
         return dataHolder;
     }
 }
