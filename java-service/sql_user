@@ -1,0 +1,29 @@
+login as root
+CREATE USER  'student'@'localhost'   IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO   'student'@'%'   IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO   'student'@'localhost'   IDENTIFIED BY 'password';
+
+mysql -u student -p
+
+
+CREATE DATABASE Sporteezone
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_czech_ci;
+
+USE Sporteezone;
+
+
+DROP table user;
+
+CREATE TABLE user
+     (id INT PRIMARY KEY AUTO_INCREMENT,
+     name VARCHAR(50),
+     email INT,
+     sub VARCHAR(50)
+     );
+
+
+INSERT INTO user (name, email, sub) VALUES
+
+
+('Michal Jakubík', 1), ('Pavel Zdráhal', 2), ('Kamila Klvačová', 3),

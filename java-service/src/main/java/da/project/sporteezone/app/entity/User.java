@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 @Data
 @Entity
 public class User {
@@ -15,14 +16,14 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(nullable = false)
-    private String username;
+    private String name;
+    private String email;
+    private String sub;
 
-    @Column(nullable = false)
-    private String password;
-    private Integer active;
-    private String roles;
+}
 
+
+    /*
     public List<String> getRolesList() {
 
         if (this.roles.length() > 0) {
@@ -40,4 +41,6 @@ public class User {
         this.active = active;
         this.roles = roles;
     }
-}
+
+
+     */
