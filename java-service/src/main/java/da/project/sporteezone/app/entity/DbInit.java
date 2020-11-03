@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 
 //vzor pro inicializaci databáze
-
+/*
 @Service
 public class DbInit implements CommandLineRunner {
 
@@ -35,3 +35,4 @@ public class DbInit implements CommandLineRunner {
     }
 
 }
+*/

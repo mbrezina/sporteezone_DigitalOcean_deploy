@@ -1,15 +1,24 @@
 package da.project.sporteezone.app.controller;
 
 import da.project.sporteezone.app.entity.Fitness;
+import da.project.sporteezone.app.entity.GoogleUserInfo;
+import da.project.sporteezone.app.entity.User;
+import da.project.sporteezone.app.service.CustomOidcUserService;
 import da.project.sporteezone.app.service.FitnessService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserRequest;
+import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
+import org.springframework.security.oauth2.core.oidc.user.OidcUser;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 
@@ -17,6 +26,9 @@ import java.util.Optional;
 @Controller
 @RequestMapping(path = "/")
 public class MainController {
+
+    @Autowired
+    CustomOidcUserService customOidcUserService;
 
     //@Autowired
     //private FitnessService fitnessService;
@@ -29,11 +41,13 @@ public class MainController {
         return dataHolder;
     }
 
-    @RequestMapping("restricted")
-    public ModelAndView showRestricted() throws IOException {
-        ModelAndView dataHolder = new ModelAndView("restricted");
-        //dataHolder.addObject("message", "restricted");
+    @RequestMapping("user")
+    public ModelAndView showUser(@AuthenticationPrincipal CustomOidcUserService principal) throws IOException {
+        ModelAndView dataHolder = new ModelAndView("user");
+        //User user = customOidcUserService.
+        dataHolder.addObject("message", "kuk");
         return dataHolder;
     }
+
 }
 
