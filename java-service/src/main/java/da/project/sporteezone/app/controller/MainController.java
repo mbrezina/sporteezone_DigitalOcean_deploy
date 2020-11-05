@@ -3,7 +3,7 @@ package da.project.sporteezone.app.controller;
 import da.project.sporteezone.app.entity.Fitness;
 //import da.project.sporteezone.app.entity.GoogleUserInfo;
 import da.project.sporteezone.app.entity.User;
-import da.project.sporteezone.app.service.CustomOidcUserService;
+//import da.project.sporteezone.app.service.CustomOidcUserService;
 import da.project.sporteezone.app.service.FitnessService;
 import da.project.sporteezone.app.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -32,8 +32,8 @@ import java.util.Optional;
 @RequestMapping(path = "/")
 public class MainController {
 
-    @Autowired
-    CustomOidcUserService customOidcUserService;
+    //@Autowired
+    //CustomOidcUserService customOidcUserService;
 
     @Autowired
     private UserService userService;
@@ -45,26 +45,30 @@ public class MainController {
         return dataHolder;
     }
 
+
     @RequestMapping("/securedPage")
+    //@RequestMapping("/user")
     public String securedPage(Model model,
                               @RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient authorizedClient,
                               @AuthenticationPrincipal OAuth2User oauth2User) {
 
         String subKod = oauth2User.getAttributes().get("sub").toString();
-        //long sub = Long.parseLong(subKod);
-        //long l = Long.parseLong("200");
-
         String jmeno = oauth2User.getAttributes().get("name").toString();
         String email = oauth2User.getAttributes().get("email").toString();
 
-        User hledanyUzivatel = userService.najdiPodleSub(subKod);
-        if (hledanyUzivatel == null) {
+        User vyhledanyUzivatel = userService.najdiPodleSub(subKod);
+        if (vyhledanyUzivatel == null) {
             User novyUzivatel = new User(subKod, jmeno, email);
             userService.ulozUzivatele(novyUzivatel);
+            model.addAttribute("user", novyUzivatel);
+        } else {
+            model.addAttribute("user", vyhledanyUzivatel);
         }
-        model.addAttribute("jmeno", jmeno);
-        model.addAttribute("email", email);
-        model.addAttribute("sub", subKod);
+
+        //model.addAttribute("jmeno", jmeno);
+        //model.addAttribute("jmeno", );
+        //model.addAttribute("email", email);
+        //model.addAttribute("sub", subKod);
 
         /*model.addAttribute("userName", oauth2User.getName());
         model.addAttribute("clientName", authorizedClient.getClientRegistration().getClientName());

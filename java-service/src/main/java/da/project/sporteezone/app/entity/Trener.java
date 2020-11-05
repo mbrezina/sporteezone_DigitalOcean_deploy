@@ -10,6 +10,7 @@ import java.util.List;
 
 @Entity
 @Data
+@Table(name = "trener")
 public class Trener {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
