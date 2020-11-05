@@ -20,6 +20,7 @@ import org.springframework.security.oauth2.client.oidc.web.logout.OidcClientInit
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
+import org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -43,6 +44,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         OidcUserService googleUserService = new OidcUserService();
         googleUserService.setAccessibleScopes(googleScopes);
 
+
         http
             .authorizeRequests(authorizeRequests -> authorizeRequests.antMatchers("/user/**").authenticated())
             .oauth2Login(oauthLogin -> oauthLogin
@@ -53,20 +55,25 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .antMatchers(HttpMethod.GET, "/api/**").permitAll()
             .antMatchers(HttpMethod.POST, "/api/**").permitAll()
             .anyRequest().authenticated()
-            .and()
-            .logout()
-            .logoutSuccessHandler(oidcLogoutSuccessHandler())
-            .invalidateHttpSession(true)
-            .clearAuthentication(true);
+        .and()
+        .logout()
+        .logoutSuccessHandler(oidcLogoutSuccessHandler())
+        .invalidateHttpSession(true)
+        .clearAuthentication(true);
+
+        //.and()
+        //.logout(logout -> logout
+        //    .logoutUrl("/home")
+        //    .addLogoutHandler(new SecurityContextLogoutHandler())
+        //);
+
 
     }
 
     private LogoutSuccessHandler oidcLogoutSuccessHandler() {
         OidcClientInitiatedLogoutSuccessHandler oidcLogoutSuccessHandler =
             new OidcClientInitiatedLogoutSuccessHandler(this.clientRegistrationRepository);
-
         oidcLogoutSuccessHandler.setPostLogoutRedirectUri("{baseUrl}");
-
         return oidcLogoutSuccessHandler;
     }
 
@@ -78,3 +85,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     }
 
 }
+

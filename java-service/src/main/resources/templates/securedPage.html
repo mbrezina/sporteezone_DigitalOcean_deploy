@@ -8,11 +8,18 @@
     <title>Title</title>
 
 
-    <h1 th:text="${email}"></h1>
-    <h1 th:text="${jmeno}"></h1>
-    <h1 th:text="${sub}"></h1>
+    <h1 th:text="${user.email}"></h1>
+    <h1 th:text="${user.name}"></h1>
+    <h1 th:text="${user.sub}"></h1>
+
+    <!--<a href="<c:url value="/logout" />">Logout</a>-->
 
 
+    <div>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+    </div>
 </head>
 <body>
 
