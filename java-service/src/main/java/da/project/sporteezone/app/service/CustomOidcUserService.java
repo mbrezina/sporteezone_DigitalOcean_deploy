@@ -1,6 +1,6 @@
 package da.project.sporteezone.app.service;
 
-import da.project.sporteezone.app.entity.GoogleUserInfo;
+//import da.project.sporteezone.app.entity.GoogleUserInfo;
 import da.project.sporteezone.app.entity.User;
 import da.project.sporteezone.app.repository.UserRepository;
 import lombok.Data;
@@ -20,9 +20,11 @@ import java.util.Optional;
 @Slf4j
 @Service
 public class CustomOidcUserService extends OidcUserService {
-
+/*
     @Autowired
     private UserRepository userRepository;
+
+
 
     @Override
     public OidcUser loadUser(OidcUserRequest userRequest) throws OAuth2AuthenticationException {
@@ -48,6 +50,6 @@ public class CustomOidcUserService extends OidcUserService {
         }
         return oidcUser;
     }
-
+*/
 
 }

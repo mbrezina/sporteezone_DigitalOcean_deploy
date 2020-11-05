@@ -11,15 +11,24 @@ import java.util.List;
 
 @Data
 @Entity
+@Table(name = "user")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
+    private String sub;
     private String name;
     private String email;
-    private String sub;
 
+    public User() {
+    }
+
+    public User(String sub, String name, String email) {
+        this.sub = sub;
+        this.name = name;
+        this.email = email;
+    }
 }
 
 

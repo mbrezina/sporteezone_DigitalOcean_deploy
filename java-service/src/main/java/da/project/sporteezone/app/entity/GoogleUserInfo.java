@@ -2,6 +2,7 @@ package da.project.sporteezone.app.entity;
 
 import java.util.Map;
 
+/*
 public class GoogleUserInfo {
 
     private Map<String, Object> attributes;
@@ -27,3 +28,4 @@ public class GoogleUserInfo {
     }
 }
 
+*/

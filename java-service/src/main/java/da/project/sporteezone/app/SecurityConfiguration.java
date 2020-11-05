@@ -48,7 +48,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .oauth2Login(oauthLogin -> oauthLogin
                 .userInfoEndpoint()
                 .oidcUserService(googleUserService))
-
             .authorizeRequests()
             .antMatchers("/", "/home").permitAll()
             .antMatchers(HttpMethod.GET, "/api/**").permitAll()
