@@ -1,0 +1,12 @@
+DROP table preference;
+
+CREATE TABLE preference
+     (id INT PRIMARY KEY AUTO_INCREMENT,
+     sub VARCHAR(50),
+     aktivita VARCHAR(50)
+     );
+
+
+INSERT INTO preference (sub, aktivita) VALUES
+('1111111111', "spinning"), ('2222222222', "step aerobic");
+

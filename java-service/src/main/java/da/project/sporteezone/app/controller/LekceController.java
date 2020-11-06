@@ -23,12 +23,6 @@ public class LekceController {
     @Autowired
     private LekceService lekceService;
 
-    @Autowired
-    private LekceRepository lekceRepository;
-
-    @Autowired
-    private TrenerRepository lektorRepository;
-
     @GetMapping(path = "")
     public @ResponseBody
     List<Lekce> vsechnyLekce() {
