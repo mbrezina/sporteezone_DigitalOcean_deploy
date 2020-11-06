@@ -12,6 +12,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
 import org.springframework.security.oauth2.client.annotation.RegisteredOAuth2AuthorizedClient;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserRequest;
+import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.security.oauth2.core.user.OAuth2User;
@@ -32,23 +33,11 @@ import java.util.Optional;
 @RequestMapping(path = "/")
 public class MainController {
 
-    //@Autowired
-    //CustomOidcUserService customOidcUserService;
-
     @Autowired
     private UserService userService;
 
-    @RequestMapping("")
-    public ModelAndView showRate() throws IOException {
-        ModelAndView dataHolder = new ModelAndView("index");
-        //dataHolder.addObject("message", "hello");
-        return dataHolder;
-    }
-
-
-    @RequestMapping("/securedPage")
-    //@RequestMapping("/user")
-    public String securedPage(Model model,
+    @RequestMapping("user")
+    public String userPage(Model model,
                               @RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient authorizedClient,
                               @AuthenticationPrincipal OAuth2User oauth2User) {
 
@@ -64,28 +53,15 @@ public class MainController {
         } else {
             model.addAttribute("user", vyhledanyUzivatel);
         }
-
-        //model.addAttribute("jmeno", jmeno);
-        //model.addAttribute("jmeno", );
-        //model.addAttribute("email", email);
-        //model.addAttribute("sub", subKod);
-
-        /*model.addAttribute("userName", oauth2User.getName());
-        model.addAttribute("clientName", authorizedClient.getClientRegistration().getClientName());
-        model.addAttribute("userAttributes", oauth2User.getAttributes());
-        */
-        return "securedPage";
+        return "userPage";
     }
 
 
-    @RequestMapping("user")
-    //public ModelAndView showUser(@AuthenticationPrincipal CustomOidcUserService principal) throws IOException {
-    public ModelAndView showUser(Principal principal) throws IOException {
-        ModelAndView dataHolder = new ModelAndView("user");
-        //User user = customOidcUserService.
-        dataHolder.addObject("message", "kuk");
+    @RequestMapping("")
+    public ModelAndView showRate() throws IOException {
+        ModelAndView dataHolder = new ModelAndView("index");
+        //dataHolder.addObject("message", "hello");
         return dataHolder;
     }
-
 }
 
