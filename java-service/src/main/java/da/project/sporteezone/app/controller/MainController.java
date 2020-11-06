@@ -37,9 +37,7 @@ public class MainController {
     private UserService userService;
 
     @RequestMapping("user")
-    public String user(Model model,
-                              @AuthenticationPrincipal OAuth2User oauth2User) {
-
+    public String user(Model model, @AuthenticationPrincipal OAuth2User oauth2User) {
         String subKod = oauth2User.getAttributes().get("sub").toString();
         String jmeno = oauth2User.getAttributes().get("name").toString();
         String email = oauth2User.getAttributes().get("email").toString();
@@ -54,7 +52,6 @@ public class MainController {
         }
         return "user";
     }
-
 
     @RequestMapping("")
     public ModelAndView showRate() throws IOException {
