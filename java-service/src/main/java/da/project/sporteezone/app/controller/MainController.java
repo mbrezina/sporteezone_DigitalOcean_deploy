@@ -37,8 +37,7 @@ public class MainController {
     private UserService userService;
 
     @RequestMapping("user")
-    public String userPage(Model model,
-                              @RegisteredOAuth2AuthorizedClient OAuth2AuthorizedClient authorizedClient,
+    public String user(Model model,
                               @AuthenticationPrincipal OAuth2User oauth2User) {
 
         String subKod = oauth2User.getAttributes().get("sub").toString();
@@ -53,7 +52,7 @@ public class MainController {
         } else {
             model.addAttribute("user", vyhledanyUzivatel);
         }
-        return "userPage";
+        return "user";
     }
 
 
