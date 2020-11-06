@@ -31,4 +31,3 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-java-service/archive/
