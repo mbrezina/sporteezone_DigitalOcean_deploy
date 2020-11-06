@@ -21,20 +21,12 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User pridejUsera(User novyUser) {
-        userRepository.saveAndFlush(novyUser);
-        return novyUser;
-    }
-
     public User najdiPodleSub(String sub) {
-        //Long subKod = convertToLong(sub);
         return  userRepository.findBySub(sub);
     }
-
 
     public User ulozUzivatele(User user) {
         userRepository.saveAndFlush(user);
         return user;
     }
-
 }
