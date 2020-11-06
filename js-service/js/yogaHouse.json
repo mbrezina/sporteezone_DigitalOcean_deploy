@@ -1,0 +1,851 @@
+[
+    {
+        "yogaHouse": {
+            "courses": [
+                {
+                    "name": "Ranní power jóga",
+                    "day": "Pá 13.12.2019",
+                    "start": "7:00–8:00",
+                    "availability": "Uplynulo"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "day": "So 14.12.2019",
+                    "start": "8:30–9:30",
+                    "availability": "Uplynulo"
+                },
+                {
+                    "name": "Čakra jóga",
+                    "day": "Ne 15.12.2019",
+                    "start": "16:20–17:20",
+                    "availability": "Pozděvolno: 5 (+8)"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "day": "Po 16.12.2019",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 1 (+8)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "day": "Út 17.12.2019",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 3 (+8)"
+                },
+                {
+                    "name": "Jemná jóga",
+                    "day": "St 18.12.2019",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 15 (+8)"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "day": "Čt 19.12.2019",
+                    "start": "7:00–8:00",
+                    "availability": "volno: 3 (+8)"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "day": "Pá 20.12.2019",
+                    "start": "8:30–9:30",
+                    "availability": "ObsazenoPouze náhradníci: 7"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "day": "So 21.12.2019",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 11 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "day": "Ne 22.12.2019",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 8 (+8)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "day": "Po 23.12.2019",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 10 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "day": "Út 24.12.2019",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 3 (+8)"
+                },
+                {
+                    "name": "Adventní jóga",
+                    "day": "St 25.12.2019",
+                    "start": "10:00–11:00",
+                    "availability": "ObsazenoPouze náhradníci: 3"
+                },
+                {
+                    "name": "Power jóga",
+                    "day": "Čt 26.12.2019",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 6 (+8)"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "day": "Pá 27.12.2019",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 6 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "day": "So 28.12.2019",
+                    "start": "18:30–19:30",
+                    "availability": "Obsazeno"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "day": "Ne 29.12.2019",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 11 (+8)"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "day": "Po 30.12.2019",
+                    "start": "7:00–8:00",
+                    "availability": "volno: 1 (+8)"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "day": "Út 31.12.2019",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 14 (+8)"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "day": "St 1.1.2020",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 14 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "day": "Čt 2.1.2020",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 5 (+8)"
+                },
+                {
+                    "name": "Začínáme s jógou - KURZ",
+                    "day": "Pá 3.1.2020",
+                    "start": "18:30–19:30",
+                    "availability": ""
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "day": "So 4.1.2020",
+                    "start": "19:35–20:35",
+                    "availability": "ObsazenoPouze náhradníci: 4"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "day": "Ne 5.1.2020",
+                    "start": "7:00–8:00",
+                    "availability": "ObsazenoPouze náhradníci: 8"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "day": "Po 6.1.2020",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 12 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "day": "Út 7.1.2020",
+                    "start": "11:30–12:30",
+                    "availability": "volno: 15 (+8)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "day": "St 8.1.2020",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 16 (+8)"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "day": "Čt 9.1.2020",
+                    "start": "17:25–18:25",
+                    "availability": "ObsazenoPouze náhradníci: 7"
+                },
+                {
+                    "name": "Vnitřní jóga",
+                    "day": "Pá 10.1.2020",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 12 (+8)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "day": "So 11.1.2020",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 8 (+8)"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "day": "Ne 12.1.2020",
+                    "start": "7:00–8:00",
+                    "availability": "volno: 10 (+8)"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "day": "Po 13.1.2020",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 10 (+8)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "day": "Út 14.1.2020",
+                    "start": "11:30–12:30",
+                    "availability": "volno: 16 (+8)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "16:20–17:20",
+                    "availability": "ObsazenoPouze náhradníci: 4"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 12 (+8)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "18:30–19:30",
+                    "availability": "ObsazenoPouze náhradníci: 3"
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 11 (+8)"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "7:00–8:00",
+                    "availability": "volno: 14 (+8)"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 13 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 16 (+8)"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 6 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 17 (+8)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 13 (+8)"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "7:00–8:00",
+                    "availability": "volno: 13 (+8)"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 16 (+8)"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 17 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 12 (+8)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 14 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 16 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 14 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "18:30–19:30",
+                    "availability": "ObsazenoPouze náhradníci: 5"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "19:35–20:35",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 16 (+8)"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 17 (+8)"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 15 (+8)"
+                },
+                {
+                    "name": "Jemná jóga",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 18 (+8)"
+                },
+                {
+                    "name": "Vánoční power vinyása jóga",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 18 (+8)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "16:20–17:20",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "18:30–19:30",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "16:20–17:20",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "16:20–17:20",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "19:35–20:35",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "8:30–9:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "16:20–17:20",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "8:30–9:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "16:20–17:20",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Vnitřní jóga",
+                    "start": "18:30–19:30",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "8:30–9:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "16:20–17:20",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Uplynulo"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "8:30–9:30",
+                    "availability": "Uplynulo"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "16:20–17:20",
+                    "availability": "Pozděvolno: 0 (+6)"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 5 (+6)"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 2 (+6)"
+                },
+                {
+                    "name": "Aromaterapeutická jin jóga",
+                    "start": "19:35–20:35",
+                    "availability": "ObsazenoPouze náhradníci: 4"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "7:00–8:00",
+                    "availability": "ObsazenoPouze náhradníci: 1"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "8:30–9:30",
+                    "availability": "ObsazenoPouze náhradníci: 6"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 1 (+6)"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 8 (+6)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 6 (+6)"
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 10 (+6)"
+                },
+                {
+                    "name": "Jemná hatha jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 9 (+6)"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 6 (+6)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "18:30–19:30",
+                    "availability": "ObsazenoPouze náhradníci: 6"
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 8 (+6)"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "7:00–8:00",
+                    "availability": "volno: 2 (+6)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "8:30–9:30",
+                    "availability": "ObsazenoPouze náhradníci: 5"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "16:20–17:20",
+                    "availability": "ObsazenoPouze náhradníci: 6"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 7 (+6)"
+                },
+                {
+                    "name": "Jóga pro bajkery - KURZ",
+                    "start": "18:30–19:30",
+                    "availability": ""
+                },
+                {
+                    "name": "Jemná jóga",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 7 (+6)"
+                },
+                {
+                    "name": "Aštanga vinyása jóga - začátečníci",
+                    "start": "6:30–8:00",
+                    "availability": "volno: 10 (+6)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 3 (+6)"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 3 (+6)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 5 (+6)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda – KURZ",
+                    "start": "18:30–19:30",
+                    "availability": ""
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "19:35–20:35",
+                    "availability": "ObsazenoPouze náhradníci: 2"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "7:00–8:00",
+                    "availability": "ObsazenoPouze náhradníci: 3"
+                },
+                {
+                    "name": "Ranní power jóga",
+                    "start": "8:10–9:10",
+                    "availability": "volno: 11 (+6)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 9 (+6)"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "17:25–18:25",
+                    "availability": "ObsazenoPouze náhradníci: 3"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 12 (+6)"
+                },
+                {
+                    "name": "Meditace",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 14 (+6)"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "start": "7:00–8:00",
+                    "availability": "volno: 7 (+6)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 10 (+6)"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 7 (+6)"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 9 (+6)"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 10 (+6)"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "19:35–20:35",
+                    "availability": "volno: 12 (+6)"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "start": "7:00–8:00",
+                    "availability": "volno: 9 (+6)"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "8:30–9:30",
+                    "availability": "volno: 10 (+6)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 5 (+6)"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 9 (+6)"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "18:30–19:30",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Adventní jóga",
+                    "start": "10:00–11:00",
+                    "availability": "volno: 4 (+6)"
+                },
+                {
+                    "name": "Jemná hatha jóga",
+                    "start": "16:20–17:20",
+                    "availability": "volno: 11 (+6)"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "volno: 12 (+6)"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "18:30–19:30",
+                    "availability": "volno: 10 (+6)"
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "16:20–17:20",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Aromaterapeutická jin jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "16:20–17:20",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Večerní hatha jóga",
+                    "start": "19:35–20:35",
+                    "availability": "Dnes zrušeno"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "start": "8:30–9:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power vinyása jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "8:30–9:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Ranní hatha jóga",
+                    "start": "7:00–8:00",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jóga pro zdravá záda",
+                    "start": "8:30–9:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Jin jóga",
+                    "start": "16:20–17:20",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Hatha jóga",
+                    "start": "17:25–18:25",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Aštanga vinyása jóga",
+                    "start": "9:00–10:30",
+                    "availability": "Není povoleno"
+                },
+                {
+                    "name": "Power jóga basic",
+                    "start": "18:30–19:30",
+                    "availability": "Není povoleno"
+                }
+            ]
+        }
+    }
+]

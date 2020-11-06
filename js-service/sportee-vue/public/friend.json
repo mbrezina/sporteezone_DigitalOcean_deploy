@@ -1,0 +1,307 @@
+[
+    {
+        "friend": {
+            "courses": [
+                {
+                    "name": "Kruháč",
+                    "day": "2019-12-16",
+                    "start": "8:30",
+                    "end": "9:30",
+                    "availability": "8 / 12  volných míst",
+                    "price": "100 Kč /1 os."
+                },
+                {
+                    "name": "Zadek+břicho",
+                    "day": "2019-12-16",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "1 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Friends Hell - Jirka",
+                    "day": "2019-12-16",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "8 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Zdravá záda, pevné bříško",
+                    "day": "2019-12-16",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "availability": "7 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Jumping",
+                    "day": "2019-12-16",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "6 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "FIT H.E.A.T. - Danča",
+                    "day": "2019-12-16",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "0 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "H.E.A.T. spalovací",
+                    "day": "2019-12-16",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "availability": "0 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Ranní Funkční trénink",
+                    "day": "2019-12-17",
+                    "start": "6:00",
+                    "end": "7:00",
+                    "availability": "9 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Senior",
+                    "day": "2019-12-17",
+                    "start": "9:00",
+                    "end": "10:00",
+                    "availability": "7 / 12  volných míst",
+                    "price": "70 Kč /1 os."
+                },
+                {
+                    "name": "Zdravá záda, pevné bříško",
+                    "day": "2019-12-17",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "6 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Jumping",
+                    "day": "2019-12-17",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "11 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "TRX kondiční",
+                    "day": "2019-12-17",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "availability": "0 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Power YOGA",
+                    "day": "2019-12-17",
+                    "start": "20:00",
+                    "end": "21:00",
+                    "availability": "8 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "TYGR mix - Jirka",
+                    "day": "2019-12-17",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "5 / 8  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Power YOGA",
+                    "day": "2019-12-17",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "availability": "0 / 10  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "FIT H.E.A.T. Kája",
+                    "day": "2019-12-17",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "4 / 10  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Spalujeme s Jirkou",
+                    "day": "2019-12-18",
+                    "start": "9:30",
+                    "end": "10:30",
+                    "availability": "8 / 12  volných míst",
+                    "price": "100 Kč /1 os."
+                },
+                {
+                    "name": "Full BODY",
+                    "day": "2019-12-18",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "0 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Friends Hell - Jirka",
+                    "day": "2019-12-18",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "8 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "SM systém",
+                    "day": "2019-12-18",
+                    "start": "17:30",
+                    "end": "18:20",
+                    "availability": "0 / 7  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "JUMPING Basic",
+                    "day": "2019-12-18",
+                    "start": "18:30",
+                    "end": "19:30",
+                    "availability": "8 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Funkční trénink",
+                    "day": "2019-12-19",
+                    "start": "9:30",
+                    "end": "10:30",
+                    "availability": "12 / 12  volných míst",
+                    "price": "100 Kč /1 os."
+                },
+                {
+                    "name": "Senior",
+                    "day": "2019-12-19",
+                    "start": "11:00",
+                    "end": "12:00",
+                    "availability": "11 / 12  volných míst",
+                    "price": "70 Kč /1 os."
+                },
+                {
+                    "name": "Power & CORE",
+                    "day": "2019-12-19",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "6 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "TRX",
+                    "day": "2019-12-19",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "0 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Silový trénink",
+                    "day": "2019-12-19",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "11 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "JUMPING s posilováním",
+                    "day": "2019-12-19",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "9 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Fit Yoga",
+                    "day": "2019-12-19",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "availability": "8 / 10  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "FIT H.E.A.T. - Danča",
+                    "day": "2019-12-19",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "0 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "H.E.A.T. Basic",
+                    "day": "2019-12-19",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "availability": "0 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Ranní Friends Hell",
+                    "day": "2019-12-20",
+                    "start": "6:00",
+                    "end": "7:00",
+                    "availability": "8 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Zpevňujeme s Jirkou",
+                    "day": "2019-12-20",
+                    "start": "9:30",
+                    "end": "10:30",
+                    "availability": "9 / 12  volných míst",
+                    "price": "100 Kč /1 os."
+                },
+                {
+                    "name": "Zdravá záda, pevné bříško",
+                    "day": "2019-12-20",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "6 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Funkční trénink",
+                    "day": "2019-12-20",
+                    "start": "18:30",
+                    "end": "19:30",
+                    "availability": "10 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "Power YOGA",
+                    "day": "2019-12-22",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "9 / 12  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "FIT H.E.A.T. - Danča",
+                    "day": "2019-12-22",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "0 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                },
+                {
+                    "name": "FIT H.E.A.T. - Danča",
+                    "day": "2019-12-22",
+                    "start": "19:00",
+                    "end": "20:00",
+                    "availability": "0 / 11  volných míst",
+                    "price": "130 Kč /1 os."
+                }
+            ],
+            "url": "https://rezervace.friendsfit.cz:18443/timeline/week?ac%5B0%5D.s=true&_ac%5B0%5D.s=on&ac%5B1%5D.s=true&_ac%5B1%5D.s=on&ac%5B2%5D.s=true&_ac%5B2%5D.s=on&ac%5B3%5D.s=true&_ac%5B3%5D.s=on&ac%5B4%5D.s=true&_ac%5B4%5D.s=on&ac%5B5%5D.s=true&_ac%5B5%5D.s=on&ac%5B6%5D.s=true&_ac%5B6%5D.s=on&ac%5B7%5D.s=true&_ac%5B7%5D.s=on&ac%5B8%5D.s=true&_ac%5B8%5D.s=on&ac%5B9%5D.s=true&_ac%5B9%5D.s=on&ac%5B10%5D.s=true&_ac%5B10%5D.s=on&ac%5B11%5D.s=true&_ac%5B11%5D.s=on&ac%5B12%5D.s=true&_ac%5B12%5D.s=on&ac%5B13%5D.s=true&_ac%5B13%5D.s=on&ac%5B14%5D.s=true&_ac%5B14%5D.s=on&ac%5B15%5D.s=true&_ac%5B15%5D.s=on&ac%5B16%5D.s=true&_ac%5B16%5D.s=on&ac%5B17%5D.s=true&_ac%5B17%5D.s=on&ac%5B18%5D.s=true&_ac%5B18%5D.s=on&ac%5B19%5D.s=true&_ac%5B19%5D.s=on&ac%5B20%5D.s=true&_ac%5B20%5D.s=on&ac%5B21%5D.s=true&_ac%5B21%5D.s=on&ac%5B22%5D.s=true&_ac%5B22%5D.s=on&ac%5B23%5D.s=true&_ac%5B23%5D.s=on&ac%5B24%5D.s=true&_ac%5B24%5D.s=on&tc%5B0%5D.s=true&_tc%5B0%5D.s=on&tc%5B1%5D.s=true&_tc%5B1%5D.s=on&tc%5B2%5D.s=true&_tc%5B2%5D.s=on&ic%5B0%5D.s=true&_ic%5B0%5D.s=on&ic%5B1%5D.s=true&_ic%5B1%5D.s=on&ic%5B2%5D.s=true&_ic%5B2%5D.s=on&ic%5B3%5D.s=true&_ic%5B3%5D.s=on&ic%5B4%5D.s=true&_ic%5B4%5D.s=on&ic%5B5%5D.s=true&_ic%5B5%5D.s=on&ic%5B6%5D.s=true&_ic%5B6%5D.s=on&ic%5B7%5D.s=true&_ic%5B7%5D.s=on&ic%5B8%5D.s=true&_ic%5B8%5D.s=on&ic%5B9%5D.s=true&_ic%5B9%5D.s=on&ic%5B10%5D.s=true&_ic%5B10%5D.s=on&ic%5B11%5D.s=true&_ic%5B11%5D.s=on&ic%5B12%5D.s=true&_ic%5B12%5D.s=on&ic%5B13%5D.s=true&_ic%5B13%5D.s=on&ic%5B14%5D.s=true&_ic%5B14%5D.s=on&ic%5B15%5D.s=true&_ic%5B15%5D.s=on&ic%5B16%5D.s=true&_ic%5B16%5D.s=on&check_all=on&criteriaTimestamp=1576754530000",
+            "multisport": true,
+            "activepass": true
+        }
+    }
+]

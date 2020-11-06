@@ -30,13 +30,13 @@ import java.util.Optional;
 
 @Slf4j
 @Controller
-@RequestMapping(path = "/")
+@RequestMapping(path = "/user")
 public class MainController {
 
     @Autowired
     private UserService userService;
 
-    @RequestMapping("user")
+    @RequestMapping("")
     public String user(Model model, @AuthenticationPrincipal OAuth2User oauth2User) {
         String subKod = oauth2User.getAttributes().get("sub").toString();
         String jmeno = oauth2User.getAttributes().get("name").toString();
@@ -53,11 +53,11 @@ public class MainController {
         return "user";
     }
 
-    @RequestMapping("")
-    public ModelAndView showRate() throws IOException {
-        ModelAndView dataHolder = new ModelAndView("index");
-        //dataHolder.addObject("message", "hello");
-        return dataHolder;
-    }
+//    @RequestMapping("")
+//    public ModelAndView showRate() throws IOException {
+//        ModelAndView dataHolder = new ModelAndView("index");
+//        //dataHolder.addObject("message", "hello");
+//        return dataHolder;
+//    }
 }
 

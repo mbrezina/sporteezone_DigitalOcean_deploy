@@ -1,0 +1,5 @@
+CREATE DATABASE Sporteezone
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_czech_ci;
+
+USE Sporteezone;

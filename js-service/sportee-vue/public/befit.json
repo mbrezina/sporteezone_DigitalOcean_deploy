@@ -1,0 +1,1563 @@
+[
+    {
+        "befit": {
+            "courses": [
+                {
+                    "name": "BODYPUMP '45 S - Kristýna Pospíšilová",
+                    "day": "2019-12-16",
+                    "start": "6:15",
+                    "end": "7:10",
+                    "availability": "25  volných míst",
+                    "price": "170 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Michaela Kotková",
+                    "day": "2019-12-16",
+                    "start": "7:15",
+                    "end": "8:10",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping S - Janka Gáťová",
+                    "day": "2019-12-16",
+                    "start": "8:15",
+                    "end": "9:10",
+                    "availability": "29  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Michaela Kotková",
+                    "day": "2019-12-16",
+                    "start": "9:15",
+                    "end": "10:10",
+                    "availability": "16  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Lucie Formánková",
+                    "day": "2019-12-16",
+                    "start": "10:15",
+                    "end": "11:05",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Lucie Formánková",
+                    "day": "2019-12-16",
+                    "start": "11:10",
+                    "end": "12:00",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Lenka  Novosadová",
+                    "day": "2019-12-16",
+                    "start": "12:05",
+                    "end": "13:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Lenka  Novosadová",
+                    "day": "2019-12-16",
+                    "start": "13:05",
+                    "end": "14:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Lenka  Novosadová",
+                    "day": "2019-12-16",
+                    "start": "14:05",
+                    "end": "15:00",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP S - Leona  Chlubná",
+                    "day": "2019-12-16",
+                    "start": "15:05",
+                    "end": "16:10",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Markéta Zelendová",
+                    "day": "2019-12-16",
+                    "start": "16:15",
+                    "end": "17:15",
+                    "availability": "31  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Veronika Šujanová",
+                    "day": "2019-12-16",
+                    "start": "17:25",
+                    "end": "18:25",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Klára Čuhelová",
+                    "day": "2019-12-16",
+                    "start": "18:30",
+                    "end": "19:30",
+                    "availability": "11  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Tereza Lepková",
+                    "day": "2019-12-16",
+                    "start": "19:35",
+                    "end": "20:40",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Kateřina  Sochová",
+                    "day": "2019-12-16",
+                    "start": "12:00",
+                    "end": "12:55",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Alžběta  Komrsková",
+                    "day": "2019-12-16",
+                    "start": "14:00",
+                    "end": "14:55",
+                    "availability": "21  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Alžběta  Komrsková",
+                    "day": "2019-12-16",
+                    "start": "15:00",
+                    "end": "16:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Hana Vildomcová",
+                    "day": "2019-12-16",
+                    "start": "16:30",
+                    "end": "17:25",
+                    "availability": "21  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Hana Vildomcová",
+                    "day": "2019-12-16",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX + BODYBALANCE - Zuzana Dvořáková",
+                    "day": "2019-12-16",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYJAM - Zuzana Dvořáková",
+                    "day": "2019-12-16",
+                    "start": "19:30",
+                    "end": "20:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Kateřina Goldová",
+                    "day": "2019-12-16",
+                    "start": "7:00",
+                    "end": "7:30",
+                    "availability": "19  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Kateřina Goldová",
+                    "day": "2019-12-16",
+                    "start": "7:35",
+                    "end": "8:05",
+                    "availability": "19  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Tamara Vaňousová",
+                    "day": "2019-12-16",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA - Sabina Kuldová",
+                    "day": "2019-12-16",
+                    "start": "19:35",
+                    "end": "20:30",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Michaela Kotková",
+                    "day": "2019-12-16",
+                    "start": "8:20",
+                    "end": "9:15",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-16",
+                    "start": "9:20",
+                    "end": "10:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-16",
+                    "start": "12:15",
+                    "end": "13:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Body Styling S - Sabina Kuldová",
+                    "day": "2019-12-16",
+                    "start": "13:15",
+                    "end": "14:10",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Zumba - Martina Bruzlová",
+                    "day": "2019-12-16",
+                    "start": "15:30",
+                    "end": "16:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Body Styling - Tereza Stárková",
+                    "day": "2019-12-16",
+                    "start": "16:25",
+                    "end": "17:20",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu - Tereza Stárková",
+                    "day": "2019-12-16",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYCOMBAT - Eliška Bartková",
+                    "day": "2019-12-16",
+                    "start": "18:30",
+                    "end": "19:30",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Tamara Vaňousová",
+                    "day": "2019-12-16",
+                    "start": "19:35",
+                    "end": "20:30",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Tereza Stárková",
+                    "day": "2019-12-17",
+                    "start": "6:15",
+                    "end": "7:10",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping S - Michaela Macková",
+                    "day": "2019-12-17",
+                    "start": "7:15",
+                    "end": "8:10",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Tereza Stárková",
+                    "day": "2019-12-17",
+                    "start": "8:15",
+                    "end": "9:10",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Lucie Formánková",
+                    "day": "2019-12-17",
+                    "start": "9:15",
+                    "end": "10:10",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Lucie Formánková",
+                    "day": "2019-12-17",
+                    "start": "10:15",
+                    "end": "11:10",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Rebeka Šilhanová",
+                    "day": "2019-12-17",
+                    "start": "12:00",
+                    "end": "12:55",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Rebeka Šilhanová",
+                    "day": "2019-12-17",
+                    "start": "13:00",
+                    "end": "13:55",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Rebeka Šilhanová",
+                    "day": "2019-12-17",
+                    "start": "14:00",
+                    "end": "14:55",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping S - Janka Gáťová",
+                    "day": "2019-12-17",
+                    "start": "15:05",
+                    "end": "16:05",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Nicole  Šulcová",
+                    "day": "2019-12-17",
+                    "start": "16:10",
+                    "end": "17:15",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Markéta Zelendová",
+                    "day": "2019-12-17",
+                    "start": "17:20",
+                    "end": "18:20",
+                    "availability": "26  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Leona  Chlubná",
+                    "day": "2019-12-17",
+                    "start": "18:25",
+                    "end": "19:30",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT - Ivana Reicheltová",
+                    "day": "2019-12-17",
+                    "start": "19:35",
+                    "end": "20:30",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Barbora Kazimírová",
+                    "day": "2019-12-17",
+                    "start": "6:30",
+                    "end": "7:30",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Barbora Kazimírová",
+                    "day": "2019-12-17",
+                    "start": "8:00",
+                    "end": "8:55",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "LUNCHJOGA S - Hana Vildomcová",
+                    "day": "2019-12-17",
+                    "start": "12:00",
+                    "end": "12:55",
+                    "availability": "21  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Kateřina  Sochová",
+                    "day": "2019-12-17",
+                    "start": "14:00",
+                    "end": "14:55",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Kateřina  Sochová",
+                    "day": "2019-12-17",
+                    "start": "15:00",
+                    "end": "15:55",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu - Michaela Kotková",
+                    "day": "2019-12-17",
+                    "start": "16:25",
+                    "end": "17:20",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Markéta Swatzinová",
+                    "day": "2019-12-17",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "21  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Body Styling - Michaela Kotková",
+                    "day": "2019-12-17",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Dominika Veselá",
+                    "day": "2019-12-17",
+                    "start": "19:30",
+                    "end": "20:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Markéta Zelendová",
+                    "day": "2019-12-17",
+                    "start": "7:30",
+                    "end": "8:00",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Markéta Zelendová",
+                    "day": "2019-12-17",
+                    "start": "8:05",
+                    "end": "8:35",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Kateřina Goldová",
+                    "day": "2019-12-17",
+                    "start": "15:50",
+                    "end": "16:20",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "BODYATTACK - Kateřina Goldová",
+                    "day": "2019-12-17",
+                    "start": "16:25",
+                    "end": "17:25",
+                    "availability": "18  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Dominika Veselá",
+                    "day": "2019-12-17",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX + BODYBALANCE - Eliška Bartková",
+                    "day": "2019-12-17",
+                    "start": "19:35",
+                    "end": "20:35",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu S - Tereza Stárková",
+                    "day": "2019-12-17",
+                    "start": "7:20",
+                    "end": "8:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Sabina Kuldová",
+                    "day": "2019-12-17",
+                    "start": "8:20",
+                    "end": "9:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Sabina Kuldová",
+                    "day": "2019-12-17",
+                    "start": "9:20",
+                    "end": "10:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-17",
+                    "start": "11:15",
+                    "end": "12:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-17",
+                    "start": "12:15",
+                    "end": "13:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Markéta Swatzinová",
+                    "day": "2019-12-17",
+                    "start": "16:25",
+                    "end": "17:20",
+                    "availability": "26  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA - Michaela Kotková",
+                    "day": "2019-12-17",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYCOMBAT - Eliška Bartková",
+                    "day": "2019-12-17",
+                    "start": "18:30",
+                    "end": "19:30",
+                    "availability": "17  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "beFIT DANCE - Vendula Gottvaldová",
+                    "day": "2019-12-17",
+                    "start": "19:35",
+                    "end": "20:30",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP '45 S - Denisa Olečková",
+                    "day": "2019-12-18",
+                    "start": "6:15",
+                    "end": "7:10",
+                    "availability": "22  volných míst",
+                    "price": "170 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Michaela Kotková",
+                    "day": "2019-12-18",
+                    "start": "7:15",
+                    "end": "8:10",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping S - Markéta Zelendová",
+                    "day": "2019-12-18",
+                    "start": "8:15",
+                    "end": "9:10",
+                    "availability": "32  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Michaela Kotková",
+                    "day": "2019-12-18",
+                    "start": "9:15",
+                    "end": "10:10",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Lucie Formánková",
+                    "day": "2019-12-18",
+                    "start": "10:15",
+                    "end": "11:05",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Lucie Formánková",
+                    "day": "2019-12-18",
+                    "start": "11:10",
+                    "end": "12:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Ivana Reicheltová",
+                    "day": "2019-12-18",
+                    "start": "12:05",
+                    "end": "13:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Ivana Reicheltová",
+                    "day": "2019-12-18",
+                    "start": "13:05",
+                    "end": "14:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Ivana Reicheltová",
+                    "day": "2019-12-18",
+                    "start": "14:05",
+                    "end": "15:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP S - Kristýna Pospíšilová",
+                    "day": "2019-12-18",
+                    "start": "15:05",
+                    "end": "16:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Dominika Novottová",
+                    "day": "2019-12-18",
+                    "start": "16:15",
+                    "end": "17:15",
+                    "availability": "32  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Nicole  Šulcová",
+                    "day": "2019-12-18",
+                    "start": "17:20",
+                    "end": "18:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Janka Gáťová",
+                    "day": "2019-12-18",
+                    "start": "18:30",
+                    "end": "19:30",
+                    "availability": "17  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT - Ivana Reicheltová",
+                    "day": "2019-12-18",
+                    "start": "19:35",
+                    "end": "20:35",
+                    "availability": "18  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Alžběta  Komrsková",
+                    "day": "2019-12-18",
+                    "start": "6:30",
+                    "end": "7:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Dominika Veselá",
+                    "day": "2019-12-18",
+                    "start": "7:30",
+                    "end": "8:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Dominika Veselá",
+                    "day": "2019-12-18",
+                    "start": "8:30",
+                    "end": "9:25",
+                    "availability": "21  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Kateřina  Sochová",
+                    "day": "2019-12-18",
+                    "start": "12:00",
+                    "end": "13:00",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Body Styling - Tereza Stárková",
+                    "day": "2019-12-18",
+                    "start": "16:30",
+                    "end": "17:25",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu - Tereza Stárková",
+                    "day": "2019-12-18",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Markéta Swatzinová",
+                    "day": "2019-12-18",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Kateřina  Sochová",
+                    "day": "2019-12-18",
+                    "start": "19:30",
+                    "end": "20:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Eliška Bartková",
+                    "day": "2019-12-18",
+                    "start": "7:00",
+                    "end": "7:30",
+                    "availability": "19  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Eliška Bartková",
+                    "day": "2019-12-18",
+                    "start": "7:35",
+                    "end": "8:05",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Barbora Kazimírová",
+                    "day": "2019-12-18",
+                    "start": "15:30",
+                    "end": "16:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Barbora Kazimírová",
+                    "day": "2019-12-18",
+                    "start": "16:30",
+                    "end": "17:25",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYATTACK - Silvie Radiměřská",
+                    "day": "2019-12-18",
+                    "start": "17:30",
+                    "end": "18:30",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX + BODYBALANCE - Silvie Radiměřská",
+                    "day": "2019-12-18",
+                    "start": "18:35",
+                    "end": "19:35",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Michaela Kotková",
+                    "day": "2019-12-18",
+                    "start": "8:20",
+                    "end": "9:15",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-18",
+                    "start": "9:20",
+                    "end": "10:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-18",
+                    "start": "12:15",
+                    "end": "13:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Body Styling S - Sabina Kuldová",
+                    "day": "2019-12-18",
+                    "start": "13:15",
+                    "end": "14:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Sabina Kuldová",
+                    "day": "2019-12-18",
+                    "start": "14:15",
+                    "end": "15:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Sabina Kuldová",
+                    "day": "2019-12-18",
+                    "start": "15:15",
+                    "end": "16:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "beFIT DANCE - Vendula Gottvaldová",
+                    "day": "2019-12-18",
+                    "start": "16:30",
+                    "end": "17:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Markéta Swatzinová",
+                    "day": "2019-12-18",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "29  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYCOMBAT - Barbora Michajlova",
+                    "day": "2019-12-18",
+                    "start": "18:30",
+                    "end": "19:30",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA - Sabina Kuldová",
+                    "day": "2019-12-18",
+                    "start": "19:35",
+                    "end": "20:30",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Ivana Reicheltová",
+                    "day": "2019-12-19",
+                    "start": "6:15",
+                    "end": "7:10",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping S - Kristina Oslejová",
+                    "day": "2019-12-19",
+                    "start": "8:15",
+                    "end": "9:10",
+                    "availability": "32  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Lucie Formánková",
+                    "day": "2019-12-19",
+                    "start": "9:15",
+                    "end": "10:10",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT S - Lucie Formánková",
+                    "day": "2019-12-19",
+                    "start": "10:15",
+                    "end": "11:10",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Rebeka Šilhanová",
+                    "day": "2019-12-19",
+                    "start": "12:00",
+                    "end": "12:55",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Rebeka Šilhanová",
+                    "day": "2019-12-19",
+                    "start": "13:00",
+                    "end": "13:55",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Rebeka Šilhanová",
+                    "day": "2019-12-19",
+                    "start": "14:00",
+                    "end": "14:55",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping S- Dominika Novottová",
+                    "day": "2019-12-19",
+                    "start": "15:00",
+                    "end": "16:00",
+                    "availability": "31  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Veronika Šujanová",
+                    "day": "2019-12-19",
+                    "start": "16:10",
+                    "end": "17:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Klára Čuhelová",
+                    "day": "2019-12-19",
+                    "start": "17:20",
+                    "end": "18:20",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Tereza Lepková",
+                    "day": "2019-12-19",
+                    "start": "18:25",
+                    "end": "19:30",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT - Vendula Gottvaldová",
+                    "day": "2019-12-19",
+                    "start": "19:35",
+                    "end": "20:30",
+                    "availability": "18  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Monika Lazoríková",
+                    "day": "2019-12-19",
+                    "start": "6:30",
+                    "end": "7:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Tamara Vaňousová",
+                    "day": "2019-12-19",
+                    "start": "8:00",
+                    "end": "9:00",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "LUNCHJOGA S - Hana Vildomcová",
+                    "day": "2019-12-19",
+                    "start": "12:00",
+                    "end": "12:55",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Kateřina  Sochová",
+                    "day": "2019-12-19",
+                    "start": "14:00",
+                    "end": "14:55",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Kateřina  Sochová",
+                    "day": "2019-12-19",
+                    "start": "15:00",
+                    "end": "15:55",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Body Styling - Dominika Veselá",
+                    "day": "2019-12-19",
+                    "start": "16:30",
+                    "end": "17:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu - Vendula Gottvaldová",
+                    "day": "2019-12-19",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "beFIT DANCE - Vendula Gottvaldová",
+                    "day": "2019-12-19",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Kristina Královská",
+                    "day": "2019-12-19",
+                    "start": "7:30",
+                    "end": "8:00",
+                    "availability": "19  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Kristina Královská",
+                    "day": "2019-12-19",
+                    "start": "8:05",
+                    "end": "8:35",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Kateřina Goldová",
+                    "day": "2019-12-19",
+                    "start": "15:50",
+                    "end": "16:20",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "BODYATTACK - Kateřina Goldová",
+                    "day": "2019-12-19",
+                    "start": "16:25",
+                    "end": "17:20",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "GRIT CARDIO - Veronika Šujanová",
+                    "day": "2019-12-19",
+                    "start": "17:25",
+                    "end": "17:55",
+                    "availability": "19  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Kristina Královská",
+                    "day": "2019-12-19",
+                    "start": "18:00",
+                    "end": "18:30",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "BODYCOMBAT - Kristína Kráľovská",
+                    "day": "2019-12-19",
+                    "start": "18:35",
+                    "end": "19:35",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu S - Tereza Stárková",
+                    "day": "2019-12-19",
+                    "start": "7:20",
+                    "end": "8:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-19",
+                    "start": "8:20",
+                    "end": "9:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-19",
+                    "start": "11:15",
+                    "end": "12:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu S - Sabina Kuldová",
+                    "day": "2019-12-19",
+                    "start": "13:15",
+                    "end": "14:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Sabina Kuldová",
+                    "day": "2019-12-19",
+                    "start": "14:15",
+                    "end": "15:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Sabina Kuldová",
+                    "day": "2019-12-19",
+                    "start": "15:15",
+                    "end": "16:10",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Alžběta  Komrsková",
+                    "day": "2019-12-19",
+                    "start": "16:30",
+                    "end": "17:25",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Dominika Veselá",
+                    "day": "2019-12-19",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Dominika Veselá",
+                    "day": "2019-12-19",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "29  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX + BODYBALANCE - Silvie Radiměřská",
+                    "day": "2019-12-19",
+                    "start": "19:35",
+                    "end": "20:35",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP '45 S - Denisa Olečková",
+                    "day": "2019-12-20",
+                    "start": "6:15",
+                    "end": "7:10",
+                    "availability": "24  volných míst",
+                    "price": "170 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Michaela Kotková",
+                    "day": "2019-12-20",
+                    "start": "7:15",
+                    "end": "8:10",
+                    "availability": "19  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping S - Janka Gáťová",
+                    "day": "2019-12-20",
+                    "start": "8:15",
+                    "end": "9:10",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Barbora Michajlova",
+                    "day": "2019-12-20",
+                    "start": "9:15",
+                    "end": "10:10",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Barbora Michajlova",
+                    "day": "2019-12-20",
+                    "start": "10:15",
+                    "end": "11:05",
+                    "availability": "18  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT S - Barbora Michajlova",
+                    "day": "2019-12-20",
+                    "start": "11:10",
+                    "end": "12:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Lenka  Novosadová",
+                    "day": "2019-12-20",
+                    "start": "12:05",
+                    "end": "13:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Lenka  Novosadová",
+                    "day": "2019-12-20",
+                    "start": "13:05",
+                    "end": "14:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BUILD IT S - Lenka  Novosadová",
+                    "day": "2019-12-20",
+                    "start": "14:05",
+                    "end": "15:00",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP S - Lucie Langerová",
+                    "day": "2019-12-20",
+                    "start": "15:00",
+                    "end": "16:00",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODY STEP - Lucie Langerová",
+                    "day": "2019-12-20",
+                    "start": "16:10",
+                    "end": "16:55",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Alžběta Klimešová",
+                    "day": "2019-12-20",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "32  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Dominika Veselá",
+                    "day": "2019-12-20",
+                    "start": "6:30",
+                    "end": "7:25",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Dominika Veselá",
+                    "day": "2019-12-20",
+                    "start": "7:30",
+                    "end": "8:25",
+                    "availability": "22  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "LUNCHJOGA S - Hana Vildomcová",
+                    "day": "2019-12-20",
+                    "start": "11:30",
+                    "end": "12:30",
+                    "availability": "23  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu S - Sabina Kuldová",
+                    "day": "2019-12-20",
+                    "start": "15:30",
+                    "end": "16:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA - Sabina Kuldová",
+                    "day": "2019-12-20",
+                    "start": "16:30",
+                    "end": "17:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Barbora Michajlova",
+                    "day": "2019-12-20",
+                    "start": "7:30",
+                    "end": "8:00",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Barbora Michajlova",
+                    "day": "2019-12-20",
+                    "start": "8:05",
+                    "end": "8:35",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX - Kristina Královská",
+                    "day": "2019-12-20",
+                    "start": "14:55",
+                    "end": "15:25",
+                    "availability": "20  volných míst",
+                    "price": "100 Kč  /1 os."
+                },
+                {
+                    "name": "BODYCOMBAT S - Kristína Kráľovská",
+                    "day": "2019-12-20",
+                    "start": "15:30",
+                    "end": "16:30",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Michaela Kotková",
+                    "day": "2019-12-20",
+                    "start": "8:20",
+                    "end": "9:15",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-20",
+                    "start": "12:00",
+                    "end": "12:55",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-20",
+                    "start": "13:00",
+                    "end": "13:55",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA S - Lucie Formánková",
+                    "day": "2019-12-20",
+                    "start": "14:00",
+                    "end": "14:50",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga S - Markéta Swatzinová",
+                    "day": "2019-12-20",
+                    "start": "15:30",
+                    "end": "16:25",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Zumba - Martina Bruzlová",
+                    "day": "2019-12-20",
+                    "start": "16:35",
+                    "end": "17:30",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BURN IT - Barbora Michajlova",
+                    "day": "2019-12-21",
+                    "start": "8:00",
+                    "end": "8:55",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Veronika Šujanová",
+                    "day": "2019-12-21",
+                    "start": "9:00",
+                    "end": "10:00",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Janka Gáťová",
+                    "day": "2019-12-21",
+                    "start": "10:05",
+                    "end": "11:05",
+                    "availability": "31  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Body Styling - Sabina Kuldová",
+                    "day": "2019-12-21",
+                    "start": "8:30",
+                    "end": "9:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu - Sabina Kuldová",
+                    "day": "2019-12-21",
+                    "start": "9:30",
+                    "end": "10:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "TABATA - Sabina Kuldová",
+                    "day": "2019-12-21",
+                    "start": "10:30",
+                    "end": "11:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYCOMBAT - Barbora Michajlova",
+                    "day": "2019-12-21",
+                    "start": "9:05",
+                    "end": "10:05",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Kateřina  Sochová",
+                    "day": "2019-12-21",
+                    "start": "9:00",
+                    "end": "9:55",
+                    "availability": "29  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Kateřina  Sochová",
+                    "day": "2019-12-21",
+                    "start": "10:00",
+                    "end": "10:55",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Vendula Kolaříková",
+                    "day": "2019-12-22",
+                    "start": "9:00",
+                    "end": "10:00",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Pavla  Fryštáková",
+                    "day": "2019-12-22",
+                    "start": "10:05",
+                    "end": "11:05",
+                    "availability": "33  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BRACE IT - Tereza Stárková",
+                    "day": "2019-12-22",
+                    "start": "16:15",
+                    "end": "17:10",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Klára Čuhelová",
+                    "day": "2019-12-22",
+                    "start": "17:15",
+                    "end": "18:15",
+                    "availability": "33  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYPUMP - Veronika Šujanová",
+                    "day": "2019-12-22",
+                    "start": "18:20",
+                    "end": "19:25",
+                    "availability": "25  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Jumping - Alžběta Klimešová",
+                    "day": "2019-12-22",
+                    "start": "19:30",
+                    "end": "20:30",
+                    "availability": "33  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Bosu - Tereza Stárková",
+                    "day": "2019-12-22",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Body Styling - Tereza Stárková",
+                    "day": "2019-12-22",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "24  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "BODYATTACK - Silvie Radiměřská",
+                    "day": "2019-12-22",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "CX WORX + BODYBALANCE - Silvie Radiměřská",
+                    "day": "2019-12-22",
+                    "start": "18:35",
+                    "end": "19:35",
+                    "availability": "20  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Markéta Swatzinová",
+                    "day": "2019-12-22",
+                    "start": "17:25",
+                    "end": "18:25",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                },
+                {
+                    "name": "Power Yoga - Markéta Swatzinová",
+                    "day": "2019-12-22",
+                    "start": "18:30",
+                    "end": "19:30",
+                    "availability": "30  volných míst",
+                    "price": "190 Kč  /1 os."
+                }
+            ],
+            "url": "https://rezervace.befitbrno.cz/timeline/week?ac%5B0%5D.s=true&_ac%5B0%5D.s=on&ac%5B1%5D.s=true&_ac%5B1%5D.s=on&ac%5B2%5D.s=true&_ac%5B2%5D.s=on&ac%5B3%5D.s=true&_ac%5B3%5D.s=on&ac%5B4%5D.s=true&_ac%5B4%5D.s=on&ac%5B5%5D.s=true&_ac%5B5%5D.s=on&ac%5B6%5D.s=true&_ac%5B6%5D.s=on&ac%5B7%5D.s=true&_ac%5B7%5D.s=on&ac%5B8%5D.s=true&_ac%5B8%5D.s=on&ac%5B9%5D.s=true&_ac%5B9%5D.s=on&ac%5B10%5D.s=true&_ac%5B10%5D.s=on&ac%5B11%5D.s=true&_ac%5B11%5D.s=on&ac%5B12%5D.s=true&_ac%5B12%5D.s=on&ac%5B13%5D.s=true&_ac%5B13%5D.s=on&ac%5B14%5D.s=true&_ac%5B14%5D.s=on&ac%5B15%5D.s=true&_ac%5B15%5D.s=on&ac%5B16%5D.s=true&_ac%5B16%5D.s=on&ac%5B17%5D.s=true&_ac%5B17%5D.s=on&ac%5B18%5D.s=true&_ac%5B18%5D.s=on&tc%5B0%5D.s=true&_tc%5B0%5D.s=on&tc%5B1%5D.s=true&_tc%5B1%5D.s=on&tc%5B2%5D.s=true&_tc%5B2%5D.s=on&tc%5B3%5D.s=true&_tc%5B3%5D.s=on&ic%5B0%5D.s=true&_ic%5B0%5D.s=on&ic%5B1%5D.s=true&_ic%5B1%5D.s=on&ic%5B2%5D.s=true&_ic%5B2%5D.s=on&ic%5B3%5D.s=true&_ic%5B3%5D.s=on&ic%5B4%5D.s=true&_ic%5B4%5D.s=on&ic%5B5%5D.s=true&_ic%5B5%5D.s=on&ic%5B6%5D.s=true&_ic%5B6%5D.s=on&ic%5B7%5D.s=true&_ic%5B7%5D.s=on&ic%5B8%5D.s=true&_ic%5B8%5D.s=on&ic%5B9%5D.s=true&_ic%5B9%5D.s=on&ic%5B10%5D.s=true&_ic%5B10%5D.s=on&ic%5B11%5D.s=true&_ic%5B11%5D.s=on&ic%5B12%5D.s=true&_ic%5B12%5D.s=on&ic%5B13%5D.s=true&_ic%5B13%5D.s=on&ic%5B14%5D.s=true&_ic%5B14%5D.s=on&ic%5B15%5D.s=true&_ic%5B15%5D.s=on&ic%5B16%5D.s=true&_ic%5B16%5D.s=on&ic%5B17%5D.s=true&_ic%5B17%5D.s=on&ic%5B18%5D.s=true&_ic%5B18%5D.s=on&ic%5B19%5D.s=true&_ic%5B19%5D.s=on&ic%5B20%5D.s=true&_ic%5B20%5D.s=on&ic%5B21%5D.s=true&_ic%5B21%5D.s=on&ic%5B22%5D.s=true&_ic%5B22%5D.s=on&ic%5B23%5D.s=true&_ic%5B23%5D.s=on&ic%5B24%5D.s=true&_ic%5B24%5D.s=on&ic%5B25%5D.s=true&_ic%5B25%5D.s=on&ic%5B26%5D.s=true&_ic%5B26%5D.s=on&ic%5B27%5D.s=true&_ic%5B27%5D.s=on&ic%5B28%5D.s=true&_ic%5B28%5D.s=on&ic%5B29%5D.s=true&_ic%5B29%5D.s=on&ic%5B30%5D.s=true&_ic%5B30%5D.s=on&ic%5B31%5D.s=true&_ic%5B31%5D.s=on&ic%5B32%5D.s=true&_ic%5B32%5D.s=on&ic%5B33%5D.s=true&_ic%5B33%5D.s=on&ic%5B34%5D.s=true&_ic%5B34%5D.s=on&ic%5B35%5D.s=true&_ic%5B35%5D.s=on&ic%5B36%5D.s=true&_ic%5B36%5D.s=on&ic%5B37%5D.s=true&_ic%5B37%5D.s=on&ic%5B38%5D.s=true&_ic%5B38%5D.s=on&ic%5B39%5D.s=true&_ic%5B39%5D.s=on&check_all=on&criteriaTimestamp=1576766152000",
+            "multisport": true,
+            "activepass": true
+        }
+    }
+]

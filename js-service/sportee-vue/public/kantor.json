@@ -1,0 +1,395 @@
+[
+    {
+        "kantor": {
+            "courses": [
+                {
+                    "name": "RESET - Lenka Grossmannová",
+                    "day": "2019-12-16",
+                    "start": "7:00",
+                    "end": "8:00",
+                    "availability": "2 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Veronika Huláková",
+                    "day": "2019-12-16",
+                    "start": "16:30",
+                    "end": "17:30",
+                    "availability": "3 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Robert Kántor",
+                    "day": "2019-12-16",
+                    "start": "18:00",
+                    "end": "18:55",
+                    "availability": "1 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Michal Šot",
+                    "day": "2019-12-16",
+                    "start": "6:30",
+                    "end": "7:30",
+                    "availability": "0 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "REBORN EASY - Robert Kántor",
+                    "day": "2019-12-16",
+                    "start": "16:00",
+                    "end": "16:55",
+                    "availability": "8 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Robert Kántor",
+                    "day": "2019-12-16",
+                    "start": "17:00",
+                    "end": "17:55",
+                    "availability": "2 / 14  volných míst",
+                    "price": "200 Kč /1 os."
+                },
+                {
+                    "name": "REBORN CORE - Kateřina Hortová",
+                    "day": "2019-12-16",
+                    "start": "18:00",
+                    "end": "18:55",
+                    "availability": "8 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE EASY - Robert Kántor",
+                    "day": "2019-12-16",
+                    "start": "19:00",
+                    "end": "19:55",
+                    "availability": "0 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "Florbal Židenice",
+                    "day": "2019-12-16",
+                    "start": "20:00",
+                    "end": "20:55",
+                    "availability": "1 / 1  volných míst",
+                    "price": "0 Kč"
+                },
+                {
+                    "name": "RESET - Jan VIKI",
+                    "day": "2019-12-17",
+                    "start": "7:00",
+                    "end": "7:55",
+                    "availability": "15 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Jan VIKI",
+                    "day": "2019-12-17",
+                    "start": "16:30",
+                    "end": "17:25",
+                    "availability": "7 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Jan VIKI",
+                    "day": "2019-12-17",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "10 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "REBORN - Michal Šot",
+                    "day": "2019-12-17",
+                    "start": "7:00",
+                    "end": "7:55",
+                    "availability": "0 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Michal Šot",
+                    "day": "2019-12-17",
+                    "start": "8:00",
+                    "end": "8:55",
+                    "availability": "1 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE EASY - Robert Kántor",
+                    "day": "2019-12-17",
+                    "start": "17:00",
+                    "end": "17:55",
+                    "availability": "7 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "REBORN - Robert Kántor",
+                    "day": "2019-12-17",
+                    "start": "18:00",
+                    "end": "18:55",
+                    "availability": "0 / 14  volných míst",
+                    "price": "200 Kč /1 os."
+                },
+                {
+                    "name": "RESHAPE - Robert Kántor",
+                    "day": "2019-12-17",
+                    "start": "19:00",
+                    "end": "19:55",
+                    "availability": "7 / 14  volných míst",
+                    "price": "200 Kč /1 os."
+                },
+                {
+                    "name": "RESHAPE EASY - Robert Kántor",
+                    "day": "2019-12-17",
+                    "start": "20:00",
+                    "end": "20:55",
+                    "availability": "1 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Honza Straka",
+                    "day": "2019-12-18",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "0 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Honza Straka",
+                    "day": "2019-12-18",
+                    "start": "18:30",
+                    "end": "19:25",
+                    "availability": "0 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Kristýna Tomanová",
+                    "day": "2019-12-18",
+                    "start": "7:00",
+                    "end": "8:00",
+                    "availability": "5 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Michal Šot",
+                    "day": "2019-12-18",
+                    "start": "8:30",
+                    "end": "9:25",
+                    "availability": "0 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "REBORN - Michal Šot",
+                    "day": "2019-12-18",
+                    "start": "10:00",
+                    "end": "10:55",
+                    "availability": "11 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE EASY - Robert Kántor",
+                    "day": "2019-12-18",
+                    "start": "17:00",
+                    "end": "17:55",
+                    "availability": "1 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Robert Kántor",
+                    "day": "2019-12-18",
+                    "start": "18:00",
+                    "end": "18:55",
+                    "availability": "3 / 14  volných míst",
+                    "price": "200 Kč /1 os."
+                },
+                {
+                    "name": "REBORN EASY - Robert Kántor",
+                    "day": "2019-12-18",
+                    "start": "19:00",
+                    "end": "19:55",
+                    "availability": "5 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE EASY - Robert Kántor",
+                    "day": "2019-12-18",
+                    "start": "20:00",
+                    "end": "20:55",
+                    "availability": "13 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Jan VIKI",
+                    "day": "2019-12-19",
+                    "start": "8:00",
+                    "end": "8:55",
+                    "availability": "11 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Lenka Grossmannová",
+                    "day": "2019-12-19",
+                    "start": "16:30",
+                    "end": "17:30",
+                    "availability": "13 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Lenka Grossmannová",
+                    "day": "2019-12-19",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "13 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "REBORN - Kristýna Tomanová",
+                    "day": "2019-12-19",
+                    "start": "7:00",
+                    "end": "7:55",
+                    "availability": "0 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Kristýna Tomanová",
+                    "day": "2019-12-19",
+                    "start": "8:00",
+                    "end": "9:00",
+                    "availability": "12 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "REBORN CORE - Kateřina Hortová",
+                    "day": "2019-12-19",
+                    "start": "17:00",
+                    "end": "17:55",
+                    "availability": "6 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Kristýna Tomanová",
+                    "day": "2019-12-19",
+                    "start": "18:00",
+                    "end": "19:00",
+                    "availability": "9 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE EASY - Kristýna Tomanová",
+                    "day": "2019-12-19",
+                    "start": "19:00",
+                    "end": "19:55",
+                    "availability": "0 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Kristýna Tomanová",
+                    "day": "2019-12-19",
+                    "start": "20:00",
+                    "end": "21:00",
+                    "availability": "14 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Lenka Grossmannová",
+                    "day": "2019-12-20",
+                    "start": "7:00",
+                    "end": "7:55",
+                    "availability": "7 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Jan VIKI",
+                    "day": "2019-12-20",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "11 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Michal Šot",
+                    "day": "2019-12-20",
+                    "start": "7:00",
+                    "end": "7:55",
+                    "availability": "0 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "REBORN - Michal Šot",
+                    "day": "2019-12-20",
+                    "start": "8:30",
+                    "end": "9:25",
+                    "availability": "2 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "REBORN CORE - Kateřina Hortová",
+                    "day": "2019-12-20",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "13 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Kristýna Tomanová",
+                    "day": "2019-12-20",
+                    "start": "18:00",
+                    "end": "18:55",
+                    "availability": "14 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Lenka Grossmannová",
+                    "day": "2019-12-21",
+                    "start": "8:00",
+                    "end": "8:55",
+                    "availability": "7 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Kristýna Tomanová",
+                    "day": "2019-12-21",
+                    "start": "8:30",
+                    "end": "9:25",
+                    "availability": "7 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Kristýna Tomanová",
+                    "day": "2019-12-21",
+                    "start": "9:30",
+                    "end": "10:25",
+                    "availability": "13 / 14  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESET - Jan VIKI",
+                    "day": "2019-12-22",
+                    "start": "17:30",
+                    "end": "18:25",
+                    "availability": "11 / 16  volných míst",
+                    "price": "200 Kč"
+                },
+                {
+                    "name": "RESHAPE - Robert Kántor",
+                    "day": "2019-12-22",
+                    "start": "17:00",
+                    "end": "18:00",
+                    "availability": "8 / 14  volných míst",
+                    "price": "200 Kč /1 os."
+                },
+                {
+                    "name": "RESHAPE - Robert Kántor",
+                    "day": "2019-12-22",
+                    "start": "18:00",
+                    "end": "18:55",
+                    "availability": "10 / 14  volných míst",
+                    "price": "200 Kč /1 os."
+                }
+            ],
+            "url": "https://rezervace.kantorfitness.cz/timeline/week?ac%5B0%5D.s=true&_ac%5B0%5D.s=on&ac%5B1%5D.s=true&_ac%5B1%5D.s=on&ac%5B2%5D.s=true&_ac%5B2%5D.s=on&ac%5B3%5D.s=true&_ac%5B3%5D.s=on&ac%5B4%5D.s=true&_ac%5B4%5D.s=on&ac%5B5%5D.s=true&_ac%5B5%5D.s=on&ac%5B6%5D.s=true&_ac%5B6%5D.s=on&tc%5B0%5D.s=true&_tc%5B0%5D.s=on&tc%5B1%5D.s=true&_tc%5B1%5D.s=on&ic%5B0%5D.s=true&_ic%5B0%5D.s=on&ic%5B1%5D.s=true&_ic%5B1%5D.s=on&ic%5B2%5D.s=true&_ic%5B2%5D.s=on&ic%5B3%5D.s=true&_ic%5B3%5D.s=on&ic%5B4%5D.s=true&_ic%5B4%5D.s=on&ic%5B5%5D.s=true&_ic%5B5%5D.s=on&ic%5B6%5D.s=true&_ic%5B6%5D.s=on&ic%5B7%5D.s=true&_ic%5B7%5D.s=on&ic%5B8%5D.s=true&_ic%5B8%5D.s=on&check_all=on&criteriaTimestamp=1576710000000",
+            "multisport": false,
+            "activepass": false
+        }
+    }
+]
