@@ -44,9 +44,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         OidcUserService googleUserService = new OidcUserService();
         googleUserService.setAccessibleScopes(googleScopes);
 
-
         http
-            .authorizeRequests(authorizeRequests -> authorizeRequests.antMatchers("/user/**").authenticated())
+            .authorizeRequests(authorizeRequests -> authorizeRequests.antMatchers("/user**").authenticated())
             .oauth2Login(oauthLogin -> oauthLogin
                 .userInfoEndpoint()
                 .oidcUserService(googleUserService))
@@ -60,14 +59,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .logoutSuccessHandler(oidcLogoutSuccessHandler())
         .invalidateHttpSession(true)
         .clearAuthentication(true);
-
-        //.and()
-        //.logout(logout -> logout
-        //    .logoutUrl("/home")
-        //    .addLogoutHandler(new SecurityContextLogoutHandler())
-        //);
-
-
     }
 
     private LogoutSuccessHandler oidcLogoutSuccessHandler() {
@@ -78,11 +69,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     }
 
 
+    //.and()
+    //.logout(logout -> logout
+    //    .logoutUrl("/home")
+    //    .addLogoutHandler(new SecurityContextLogoutHandler())
+    //);
+
     //pro SpringBoot 2 a vyšší je potřeba password encoder a je třeba ho použít pro zakódování hesel uživatelů
-    @Bean
-    PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+    //@Bean
+    //PasswordEncoder passwordEncoder() {
+        //return new BCryptPasswordEncoder();
+    //}
 
 }
 
