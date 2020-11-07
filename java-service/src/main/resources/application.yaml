@@ -1,0 +1,35 @@
+server:
+    servlet:
+        context-path: /
+    port: 8080
+
+spring:
+    thymeleaf:
+        servlet:
+            content-type: text/html;charset=UTF-8
+        prefix: classpath:/templates/
+        suffix: .html
+        cache: false
+        encoding: UTF-8
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+
+
+        hibernate:
+            ddl-auto: update
+
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+
+---
+spring:
+    profiles: prod
+    datasource:
+        url: jdbc:mysql://sporteezone-mysql-cluster-do-user-8211485-0.b.db.ondigitalocean.com:25060/Sporteezone?serverTimezone=UTC
+
+
+
+
+

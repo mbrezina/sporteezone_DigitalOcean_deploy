@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Table(name = "preference")
 public class Preference {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(name="sub")
