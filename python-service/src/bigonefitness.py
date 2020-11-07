@@ -38,12 +38,12 @@ def scraping_obf():
   rozvrh = rozvrh[['title','start','end']]
   rozvrh['obsazenost'] = 0
   rozvrh['kapacita'] = 0
-  rozvrh['IdFitness'] = 5
+  ##rozvrh['IdFitness'] = 
 
   rozvrh['start'] = rozvrh['start'].map(lambda date_string: datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S").isoformat())
   rozvrh['end'] = rozvrh['end'].map(lambda date_string: datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S").isoformat())
 
-  rozvrh = rozvrh.rename(columns = {'title': 'název', 'start':'začátek', 'end':'konec'})
+  rozvrh = rozvrh.rename(columns = {'title': 'nazev', 'start':'zacatek', 'end':'konec'})
 
   bigOneFitness = rozvrh.to_dict(orient='records')
 
