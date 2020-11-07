@@ -47,4 +47,8 @@ def scraping_obf():
 
   bigOneFitness = rozvrh.to_dict(orient='records')
 
-  return bigOneFitness
+  return bigonefitness
+
+
+if __name__ == "__main__":
+    scraping_obf()
