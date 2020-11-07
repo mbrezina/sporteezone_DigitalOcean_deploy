@@ -8,11 +8,6 @@ CREATE TABLE fitness
      ulice VARCHAR(30),
      mesto VARCHAR(20),
      psc INT(5),
-     multisport BOOLEAN,
-     activepass BOOLEAN,
-     platba VARCHAR(30),
-     pohlavi VARCHAR(10),
-     mhd BOOLEAN
      email VARCHAR(70),
      telefon INT(15),
      lat DECIMAL(10, 8) NOT NULL,
