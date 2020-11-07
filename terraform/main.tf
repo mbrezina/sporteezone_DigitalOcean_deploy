@@ -9,7 +9,7 @@ data "digitalocean_ssh_key" "example" {
 resource "digitalocean_vpc" "vpc" {
   name     = "sporteezone-project-network"
   region   = var.region
-  ip_range = "10.2.0.0/16"
+  ip_range = "10.3.0.0/16"
 }
 
 resource "digitalocean_droplet" "server" {
@@ -32,9 +32,9 @@ resource "digitalocean_droplet" "server" {
     script = "install-docker.sh"
   }
 
-  provisioner "remote-exec" {
-    script = "run-docker-containers.sh"
-  }
+  //provisioner "remote-exec" {
+  //  script = "run-docker-containers.sh"
+  //}
 }
 
 resource "digitalocean_database_cluster" "mysql" {

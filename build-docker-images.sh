@@ -2,7 +2,7 @@
 
 cd java-service
 mvn clean package
-docker build -t da-sporteezone-java:1.0.1 .
+docker build -t da-sporteezone-java:1.0.3 .
 
 
 ##docker build -t da-sporteezone-java:1.0.0 .

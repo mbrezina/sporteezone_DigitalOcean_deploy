@@ -41,6 +41,9 @@ public class MainController {
         String subKod = oauth2User.getAttributes().get("sub").toString();
         String jmeno = oauth2User.getAttributes().get("name").toString();
         String email = oauth2User.getAttributes().get("email").toString();
+        //na Long:
+        //Long sub = Long.valueOf(subKod);
+
 
         User vyhledanyUzivatel = userService.najdiPodleSub(subKod);
         if (vyhledanyUzivatel == null) {
