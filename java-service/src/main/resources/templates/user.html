@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <h1 th:text="${user.email}"></h1>
+    <h1 th:text="${user.name}"></h1>
+    <h1 th:text="${user.sub}"></h1>
+
+    <!--<a href="<c:url value="/logout" />">Logout</a>-->
+
+
+    <div>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+    </div>
+</head>
+<body>
+
+</body>
+</html>

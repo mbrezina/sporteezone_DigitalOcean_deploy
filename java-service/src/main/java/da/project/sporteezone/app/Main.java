@@ -19,7 +19,6 @@ public class Main extends SpringBootServletInitializer {
 
     private static final Logger logger = LoggerFactory.getLogger(Main.class);
 
-
     /**
      * if executed as .jar:
      */
@@ -30,7 +29,6 @@ public class Main extends SpringBootServletInitializer {
         app.run(args);
     }
 
-
     /**
      * if executed as .war:
      */
@@ -38,7 +36,6 @@ public class Main extends SpringBootServletInitializer {
     protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
         return builder.sources(Main.class);
     }
-
 
     @EventListener
     public void onAppEvent(ServletWebServerInitializedEvent evt) {
