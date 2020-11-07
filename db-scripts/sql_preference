@@ -8,5 +8,5 @@ CREATE TABLE preference
 
 
 INSERT INTO preference (sub, aktivita) VALUES
-('1111111111', "spinning"), ('2222222222', "step aerobic");
+('1111111111', 'spinning'), ('2222222222', 'step aerobic');
 
