@@ -1,18 +1,4 @@
-login as root
-CREATE USER  'student'@'localhost'   IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO   'student'@'%'   IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO   'student'@'localhost'   IDENTIFIED BY 'password';
-
-mysql -u student -p
-
-
-CREATE DATABASE Sporteezone
-  CHARACTER SET utf8mb4
-  COLLATE utf8mb4_czech_ci;
-
-USE Sporteezone;
-
-DROP table fitness;
+DROP TABLE fitness;
 
 CREATE TABLE fitness
      (
@@ -22,31 +8,47 @@ CREATE TABLE fitness
      ulice VARCHAR(30),
      mesto VARCHAR(20),
      psc INT(5),
+     
+     ###dodelavka
+     email VARCHAR(70),
+     telefon INT(15),
+     lat DECIMAL(10, 8) NOT NULL,
+     lng DECIMAL(11, 8) NOT NULL,
+     
      multisport BOOLEAN,
      activepass BOOLEAN,
-     platba VARCHAR(30),
+     platba VARCHAR(200),
      pohlavi VARCHAR(10),
      mhd BOOLEAN
      );
 
 
 ###Javascript:
-INSERT INTO fitness (nazev, url, ulice, mesto, psc, multisport, activepass, platba, pohlavi, mhd)
-VALUES ("Fitness centrum AFIT", "www.afit.cz", "Táborská 157", "Brno", 61500, 1, 1, "Benefit plus Edenred Sodexo", "muži/ženy", 1);
-
-INSERT INTO fitness (nazev, url, ulice, mesto, psc, multisport, activepass, platba, pohlavi, mhd)
-VALUES ('Fitness Blue Gym', 'www.bluegym.cz', 'Kotlářská 51a', 'Brno', '60200', 1, 0, '', 'muži/ženy', 1);
-
-INSERT INTO fitness (nazev, url, ulice, mesto, psc, multisport, activepass, platba, pohlavi, mhd)
-VALUES ('BFIT.CZ', 'www.bfit.cz', 'Veveří 455/8', 'Brno', '60200', NULL, NULL, NULL, 'muži/ženy', 1);
-
-INSERT INTO fitness (nazev, url, ulice, mesto, psc, multisport, activepass, platba, pohlavi, mhd)
-VALUES  ('Myfit', 'www.myfit.cz', 'tř. Kapitána Jaroše 7b', 'Brno', 60200, 1, 0, 'Benefit plus Edenred Sodexo', 'muži/ženy', 1);
-
-INSERT INTO fitness (nazev, url, ulice, mesto, psc, multisport, activepass, platba, pohlavi, mhd)
-VALUES  ('Weisser Sport Centrum', 'wwww.weissersportcentrum.cz', 'Tůmova 12', 'Brno', 61600, 1, 1, NULL, 'muži/ženy', 1);
+INSERT INTO fitness (nazev, url, ulice, mesto, psc, email, telefon, lat, lng, multisport, activepass, platba, pohlavi, mhd)
+VALUES 
+  ("Fitness centrum AFIT", "www.afit.cz", "Táborská 157", "Brno", 61500, 'info@afit.cz', 
+      608708099, 49.194551, 16.6356106, 1, 1, "Benefit plus Edenred Sodexo", "muži/ženy", 1)
+  ,('Fitness Blue Gym', 'www.bluegym.cz', 'Kotlářská 51a', 'Brno', '60200', 'info@bluegym.cz', 
+    541213450, 49.2082468, 16.6005693, 1, 0, '', 'muži/ženy', 1)
+  ,('BFIT.CZ', 'www.bfit.cz', 'Veveří 455/8', 'Brno', '60200', 'bfit@bfit.cz', 
+    730151138, 49.1992826, 16.6007886, NULL, NULL, NULL, 'muži/ženy', 1)
+  ,('Myfit', 'www.myfit.cz', 'tř. Kapitána Jaroše 7b', 'Brno', 60200, 'recepce@myfit.cz', 
+    731544454, 49.2009199, 16.60758471, 0, 'Benefit plus Edenred Sodexo', 'muži/ženy', 1)
+  ,('Weisser Sport Centrum', 'wwww.weissersportcentrum.cz', 'Tůmova 12', 'Brno', 61600, 'recepce@weissersportcentrum.cz', 
+    541242769, 49.2102537, 16.5988146,1, 1, NULL, 'muži/ženy', 1)
+    
+  ;
 
 ####Python:
-IronGym
-BigOne Fitness
+INSERT INTO fitness (nazev, url, ulice, mesto, psc, email, telefon, lat, lng, multisport, activepass, platba, pohlavi, mhd)
+VALUES 
+  ('Big One fitness Club', 'www.big1fitness.cz', 'Benešova 14/16', 'Brno', 60200, 'info@big1fitness.cz', 
+    601575769, 49.1929676, 16.6112301, 1, 1, , 'Flexi Pass CARD a Multi Pass CARD', 'muži/ženy', 1)
+	,('Big One fitness Mendlák', 'www.big1fitness.cz', 'Václavská 6', 'Brno', 60300, 'info@big1fitness.cz', 
+    601575769, 49.1893206, 16.5970054,1, 1, , 'Flexi Pass CARD a Multi Pass CARD', 'muži/ženy', 1)
+	,('Iron Gym', 'www.irongym.cz', 'Řezáčova 5', 'Brno', 62400, 'iron-gym@seznam.cz', 
+    606497467, 49.2244151, 16.5495407,1, 1, 0, 0, 1, 1)
+    
+  ;
+
 
