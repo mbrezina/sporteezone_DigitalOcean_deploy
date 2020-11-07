@@ -18,6 +18,10 @@ public class Fitness {
     private String ulice;
     private String mesto;
     private String psc;
+    private String email;
+    private Integer telefon;
+    private Float lon;
+    private Float lat;
     private Boolean multisport;
     private Boolean activepass;
     private String platba;
