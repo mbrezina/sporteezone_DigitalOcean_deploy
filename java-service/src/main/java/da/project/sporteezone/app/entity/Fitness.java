@@ -11,9 +11,8 @@ import java.io.Serializable;
 public class Fitness {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
     private String nazev;
     private String url;
     private String ulice;

@@ -2,7 +2,7 @@
 FROM openjdk:15-jdk-alpine3.12
 
 VOLUME /tmp
-ARG config=config/application.yaml
+#ARG config=config/application.yaml
 
 # copy JAR into image
 COPY target/*.jar /app.jar

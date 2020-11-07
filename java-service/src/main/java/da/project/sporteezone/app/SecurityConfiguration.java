@@ -45,7 +45,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         googleUserService.setAccessibleScopes(googleScopes);
 
         http
-            .authorizeRequests(authorizeRequests -> authorizeRequests.antMatchers("/user**").authenticated())
+            //.authorizeRequests(authorizeRequests -> authorizeRequests.antMatchers("/user**").authenticated())
+            .csrf().disable()
             .oauth2Login(oauthLogin -> oauthLogin
                 .userInfoEndpoint()
                 .oidcUserService(googleUserService))
@@ -57,7 +58,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .and()
         .logout()
         .logoutSuccessHandler(oidcLogoutSuccessHandler())
-        .invalidateHttpSession(true)
+        .invalidateHttpSession(true)  //odstraní cookie
         .clearAuthentication(true);
     }
 
