@@ -11,7 +11,9 @@ def scraping_obf():
 
   headers = {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
-      'Accept': 'application/json, text/javascript, */*; q=0.01',
+      'Accept': 'application/json,git checkout master
+git merge --no-ff Pajinka-patch-2
+git push origin master text/javascript, */*; q=0.01',
       'Accept-Language': 'cs,sk;q=0.8,en-US;q=0.5,en;q=0.3',
       'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
       'X-Requested-With': 'XMLHttpRequest',
@@ -33,11 +35,15 @@ def scraping_obf():
 
   response = requests.post('https://www.big1fitness.cz/wp-admin/admin-ajax.php', headers=headers, cookies=cookies, data=data)
 
-
+  url = 'https://www.big1fitness.cz/cs/pobocky/b1f-mendlak/cenik-vaclavska/'
+  table = pd.read_html(url, encoding = 'utf-8')[0]
+  
   rozvrh = pd.DataFrame.from_records(response.json())
   rozvrh = rozvrh[['title','start','end']]
   rozvrh['obsazenost'] = 0
   rozvrh['kapacita'] = 0
+  rozvrh['cena'] = int(str(table.loc[2].iloc[1]).replace('-',''))
+  rozvrh['trener'] = 'neuvedeno'
   ##rozvrh['IdFitness'] = 
 
   rozvrh['start'] = rozvrh['start'].map(lambda date_string: datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S").isoformat())
