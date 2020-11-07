@@ -1,0 +1,14 @@
+DROP table user;
+
+CREATE TABLE user
+     (id INT PRIMARY KEY AUTO_INCREMENT,
+     sub VARCHAR(50),
+     jmeno VARCHAR(50),
+     email VARCHAR(50)
+     );
+
+
+INSERT INTO user (sub, jmeno, email) VALUES
+
+('1111111111', "Junka", "martiik@seznam.cz"), ('2222222222', "Lama", "janiik@seznam.cz");
+

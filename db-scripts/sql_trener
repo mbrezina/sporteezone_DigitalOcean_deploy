@@ -1,0 +1,18 @@
+DROP table trener;
+
+CREATE TABLE trener
+     (id INT PRIMARY KEY AUTO_INCREMENT,
+     trener_jmeno VARCHAR(50),
+     kod_fitko INT);
+
+
+INSERT INTO trener (trener_jmeno, kod_fitko) VALUES
+
+
+('Michal Jakubík', 1), ('Pavel Zdráhal', 2), ('Kamila Klvačová', 3),
+('Renáta Hyklová', 4), ('Lenka Kučerová', 5), ('Jana Potrusilová', 6), ('Jarda Holánek', 1), ('Veronika Hrubanová', 3),
+('Kateřina Kučínská', 4), ('Katka Nosková', 1), ('Aleš Krmíček', 2), ('Denisa Žáková', 3), ('Gabriela Sedláková', 4), ('Radka Smýkalová', 7),
+('Lukáš Gajda', 2), ('Tereza Auermüllerová', 3), ('Simona Jílková', 5), ('Jana Havránková', 7), ('Adam Čerbák', 9), ('Vlaďka Stroupková', 8),
+('Viktor Jurák', 8), ('Pavlína Mrnuštíková', 9), ('Veronika Leoni', 2), ('Lenka Přikrylová', 1), ('Pavlína Smolková', 2), ('Václav Tofl', 3),
+('Katka Šmardová', 1), ('Jana Cindlerová', 1), ('Lenka Olivotto', 4), ('Alex Přibylová', 5), ('Světlana Kostelná', 5);
+
