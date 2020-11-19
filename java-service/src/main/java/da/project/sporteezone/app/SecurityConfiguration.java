@@ -1,4 +1,5 @@
 package da.project.sporteezone.app;
+/*
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -84,3 +85,5 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 }
 
+
+ */
