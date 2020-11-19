@@ -11,8 +11,7 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name = "user")
-public class User {
+public class Zakaznik {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,16 +20,15 @@ public class User {
     private String name;
     private String email;
 
-    public User() {
+    public Zakaznik() {
     }
 
-    public User(String sub, String name, String email) {
+    public Zakaznik(String sub, String name, String email) {
         this.sub = sub;
         this.name = name;
         this.email = email;
     }
 }
-
 
     /*
     public List<String> getRolesList() {

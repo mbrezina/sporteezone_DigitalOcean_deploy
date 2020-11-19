@@ -33,4 +33,4 @@ build/
 
 ### db setup ###
 db-scripts/sql_setup
-
+**/src/main/java/da/project/sporteezone/app/entity/DbInit.java

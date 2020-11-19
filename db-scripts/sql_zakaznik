@@ -1,6 +1,6 @@
-DROP table user;
+DROP table zakaznik;
 
-CREATE TABLE user
+CREATE TABLE zakaznik
      (id INT PRIMARY KEY AUTO_INCREMENT,
      sub VARCHAR(50),
      jmeno VARCHAR(50),
@@ -8,7 +8,7 @@ CREATE TABLE user
      );
 
 
-INSERT INTO user (sub, jmeno, email) VALUES
+INSERT INTO zakaznik (sub, jmeno, email) VALUES
 
 ('1111111111', "Junka", "martiik@seznam.cz"), ('2222222222', "Lama", "janiik@seznam.cz");
 

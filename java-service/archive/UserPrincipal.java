@@ -12,12 +12,6 @@ import java.util.List;
 
 public class UserPrincipal implements UserDetails {
 
-    @Autowired
-    private User user;
-
-    public UserPrincipal(User user) {
-        this.user = user;
-    }
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
