@@ -32,9 +32,9 @@ public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
             http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/api__/**").hasRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "api__/**").hasRole("ADMIN")
-                .antMatchers(HttpMethod.POST, "/api__/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "api/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.POST, "/api/**").hasRole("ADMIN")
                 .and()
                 .httpBasic();
         }
