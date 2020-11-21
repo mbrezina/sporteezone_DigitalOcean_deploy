@@ -13,6 +13,5 @@ def execute():
     send_data_to_api.send_data(vysledek_bigonefitness)
 
 
-
 if __name__=="__main__":
     execute()

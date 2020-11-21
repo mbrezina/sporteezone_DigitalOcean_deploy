@@ -37,7 +37,7 @@ public class LekceService {
         Integer updatovaneLekce = 0;
 
         for (Lekce novaLekce : noveLekce) {
-            Lekce shodnaLekce = lekceRepository.findByZacatekAndNazevAndKodFitko(novaLekce.getZacatek(), novaLekce.getNazev(), novaLekce.getKodFitko());
+            Lekce shodnaLekce = lekceRepository.findByZacatekAndNazevAndFitko(novaLekce.getZacatek(), novaLekce.getNazev(), novaLekce.getFitko());
             if (shodnaLekce == null) {
                 lekceRepository.saveAndFlush(novaLekce);
                 ulozeneLekce++;

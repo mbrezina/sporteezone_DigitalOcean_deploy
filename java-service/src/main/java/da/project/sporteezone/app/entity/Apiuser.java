@@ -28,13 +28,4 @@ public class Apiuser {
     private Integer active;
     private String roles;
 
-    /*public Apiuser(String username, String password, Integer active, String roles) {
-        this.username = username;
-        this.password = password;
-        this.active = active;
-        this.roles = roles;
-    }
-
-    public Apiuser() {
-    }     */
 }

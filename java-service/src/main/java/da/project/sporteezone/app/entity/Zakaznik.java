@@ -30,24 +30,3 @@ public class Zakaznik {
     }
 }
 
-    /*
-    public List<String> getRolesList() {
-
-        if (this.roles.length() > 0) {
-            return Arrays.asList(this.roles.split(","));
-        }
-        return new ArrayList<>();
-    }
-
-    public User() {
-    }
-
-    public User(String username, String password, Integer active, String roles) {
-        this.username = username;
-        this.password = password;
-        this.active = active;
-        this.roles = roles;
-    }
-
-
-     */
