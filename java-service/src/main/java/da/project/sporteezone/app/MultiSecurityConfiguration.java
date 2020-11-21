@@ -16,12 +16,14 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.client.oidc.userinfo.OidcUserService;
+import org.springframework.security.web.AuthenticationEntryPoint;
+import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @EnableWebSecurity
-public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
+public class MultiSecurityConfiguration {
 
 
     @Configuration
@@ -29,7 +31,9 @@ public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
     public static class ApiWebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
 
         protected void configure(HttpSecurity http) throws Exception {
-            http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
+            http
+                .antMatcher("/api/**")
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .csrf().disable()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.GET, "/api/**").hasAuthority("ADMIN")
@@ -37,15 +41,17 @@ public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.GET, "api/**").hasAuthority("ADMIN")
                 .antMatchers(HttpMethod.POST, "/api/**").hasAuthority("ADMIN")
                 .and()
-                .httpBasic();
-
-
-            
-
-
-
-
+                .httpBasic().authenticationEntryPoint(authenticationEntryPoint());
         }
+
+        @Bean
+        public AuthenticationEntryPoint authenticationEntryPoint(){
+            BasicAuthenticationEntryPoint entryPoint =
+                new BasicAuthenticationEntryPoint();
+            entryPoint.setRealmName("admin realm");
+            return entryPoint;
+        }
+
 
         //pro SpringBoot 2 a vyšší je potřeba password encoder a je třeba ho použít pro zakódování hesel uživatelů
         @Bean
@@ -55,7 +61,7 @@ public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
         }
     }
 
-    @Order(1)
+    //@Order(1)
     @Configuration
     public static class Oauth2WebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
 
@@ -69,6 +75,7 @@ public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
             googleUserService.setAccessibleScopes(googleScopes);
 
             http
+                //.antMatcher("/star/**")
                 .oauth2Login(oauthLogin -> oauthLogin
                     .userInfoEndpoint()
                     .oidcUserService(googleUserService))
