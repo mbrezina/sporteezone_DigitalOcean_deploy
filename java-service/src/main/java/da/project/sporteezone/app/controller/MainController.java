@@ -46,6 +46,13 @@ public class MainController {
         return dataHolder;
     }
 
+    @RequestMapping("star")
+    public ModelAndView showHome() throws IOException {
+        log.info("jsem zde");
+        ModelAndView dataHolder = new ModelAndView("index");
+        return dataHolder;
+    }
+
 
 //    @RequestMapping("")
 //    public String user(Model model, @AuthenticationPrincipal OAuth2User oauth2User) {

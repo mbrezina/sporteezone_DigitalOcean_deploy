@@ -14,16 +14,19 @@ import java.util.stream.Collectors;
 
 @Data
 public class ApiuserDetails implements UserDetails {   //transformuje uživatele z databáze do objektu UserDetails
-    private String userName;
+    private String username;
     private String password;
     private boolean active;
     private List<GrantedAuthority> authorities;
 
-    public ApiuserDetails(Apiuser apiUser) {
-        this.userName = userName;
-        this.password = password;
-        this.active = active;
-        this.authorities = Arrays.stream(apiUser.getRoles()
+    public ApiuserDetails(Apiuser apiuser) {
+        this.username = apiuser.getUsername();
+        this.password = apiuser.getPassword();
+        if (apiuser.getActive() != null) {
+            this.active = apiuser.getActive().equals(1);
+        }
+
+        this.authorities = Arrays.stream(apiuser.getRoles()
             .split(",")).map(SimpleGrantedAuthority::new)
             .collect(Collectors.toList());
     }
@@ -40,26 +43,24 @@ public class ApiuserDetails implements UserDetails {   //transformuje uživatele
 
     @Override
     public String getUsername() {
-        return userName;
+        return username;
     }
 
     @Override
     public boolean isAccountNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isAccountNonLocked() {
-        return false;
+        return true;
     }
 
     @Override
     public boolean isCredentialsNonExpired() {
-        return false;
+        return true;
     }
 
     @Override
-    public boolean isEnabled() {
-        return false;
-    }
+    public boolean isEnabled() { return true; }
 }

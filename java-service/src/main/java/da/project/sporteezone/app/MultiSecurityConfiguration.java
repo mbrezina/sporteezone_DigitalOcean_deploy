@@ -25,34 +25,27 @@ public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 
     @Configuration
-    @Order(1)
+    @Order(2)
     public static class ApiWebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
 
         protected void configure(HttpSecurity http) throws Exception {
             http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers(HttpMethod.GET, "/api/**").hasRole("ADMIN")
-                .antMatchers(HttpMethod.GET, "api/**").hasRole("ADMIN")
-                .antMatchers(HttpMethod.POST, "/api/**").hasRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/**").hasAuthority("ADMIN")
+                //vypsat endpointy
+                .antMatchers(HttpMethod.GET, "api/**").hasAuthority("ADMIN")
+                .antMatchers(HttpMethod.POST, "/api/**").hasAuthority("ADMIN")
                 .and()
                 .httpBasic();
+
+
+            
+
+
+
+
         }
-        
-        @Override
-        public UserDetailsService userDetailsServiceBean() throws Exception {
-            return super.userDetailsServiceBean();
-        }
-        
-        /*
-        @Bean
-        DaoAuthenticationProvider authenticationProvider() {
-            DaoAuthenticationProvider daoAuthenticationProvider = new DaoAuthenticationProvider();
-            daoAuthenticationProvider.setPasswordEncoder(passwordEncoder());
-            daoAuthenticationProvider.setUserDetailsService(this.userPrincipalDetailsService);
-            return daoAuthenticationProvider;
-        }
-        */
 
         //pro SpringBoot 2 a vyšší je potřeba password encoder a je třeba ho použít pro zakódování hesel uživatelů
         @Bean
@@ -62,7 +55,7 @@ public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
         }
     }
 
-    @Order(2)
+    @Order(1)
     @Configuration
     public static class Oauth2WebSecurityConfigurationAdapter extends WebSecurityConfigurerAdapter {
 
@@ -76,10 +69,10 @@ public class MultiSecurityConfiguration extends WebSecurityConfigurerAdapter {
             googleUserService.setAccessibleScopes(googleScopes);
 
             http
-                .authorizeRequests(authorizeRequests -> authorizeRequests.antMatchers("/star/**").authenticated())
                 .oauth2Login(oauthLogin -> oauthLogin
                     .userInfoEndpoint()
                     .oidcUserService(googleUserService))
+                .authorizeRequests(authorizeRequests -> authorizeRequests.antMatchers("/star/**").authenticated())
                 .authorizeRequests().antMatchers("/guest/**", "/logout/**").permitAll();
         }
     }
