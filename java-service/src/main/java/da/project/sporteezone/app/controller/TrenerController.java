@@ -26,7 +26,6 @@ public class TrenerController {
     @GetMapping(path = "/{id}")
     public @ResponseBody
     Optional<Trener> najdiTrenera(@PathVariable Integer id) {
-        //vrací trenéra včetně lekcí, které vede
         return trenerService.najdiTrenera(id);
     }
 
