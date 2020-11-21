@@ -1,23 +1,24 @@
 DROP table fitness;
 
 CREATE TABLE fitness
-	(fitnessId INT PRIMARY KEY AUTO_INCREMENT,
-	nazev VARCHAR (100) NOT NULL,
-	url VARCHAR (100) NOT NULL,
-	ulice VARCHAR (50) NOT NULL,
-	mesto VARCHAR (50) NOT NULL,
-	psc INT(5) NOT NULL,
-	email VARCHAR (100),
-	telefon INT(9),
-	lat DECIMAL (10,8),
-	lng DECIMAL (11,8),
-	parkoviste BOOLEAN,
-	mhd BOOLEAN,
-	wellness BOOLEAN,
-	obcerstveni BOOLEAN,
-	muzi BOOLEAN,
-	pomucky BOOLEAN
-    );
+     (
+     id INT PRIMARY KEY AUTO_INCREMENT,
+     nazev VARCHAR(50),
+     url VARCHAR(70),
+     ulice VARCHAR(30),
+     mesto VARCHAR(20),
+     psc INT(5),
+     email VARCHAR(70),
+     telefon INT(15),
+     lat DECIMAL(10, 8) NOT NULL,
+     lng DECIMAL(11, 8) NOT NULL,
+     multisport BOOLEAN,
+     activepass BOOLEAN,
+     platba VARCHAR(200),
+     pohlavi VARCHAR(10),
+     mhd BOOLEAN
+     );
+
 
 ###Javascript:
 INSERT INTO fitness
@@ -37,13 +38,26 @@ INSERT INTO fitness
 	muzi,
 	pomucky
 	)
+VALUES 
+('Fitness centrum AFIT', 'www.afit.cz', 'Táborská 157', 'Brno', 61500, 'info@afit.cz',
+608708099, 49.194551, 16.6356106, 1, 1, 'Benefit plus Edenred Sodexo', 'muži/ženy', 1)
+,('Fitness Blue Gym', 'www.bluegym.cz', 'Kotlářská 51a', 'Brno', '60200', 'info@bluegym.cz',
+541213450, 49.2082468, 16.6005693, 1, 0, '', 'muži/ženy', 1)
+,('BFIT.CZ', 'www.bfit.cz', 'Veveří 455/8', 'Brno', '60200', 'bfit@bfit.cz',
+730151138, 49.1992826, 16.6007886, NULL, NULL, NULL, 'muži/ženy', 1)
+,('Myfit', 'www.myfit.cz', 'tř. Kapitána Jaroše 7b', 'Brno', 60200, 'recepce@myfit.cz',
+731544454, 49.2009199, 16.60758471, 0, 0, 'Benefit plus Edenred Sodexo', 'muži/ženy', 1)
+,('Weisser Sport Centrum', 'wwww.weissersportcentrum.cz', 'Tůmova 12', 'Brno', 61600, 'recepce@weissersportcentrum.cz',
+541242769, 49.2102537, 16.5988146,1, 1, NULL, 'muži/ženy', 1)
+;
+
+####Python:
+INSERT INTO fitness (nazev, url, ulice, mesto, psc, email, telefon, lat, lng, multisport, activepass, platba, pohlavi, mhd)
 VALUES
-	('Fitness centrum AFIT', 'www.afit.cz', 'Táborská 157', 'Brno', 61500, 'info@afit.cz', 608708099, 49.194551, 16.6356106, 1, 1, 0, 0, 1, 1),
-	('Fitness Blue Gym', 'www.bluegym.cz', 'Kotlářská 51a', 'Brno', 60200, 'info@bluegym.cz', 541213450, 49.2082468, 16.6005693, NULL, 1, 1, 0, 1, NULL),
-	('BFIT.CZ', 'www.bfit.cz', 'Veveří 455/8', 'Brno', 60200, 'bfit@bfit.cz', 730151138, 49.1992826, 16.6007886, NULL, 1, 0, 0, 1, NULL),
-	('Myfit', 'www.myfit.cz', 'tř. Kapitána Jaroše 7b', 'Brno', 60200, 'recepce@myfit.cz', 731544454, 49.2009199, 16.6075847, NULL, 1, 0, 0, 1, NULL),
-	('Weisser Sport Centrum', 'wwww.weissersportcentrum.cz', 'Tůmova 12', 'Brno', 61600, 'recepce@weissersportcentrum.cz', 541242769, 49.2102537, 16.5988146, NULL, 1, 0, 0, 1, NULL),
-	('Big One fitness Club', 'www.big1fitness.cz', 'Benešova 14/16', 'Brno', 60200, 'info@big1fitness.cz', 601575769, 49.1929676, 16.6112301,1, 1, 0, 0, 1, 1),
-	('Big One fitness Mendlák', 'www.big1fitness.cz', 'Václavská 6', 'Brno', 60300, 'info@big1fitness.cz', 601575769, 49.1893206, 16.5970054,1, 1, 0, 0, 1, 1),
-	('Iron Gym', 'www.irongym.cz', 'Řezáčova 5', 'Brno', 62400, 'iron-gym@seznam.cz', 606497467, 49.2244151, 16.5495407,1, 1, 0, 0, 1, 1)
-		;
+('Big One fitness Club', 'www.big1fitness.cz', 'Benešova 14/16', 'Brno', 60200, 'info@big1fitness.cz',
+601575769, 49.1929676, 16.6112301, 1, 1, 'Flexi Pass CARD a Multi Pass CARD', 'muži/ženy', 1)
+,('Big One fitness Mendlák', 'www.big1fitness.cz', 'Václavská 6', 'Brno', 60300, 'info@big1fitness.cz',
+601575769, 49.1893206, 16.5970054,1, 1, , 'Flexi Pass CARD a Multi Pass CARD', 'muži/ženy', 1)
+,('Iron Gym', 'www.irongym.cz', 'Řezáčova 5', 'Brno', 62400, 'iron-gym@seznam.cz', 
+606497467, 49.2244151, 16.5495407,1, 1, 0, 'muži/ženy', 1)
+;
