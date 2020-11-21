@@ -41,6 +41,7 @@ git push origin master text/javascript, */*; q=0.01',
   rozvrh = pd.DataFrame.from_records(response.json())
   rozvrh = rozvrh[['title','start','end']]
   rozvrh['obsazenost'] = 0
+  rozvrh['id'] = 6
   rozvrh['kapacita'] = 0
   rozvrh['cena'] = int(str(table.loc[2].iloc[1]).replace('-',''))
   rozvrh['trener'] = 'neuvedeno'
