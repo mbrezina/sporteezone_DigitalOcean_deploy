@@ -39,6 +39,7 @@ public class LekceController {
         log.debug("datum je " + zacatek);
         log.debug(String.valueOf(zacatek.getClass()));
         return lekceService.najdiLekce(zacatek, konec);
+
     }
 
     @GetMapping(path = "/byTrener")
@@ -48,6 +49,9 @@ public class LekceController {
         log.info("toto je jméno: " + jmeno);
         return lekceService.najdiLekcePodleTrenera(jmeno);
     }
+
+
+
 
     @PostMapping(path = "/addOne", consumes = "application/json")
     public @ResponseBody
