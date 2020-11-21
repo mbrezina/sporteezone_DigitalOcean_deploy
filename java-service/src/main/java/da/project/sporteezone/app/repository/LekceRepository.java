@@ -15,20 +15,23 @@ import java.util.List;
 import java.util.Optional;
 
 
-
-
 public interface LekceRepository extends JpaRepository <Lekce, Integer> {
 
     List<Lekce> findAllByZacatekBetween(LocalDateTime zacatek, LocalDateTime konec);
 
     List<Lekce> findByZacatek(LocalDateTime zacatek);
-    Lekce findByKodFitko(Integer kodFitko);
+    //Lekce findByKodFitko(Integer kodFitko);
 
-    @Query("SELECT l FROM Lekce l WHERE l.zacatek = ?1 AND l.nazev = ?2 AND l.kodFitko = ?3")
+    //@Query("SELECT l FROM Lekce l WHERE l.zacatek = ?1 AND l.nazev = ?2 AND l.kodFitko = ?3")
+
+
+    @Query("SELECT l FROM Lekce l WHERE l.zacatek = ?1 AND l.nazev = ?2 AND l.fitko.id = ?3")
     Lekce najdiStejnouLekci(LocalDateTime zacatek, String nazev, Integer kodFitka);
 
-    Lekce findByZacatekAndNazevAndKodFitko(LocalDateTime zacatek, String nazev, Integer kodFitko);
+    //Lekce findByZacatekAndNazevAndKodFitko(LocalDateTime zacatek, String nazev, Integer kodFitko);
+    Lekce findByZacatekAndNazevAndFitko(LocalDateTime zacatek, String nazev, Fitness fitko);
 
     List<Lekce> findByJmenoTrener(String jmenoTrener);
+
 
 }

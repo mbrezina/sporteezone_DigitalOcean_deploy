@@ -11,9 +11,7 @@ def scraping_obf():
 
   headers = {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0',
-      'Accept': 'application/json,git checkout master
-git merge --no-ff Pajinka-patch-2
-git push origin master text/javascript, */*; q=0.01',
+      'Accept': 'application/json',
       'Accept-Language': 'cs,sk;q=0.8,en-US;q=0.5,en;q=0.3',
       'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
       'X-Requested-With': 'XMLHttpRequest',
@@ -54,7 +52,7 @@ git push origin master text/javascript, */*; q=0.01',
 
   bigOneFitness = rozvrh.to_json(orient="records", force_ascii=False)
 
-  return bigonefitness
+  return bigOneFitness
 
 
 if __name__ == "__main__":

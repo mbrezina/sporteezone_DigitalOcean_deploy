@@ -1,0 +1,15 @@
+DROP table apiuser;
+
+CREATE TABLE apiuser
+     (id INT PRIMARY KEY AUTO_INCREMENT,
+     username VARCHAR(50),
+     password VARCHAR(80),
+     active INT,
+     roles VARCHAR(50)
+     );
+
+
+INSERT INTO apiuser (username, password, active, roles) VALUES
+
+("spejbl", "$2a$10$5IEkdK2NbGiDVuvKzjmdJebo1cZnxt0L3LpA8l9kGtJUpoYr7pdeq", 1, "ADMIN")
+
