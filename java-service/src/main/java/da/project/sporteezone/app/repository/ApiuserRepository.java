@@ -7,9 +7,14 @@ import java.util.List;
 import java.util.Optional;
 
 
-public interface ApiuserRepository extends JpaRepository<Apiuser, Long>  {
-    Optional<Apiuser> findByUsername(String username);
+public interface ApiuserRepository extends JpaRepository<Apiuser, Integer>  {
+    //Apiuser findByUsername(String username);
+    
+    Apiuser findApiuserByUsername(String username);
+    List<Apiuser> findAll();
 
+    
+    //Apiuser findByUsername(String username);
     //void save(List<ApiUser> listApiUsers);
 
 

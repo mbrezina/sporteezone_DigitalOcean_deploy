@@ -18,9 +18,9 @@ import java.util.List;
 public class Apiuser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(nullable = false)
+    private Integer id;
+    
+    @Column(nullable = false, unique = true)
     private String username;
 
     @Column(nullable = false)
@@ -28,7 +28,7 @@ public class Apiuser {
     private Integer active;
     private String roles;
 
-    public Apiuser(String username, String password, Integer active, String roles) {
+    /*public Apiuser(String username, String password, Integer active, String roles) {
         this.username = username;
         this.password = password;
         this.active = active;
@@ -36,5 +36,5 @@ public class Apiuser {
     }
 
     public Apiuser() {
-    }
+    }     */
 }
