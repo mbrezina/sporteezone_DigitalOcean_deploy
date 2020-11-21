@@ -19,9 +19,26 @@ CREATE TABLE fitness
      mhd BOOLEAN
      );
 
+
 ###Javascript:
-INSERT INTO fitness (nazev, url, ulice, mesto, psc, email, telefon, lat, lng, multisport, activepass, platba, pohlavi, mhd)
-VALUES
+INSERT INTO fitness
+	(nazev,
+	url,
+	ulice,
+	mesto,
+	psc,
+	email,
+	telefon,
+	lat,
+	lng,
+	parkoviste,
+	mhd,
+	wellness,
+	obcerstveni,
+	muzi,
+	pomucky
+	)
+VALUES 
 ('Fitness centrum AFIT', 'www.afit.cz', 'Táborská 157', 'Brno', 61500, 'info@afit.cz',
 608708099, 49.194551, 16.6356106, 1, 1, 'Benefit plus Edenred Sodexo', 'muži/ženy', 1)
 ,('Fitness Blue Gym', 'www.bluegym.cz', 'Kotlářská 51a', 'Brno', '60200', 'info@bluegym.cz',
@@ -33,6 +50,7 @@ VALUES
 ,('Weisser Sport Centrum', 'wwww.weissersportcentrum.cz', 'Tůmova 12', 'Brno', 61600, 'recepce@weissersportcentrum.cz',
 541242769, 49.2102537, 16.5988146,1, 1, NULL, 'muži/ženy', 1)
 ;
+
 ####Python:
 INSERT INTO fitness (nazev, url, ulice, mesto, psc, email, telefon, lat, lng, multisport, activepass, platba, pohlavi, mhd)
 VALUES
@@ -42,5 +60,4 @@ VALUES
 601575769, 49.1893206, 16.5970054,1, 1, , 'Flexi Pass CARD a Multi Pass CARD', 'muži/ženy', 1)
 ,('Iron Gym', 'www.irongym.cz', 'Řezáčova 5', 'Brno', 62400, 'iron-gym@seznam.cz', 
 606497467, 49.2244151, 16.5495407,1, 1, 0, 'muži/ženy', 1)
-
 ;
