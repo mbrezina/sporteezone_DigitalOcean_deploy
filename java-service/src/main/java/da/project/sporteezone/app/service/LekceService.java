@@ -4,6 +4,7 @@ import da.project.sporteezone.app.entity.Lekce;
 import da.project.sporteezone.app.entity.Trener;
 import da.project.sporteezone.app.repository.LekceRepository;
 import lombok.extern.slf4j.Slf4j;
+import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Service;
@@ -26,42 +27,34 @@ public class LekceService {
         return lekceRepository.findAll();
     }
 
-    public Lekce pridejJednuLekci(Lekce novaLekce) {
-        lekceRepository.saveAndFlush(novaLekce);
-        return novaLekce;
+    public void pridejJednuLekci(Lekce novaLekce) {
+        zpracujLekci(novaLekce);
+        log.info("Počet nově nahraných lekcí: 1");
     }
 
-    public String pridejVicLekci(List<Lekce> noveLekce) {
+    public void pridejVicLekci(List<Lekce> noveLekce) {
         log.debug(String.valueOf(noveLekce));
-        Integer ulozeneLekce = 0;
-        Integer updatovaneLekce = 0;
-
-        for (Lekce novaLekce : noveLekce) {
-            Lekce shodnaLekce = lekceRepository.findByZacatekAndNazevAndFitko(novaLekce.getZacatek(), novaLekce.getNazev(), novaLekce.getFitko());
-            if (shodnaLekce == null) {
-                lekceRepository.saveAndFlush(novaLekce);
-                ulozeneLekce++;
-            } else {
-
-                Boolean stejny_trener = shodnaLekce.getJmenoTrener().equals(novaLekce.getJmenoTrener());
-                Boolean stejna_obsazenost = shodnaLekce.getObsazenost().equals(novaLekce.getObsazenost());
-
-                if (!stejna_obsazenost || !stejny_trener) {
-                    shodnaLekce.setObsazenost(novaLekce.getObsazenost());
-                    shodnaLekce.setJmenoTrener(novaLekce.getJmenoTrener());
-                    lekceRepository.saveAndFlush(shodnaLekce);
-                    updatovaneLekce++;
-                }
-            }
+        Integer pocetNovychLekci = 0;
+        for (Lekce jednaNovaLekce : noveLekce) {
+            pocetNovychLekci += zpracujLekci(jednaNovaLekce);
         }
-        return "Počet uložených lekcí: " + ulozeneLekce + ", počet updatovaných lekcí: " + updatovaneLekce;
+        log.info("Počet nově nahraných lekcí" + pocetNovychLekci);
     }
 
-
-    public List<Lekce> najdiLekcePodleTrenera(String jmenoTrenera) {
-        return lekceRepository.findByJmenoTrener(jmenoTrenera);
+    public Integer zpracujLekci(Lekce novaLekce) {
+        Lekce shodnaLekce = lekceRepository.findByZacatekAndNazevAndKodFitko(novaLekce.getZacatek(), novaLekce.getNazev(), novaLekce.getKodFitko());
+        if (shodnaLekce == null) {
+            lekceRepository.saveAndFlush(novaLekce);
+            return 1;
+        } else {
+            Boolean stejna_obsazenost = shodnaLekce.getObsazenost().equals(novaLekce.getObsazenost());
+            if (!stejna_obsazenost) {
+                shodnaLekce.setObsazenost(novaLekce.getObsazenost());
+                lekceRepository.saveAndFlush(shodnaLekce);
+            }
+            return 0;
+        }
     }
-
 
     public List<Lekce> najdiLekce(LocalDateTime zacatek, LocalDateTime konec) {
         log.debug("datum je " + zacatek);

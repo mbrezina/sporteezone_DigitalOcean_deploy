@@ -39,33 +39,20 @@ public class LekceController {
         log.debug("datum je " + zacatek);
         log.debug(String.valueOf(zacatek.getClass()));
         return lekceService.najdiLekce(zacatek, konec);
-
     }
-
-    @GetMapping(path = "/byTrener")
-    public @ResponseBody
-    List<Lekce> findLekceByTrener(
-        @RequestParam("jmeno") String jmeno) {
-        log.info("toto je jméno: " + jmeno);
-        return lekceService.najdiLekcePodleTrenera(jmeno);
-    }
-
-
-
 
     @PostMapping(path = "/addOne", consumes = "application/json")
     public @ResponseBody
-    Lekce pridejJednuLekci(@RequestBody Lekce novaLekce) {
+    void pridejJednuLekci(@RequestBody Lekce novaLekce) {
         lekceService.pridejJednuLekci(novaLekce);
-        return novaLekce;
     }
 
     @PostMapping(path = "/addMore", consumes = "application/json")
     public @ResponseBody
-    String pridejVicLekci(@RequestBody List<Lekce> noveLekce) {
+    void pridejVicLekci(@RequestBody List<Lekce> noveLekce) {
         log.debug("jsem v kontroleru");
         log.debug("toto jsou nové lekci, které projdou funckí pro přidání_:" + noveLekce.toString());
-        return lekceService.pridejVicLekci(noveLekce);
+        lekceService.pridejVicLekci(noveLekce);
     }
 }
 

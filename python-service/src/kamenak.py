@@ -17,12 +17,12 @@ def kamenak():
     rozvrh['end'] = rozvrh['end'].apply(lambda x: x['dateTime'])
     rozvrh['zacatek'] = rozvrh['start'].apply(lambda x: x.split('+')[0])
     rozvrh['konec'] = rozvrh['end'].apply(lambda x: x.split('+')[0])
-    rozvrh['id'] = 9
+    rozvrh['kod_fitko'] = 9
 
     rozvrh['trener'] = rozvrh['summary'].apply(lambda x: re.split('-|,', x)[1] if '-' in x else 'neuvedeno')
     rozvrh['nazev'] = rozvrh['summary'].apply(lambda x: re.split('-|,', x)[0])
 
-    rozvrh = rozvrh[['id', 'nazev', 'trener', 'zacatek', 'konec']]
+    rozvrh = rozvrh[['kod_fitko', 'nazev', 'trener', 'zacatek', 'konec']]
 
     vysledek = rozvrh.to_json(force_ascii=False, orient='records')
     
