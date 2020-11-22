@@ -22,14 +22,13 @@ public class ApiuserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        List<Apiuser> seznamVsech = apiuserRepository.findAll();
-        Iterator iterator = seznamVsech.iterator();
-        while(iterator.hasNext()) {
-            log.info(String.valueOf(iterator.next()));
-        }
+//        List<Apiuser> seznamVsech = apiuserRepository.findAll();
+//        Iterator iterator = seznamVsech.iterator();
+//        while(iterator.hasNext()) {
+//            log.info(String.valueOf(iterator.next()));
+//        }
 
         Apiuser apiuser = apiuserRepository.findApiuserByUsername(username);
-        log.info("vytahuji uživatele");
 
         if (apiuser == null) {
             throw new UsernameNotFoundException(username);
