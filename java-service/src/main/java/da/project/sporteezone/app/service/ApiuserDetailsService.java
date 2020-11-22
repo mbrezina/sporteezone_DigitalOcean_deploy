@@ -29,7 +29,6 @@ public class ApiuserDetailsService implements UserDetailsService {
         }
 
         Apiuser apiuser = apiuserRepository.findApiuserByUsername(username);
-        log.info("vytahuji uživatele");
 
         if (apiuser == null) {
             throw new UsernameNotFoundException(username);

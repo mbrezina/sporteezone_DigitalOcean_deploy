@@ -9,7 +9,7 @@ CREATE TABLE apiuser
      );
 
 
-INSERT INTO apiuser (username, password, active, roles) VALUES
+INSERT INTO apiuser(username, password, active, roles) VALUES
+('spejbl', '$2a$10$5IEkdK2NbGiDVuvKzjmdJebo1cZnxt0L3LpA8l9kGtJUpoYr7pdeq', 1, 'ADMIN');
 
-("spejbl", "$2a$10$5IEkdK2NbGiDVuvKzjmdJebo1cZnxt0L3LpA8l9kGtJUpoYr7pdeq", 1, "ADMIN")
 
