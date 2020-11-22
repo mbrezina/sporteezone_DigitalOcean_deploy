@@ -25,6 +25,7 @@ public class Lekce {
     private Integer kapacita;
     private Integer obsazenost;
     private Boolean nutnostRezervace;
+    private String trener;
     private Integer cena;
 
     @Column(name = "kod_fitko")
