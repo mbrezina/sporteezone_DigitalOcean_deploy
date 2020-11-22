@@ -27,7 +27,6 @@ public class Lekce {
     private Boolean nutnostRezervace;
     private Integer cena;
 
-
     @Column(name = "kod_fitko")
     private Integer kodFitko;
 
@@ -36,16 +35,12 @@ public class Lekce {
     @JoinColumn(name = "kod_fitko", referencedColumnName = "id", insertable=false, updatable=false)
     private Fitness fitko;
 
-    @Column(name = "jmeno_trener")
-    private String jmenoTrener;
-
     /*
     @EqualsAndHashCode.Exclude
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "kod_trener")
     @JsonIgnore
     private Trener trener;
-
     */
 
 }

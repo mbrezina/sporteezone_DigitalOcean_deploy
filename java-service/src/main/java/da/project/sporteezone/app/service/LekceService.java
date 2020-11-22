@@ -27,39 +27,31 @@ public class LekceService {
     }
 
     public Lekce pridejJednuLekci(Lekce novaLekce) {
-        lekceRepository.saveAndFlush(novaLekce);
+        zpracujLekci(novaLekce);
+        //lekceRepository.saveAndFlush(novaLekce);
         return novaLekce;
     }
 
-    public String pridejVicLekci(List<Lekce> noveLekce) {
+    public void pridejVicLekci(List<Lekce> noveLekce) {
         log.debug(String.valueOf(noveLekce));
-        Integer ulozeneLekce = 0;
-        Integer updatovaneLekce = 0;
-
+        //Integer ulozeneLekce = 0;
+        //Integer updatovaneLekce = 0;
         for (Lekce novaLekce : noveLekce) {
-            Lekce shodnaLekce = lekceRepository.findByZacatekAndNazevAndFitko(novaLekce.getZacatek(), novaLekce.getNazev(), novaLekce.getFitko());
-            if (shodnaLekce == null) {
-                lekceRepository.saveAndFlush(novaLekce);
-                ulozeneLekce++;
-            } else {
-
-                Boolean stejny_trener = shodnaLekce.getJmenoTrener().equals(novaLekce.getJmenoTrener());
-                Boolean stejna_obsazenost = shodnaLekce.getObsazenost().equals(novaLekce.getObsazenost());
-
-                if (!stejna_obsazenost || !stejny_trener) {
-                    shodnaLekce.setObsazenost(novaLekce.getObsazenost());
-                    shodnaLekce.setJmenoTrener(novaLekce.getJmenoTrener());
-                    lekceRepository.saveAndFlush(shodnaLekce);
-                    updatovaneLekce++;
-                }
-            }
+            zpracujLekci(novaLekce);
         }
-        return "Počet uložených lekcí: " + ulozeneLekce + ", počet updatovaných lekcí: " + updatovaneLekce;
     }
 
+    public void zpracujLekci(Lekce novaLekce) {
+        Lekce shodnaLekce = lekceRepository.findByZacatekAndNazevAndKodFitko(novaLekce.getZacatek(), novaLekce.getNazev(), novaLekce.getKodFitko());
+        if (shodnaLekce == null) {
+            lekceRepository.saveAndFlush(novaLekce);
+        }
 
-    public List<Lekce> najdiLekcePodleTrenera(String jmenoTrenera) {
-        return lekceRepository.findByJmenoTrener(jmenoTrenera);
+        Boolean stejna_obsazenost = shodnaLekce.getObsazenost().equals(novaLekce.getObsazenost());
+        if (!stejna_obsazenost) {
+            shodnaLekce.setObsazenost(novaLekce.getObsazenost());
+        }
+        lekceRepository.saveAndFlush(shodnaLekce);
     }
 
 
