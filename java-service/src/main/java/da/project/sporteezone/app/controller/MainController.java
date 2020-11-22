@@ -9,7 +9,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.io.IOException;
 
+//for testing of authentication
 
+/*
 @Slf4j
 @Controller
 public class MainController {
@@ -21,23 +23,25 @@ public class MainController {
     public ModelAndView showRate() throws IOException {
 
         log.info("jsem za autentikací v databázi");
-        ModelAndView dataHolder = new ModelAndView("user_test");
+        ModelAndView dataHolder = new ModelAndView("_user_test");
         return dataHolder;
     }
 
     @RequestMapping("star")
     public ModelAndView showStar() throws IOException {
         log.info("jsem za autentikací Google/OAUTH2");
-        ModelAndView dataHolder = new ModelAndView("index");
+        ModelAndView dataHolder = new ModelAndView("_index");
         return dataHolder;
     }
 
     @RequestMapping({"home", ""})
     public ModelAndView showHome() throws IOException {
         log.info("tady není žádná autentikace");
-        ModelAndView dataHolder = new ModelAndView("index");
+        ModelAndView dataHolder = new ModelAndView("_index");
         return dataHolder;
     }
 
 }
+
+ */
 

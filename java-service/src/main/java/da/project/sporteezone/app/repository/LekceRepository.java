@@ -28,10 +28,9 @@ public interface LekceRepository extends JpaRepository <Lekce, Integer> {
     @Query("SELECT l FROM Lekce l WHERE l.zacatek = ?1 AND l.nazev = ?2 AND l.fitko.id = ?3")
     Lekce najdiStejnouLekci(LocalDateTime zacatek, String nazev, Integer kodFitka);
 
-    //Lekce findByZacatekAndNazevAndKodFitko(LocalDateTime zacatek, String nazev, Integer kodFitko);
-    Lekce findByZacatekAndNazevAndFitko(LocalDateTime zacatek, String nazev, Fitness fitko);
+    Lekce findByZacatekAndNazevAndKodFitko(LocalDateTime zacatek, String nazev, Integer kodFitko);
 
-    List<Lekce> findByJmenoTrener(String jmenoTrener);
+    //List<Lekce> findByJmenoTrener(String jmenoTrener);
 
 
 }
