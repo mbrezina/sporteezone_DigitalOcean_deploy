@@ -45,4 +45,8 @@ VALUES
 ('Weisser Sport Centrum', 'wwww.weissersportcentrum.cz', 'Tůmova 12', 'Brno', 61600, 'recepce@weissersportcentrum.cz', 541242769, 49.2102537, 16.5988146, NULL, 1, 0, 0, 1, NULL),
 ('Big One fitness Club', 'www.big1fitness.cz', 'Benešova 14/16', 'Brno', 60200, 'info@big1fitness.cz', 601575769, 49.1929676, 16.6112301,1, 1, 0, 0, 1, 1),
 ('Big One fitness Mendlák', 'www.big1fitness.cz', 'Václavská 6', 'Brno', 60300, 'info@big1fitness.cz', 601575769, 49.1893206, 16.5970054,1, 1, 0, 0, 1, 1),
-('Iron Gym', 'www.irongym.cz', 'Řezáčova 5', 'Brno', 62400, 'iron-gym@seznam.cz', 606497467, 49.2244151, 16.5495407,1, 1, 0, 0, 1, 1);
+('Iron Gym', 'www.irongym.cz', 'Řezáčova 5', 'Brno', 62400, 'iron-gym@seznam.cz', 606497467, 49.2244151, 16.5495407,1, 1, 0, 0, 1, 1)
+('Fitko Kameňák', 'http://fitkokamenak.cz/', 'Oblá 51c', 'Brno', '63400', 'o.s.fitkokamenak@gmail.com', '777551104', '49.1759555', '16.5530676', 1, 1, 0, 0, 1, 1)
+('Fitness centrum Velký Průvan', 'http://velkypruvan.cz/index.html', 'Vídeňská 77', 'Brno', '63900', 'velkypruvan@gmail.com', '608859930', '49.1788669', '16.5940896', 1, 1, 0, 1, 1, 1)
+('Fitness centrum Best Gym', 'https://bestgym.cz/', 'Horova 48', 'Brno', '61600', 'info@bestgym.cz', '775111460', '49.2145625', '16.5695002', 1, 1, 1, 1, 1, 1)
+;
