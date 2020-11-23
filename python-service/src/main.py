@@ -5,6 +5,7 @@ import irongym
 import bigonefitness_rev
 import kamenak
 import velky_pruvan
+import best_gym
 
 import send_data_to_api
 
@@ -14,11 +15,13 @@ def execute():
     vysledek_bigonefitness = bigonefitness_rev.scraping_obf()
     vysledek_kamenak = kamenak.kamenak()
     vysledek_velky_pruvan = velky_pruvan.velky_pruvan()
+    vysledek_best_gym = best_gym.best_gym()
 
     send_data_to_api.send_data(vysledek_irongym)
     send_data_to_api.send_data(vysledek_bigonefitness)
     send_data_to_api.send_data(vysledek_kamenak)
     send_data_to_api.send_data(vysledek_velky_pruvan)
+    send_data_to_api.send_data(vysledek_best_gym)
 
 
     # logging.info(vysledek_irongym)   není číslo fitka
