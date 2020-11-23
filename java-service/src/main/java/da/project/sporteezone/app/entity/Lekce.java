@@ -17,8 +17,9 @@ public class Lekce {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nazev;
+    private String kategorie;
     private String url;
-
+    
     private LocalDateTime zacatek;
     private LocalDateTime konec;
 

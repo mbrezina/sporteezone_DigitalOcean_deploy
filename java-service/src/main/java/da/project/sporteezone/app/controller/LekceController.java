@@ -35,10 +35,17 @@ public class LekceController {
         @RequestParam("zacatek")
         @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime zacatek,
         @RequestParam("konec")
-        @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime konec) {
+        @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime konec,
+        @RequestParam(required = false) List<String> hledaneKategorie) {
+
         log.debug("datum je " + zacatek);
         log.debug(String.valueOf(zacatek.getClass()));
-        return lekceService.najdiLekce(zacatek, konec);
+
+        if (hledaneKategorie.size() == 0) {
+            return lekceService.najdiLekce(zacatek, konec);
+        } else {
+            return lekceService.najdiLekceDleKategorii(zacatek, konec, hledaneKategorie);
+        }
     }
 
     @PostMapping(path = "/addOne", consumes = "application/json")
