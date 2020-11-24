@@ -41,7 +41,7 @@ def scraping():
     obsazeno = []
     capacity = []
     date_iso = []
-    id_fitka = []
+    kodFitka = []
 
     while mesic_konec > i:
         day = i.strftime("%d.%m.%Y")
@@ -68,15 +68,15 @@ def scraping():
             date_iso.append(
                 datetime.datetime.strptime(mesicnik(datumy) + hod.get_text().strip(), '%d. %B %Y%H:%M').isoformat())
 
-        id_fitka.append(8)
+        kodFitka.append(8)
 
         # s číslem fitka:
-        nadpisy = ['id_fitka', 'nazev', 'obsazeno', 'kapacita', 'zacatek']
+        nadpisy = ['kodFitka', 'nazev', 'obsazeno', 'kapacita', 'zacatek']
         # nadpisy = ['název', 'kapacita', 'začátek']
 
         i = i + timedelta(1)
 
-    df1 = pd.DataFrame(data=(id_fitka, lesson, obsazeno, capacity, date_iso), index=nadpisy)
+    df1 = pd.DataFrame(data=(kodFitka, lesson, obsazeno, capacity, date_iso), index=nadpisy)
 
     vysledek = df1.T.to_json(force_ascii=False, orient='records')
     return vysledek

@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import logging
 import irongym
 import bigonefitness_rev
 import kamenak
@@ -16,12 +15,23 @@ def execute():
     vysledek_velky_pruvan = velky_pruvan.velky_pruvan()
     vysledek_best_gym = best_gym.best_gym()
 
-    send_data_to_api.send_data(vysledek_irongym)
-    send_data_to_api.send_data(vysledek_bigonefitness)
-    send_data_to_api.send_data(vysledek_kamenak)
-    send_data_to_api.send_data(vysledek_velky_pruvan)
-    send_data_to_api.send_data(vysledek_best_gym)
 
+
+    print("************")
+    print("iron gym:")
+    send_data_to_api.send_data(vysledek_irongym)
+    print("************")
+    print("big one fitness")
+    send_data_to_api.send_data(vysledek_bigonefitness)
+    print("************")
+    print("kamenak")
+    send_data_to_api.send_data(vysledek_kamenak)
+    print("************")
+    print("velký průvan")
+    send_data_to_api.send_data(vysledek_velky_pruvan)
+    print("************")
+    print("velký průvan")
+    send_data_to_api.send_data(vysledek_best_gym)
 
 if __name__=="__main__":
     execute()
