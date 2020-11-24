@@ -13,6 +13,7 @@ def execute():
     vysledek_bigonefitness = bigonefitness_rev.scraping_obf()
     vysledek_kamenak = kamenak.kamenak()
     vysledek_velky_pruvan = velky_pruvan.velky_pruvan()
+    vysledek_best_gym = best_gym.best_gym()
 
 
 
@@ -28,6 +29,9 @@ def execute():
     print("************")
     print("velký průvan")
     send_data_to_api.send_data(vysledek_velky_pruvan)
+    print("************")
+    print("velký průvan")
+    send_data_to_api.send_data(vysledek_best_gym)
 
 if __name__=="__main__":
     execute()
