@@ -14,6 +14,8 @@ def execute():
     vysledek_kamenak = kamenak.kamenak()
     vysledek_velky_pruvan = velky_pruvan.velky_pruvan()
 
+
+
     print("************")
     print("iron gym:")
     send_data_to_api.send_data(vysledek_irongym)

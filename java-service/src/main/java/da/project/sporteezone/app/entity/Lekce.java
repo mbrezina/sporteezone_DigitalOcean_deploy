@@ -29,6 +29,8 @@ public class Lekce {
     private String trener;
     private Integer cena;
 
+    
+
     @Column(name = "kod_fitko")
     private Integer kodFitko;
 

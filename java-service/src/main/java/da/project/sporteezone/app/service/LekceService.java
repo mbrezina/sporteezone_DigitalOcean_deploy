@@ -35,7 +35,7 @@ public class LekceService {
         for (Lekce jednaNovaLekce : noveLekce) {
             pocetNovychLekci += zpracujLekci(jednaNovaLekce);
         }
-        log.info("Počet nově nahraných lekcí" + pocetNovychLekci);
+        log.info("Počet nově nahraných lekcí " + pocetNovychLekci);
     }
 
     public Integer zpracujLekci(Lekce novaLekce) {
