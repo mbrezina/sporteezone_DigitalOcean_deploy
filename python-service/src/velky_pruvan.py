@@ -56,11 +56,11 @@ def velky_pruvan():
     df['konec'] = df['konec'].apply(lambda x: datetime.strptime(x, '%Y-%m-%d %H:%M').isoformat())
     df['nazev'] = df[0].apply(lambda x: (' '.join(re.split(' - | -|-| ', x)[3:-1])).lower())
     df['nazev'] = df['nazev'].apply(lambda x: ' '.join(x.split()[:3]))
-    df['kod_fitko'] = 10
+    df['kodFitko'] = 10
     df['cena'] = 100
 
     #vyhozeni pomocnych sloupcu
-    df = df[['nazev', 'zacatek', 'konec', 'trener', 'kod_fitko', 'cena']]
+    df = df[['nazev', 'zacatek', 'konec', 'trener', 'kodFitko', 'cena']]
     vysledek = df.to_json(force_ascii=False, orient='records')
     
     return vysledek

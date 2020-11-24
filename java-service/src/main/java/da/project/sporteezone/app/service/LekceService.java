@@ -75,7 +75,7 @@ public class LekceService {
     public void priradKategorie(Lekce lekce) {
         String nazevLekce = lekce.getNazev().toLowerCase();
 
-        List<String> joga = Arrays.asList("joga", "jóga", "ioga", "ióga");
+        List<String> joga = Arrays.asList("joga", "jóga", "ioga", "ióga", "yoga", "yóga");
         List<String> posilovani = Arrays.asList("core", "břicho", "bricho", "zadek", "záda", "nohy", "hýždě", "hyzde", "zadeček", "zadecek", "posilovací", "body", "h.i.i.t.", "kruhový", "funkční");
         List<String> dance = Arrays.asList("dance", "tanec", "pole");
         List<String> deti = Arrays.asList("miminek", "kojenců", "kojenecké", "kids", "junior", "dětská");
