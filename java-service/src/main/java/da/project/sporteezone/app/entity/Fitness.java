@@ -29,10 +29,11 @@ public class Fitness {
     private Boolean obcerstveni;
     private Boolean muzi;
     private Boolean pomucky;
-
-    @Lob
-    @Basic(fetch = FetchType.LAZY)
-    private byte[] logo;
+   
+    
+    //@Lob
+    //@Basic(fetch = FetchType.LAZY)
+    //private byte[] logo;
 
     //@OneToMany(mappedBy = "lekce", fetch = FetchType.EAGER)
     //private List<Lekce> seznamLekci;
