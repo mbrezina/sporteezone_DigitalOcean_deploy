@@ -44,7 +44,7 @@ public class LekceService {
             priradKategorie(novaLekce);
             lekceRepository.saveAndFlush(novaLekce);
             return 1;
-        } else {
+        } else if (novaLekce.getObsazenost() != null){
             Boolean stejna_obsazenost = shodnaLekce.getObsazenost().equals(novaLekce.getObsazenost());
             if (!stejna_obsazenost) {
                 shodnaLekce.setObsazenost(novaLekce.getObsazenost());
@@ -52,6 +52,7 @@ public class LekceService {
             }
             return 0;
         }
+        return 0;
     }
 
     public List<Lekce> najdiLekce(LocalDateTime zacatek, LocalDateTime konec) {

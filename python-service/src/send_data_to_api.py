@@ -6,7 +6,7 @@ def send_data(vysledek):
 
     headers = {'Content-type': 'application/json', 'Accept': 'application/json'}
 
-    #r = requests.post("http://167.172.36.145:8080/api/v1/lekce/addMore", auth=(os.environ["API_LOGIN"], os.environ["API_PASSWORD"]), data=vysledek.encode("utf-8"), headers=headers)
+    r = requests.post("http://167.172.36.145:8080/api/v1/lekce/addMore", auth=(os.environ["API_LOGIN"], os.environ["API_PASSWORD"]), data=vysledek.encode("utf-8"), headers=headers)
 
     print(vysledek)
 
