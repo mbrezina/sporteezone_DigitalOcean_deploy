@@ -38,7 +38,7 @@ def scraping():
     i = datetime.date.today()
     mesic_konec = i + timedelta(31)
     lesson = []
-    obsazeno = []
+    obsazenost = []
     capacity = []
     date_iso = []
     kodFitka = []
@@ -61,22 +61,28 @@ def scraping():
         for cap in kapacity:
             v = cap.get_text().strip().split('/')
             capacity.append(v[-1])
-            obsazeno.append(v[0])
+            obsazenost.append(v[0])
             # capacity.append(cap.get_text().strip().split('/')[-1])
 
         for hod in hodiny:
             date_iso.append(
                 datetime.datetime.strptime(mesicnik(datumy) + hod.get_text().strip(), '%d. %B %Y%H:%M').isoformat())
 
+
         kodFitka.append(8)
 
         # s číslem fitka:
         nadpisy = ['kodFitka', 'nazev', 'obsazeno', 'kapacita', 'zacatek']
+        kodFitka.append(int(8))
+
+        # s číslem fitka:
+        nadpisy = ['kodFitka', 'nazev', 'obsazenost', 'kapacita', 'zacatek']
         # nadpisy = ['název', 'kapacita', 'začátek']
 
         i = i + timedelta(1)
 
-    df1 = pd.DataFrame(data=(kodFitka, lesson, obsazeno, capacity, date_iso), index=nadpisy)
+    df1 = pd.DataFrame(data=(kodFitka, lesson, obsazenost, capacity, date_iso), index=nadpisy)
+
 
     vysledek = df1.T.to_json(force_ascii=False, orient='records')
     return vysledek
