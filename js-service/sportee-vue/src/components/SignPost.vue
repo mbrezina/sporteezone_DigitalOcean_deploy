@@ -126,7 +126,7 @@ export default {
 }
 
 hr {
-  width: 50%;
+	width: 50%;
 }
 
 .icon {

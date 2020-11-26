@@ -1,53 +1,35 @@
 <template>
-<div class="main-article">
-	<img src="../assets/yoga.jpg" alt="women in yoga position">
-	<div class="article-holder">
-		<div class="text">
-			<h2>Hotjóga přohřeje tělo i duši</h2>
-			<p>Jóga ať už klasické nebo jakákoliv jiná mě nikdy nějak extra nelákala. To se změnilo po několika návštěvách
-				hotjógy, kdy jsem zjistila, kolik benefitů mi cvičení ásán v teple přináší. Co mi jóga dává a kam chodím cvičit?
-			</p>
-		</div>
-		<router-link to="/clanek/1"><button>Číst více</button></router-link>
-	</div>
+<div class="article">
+	<img v-bind:src="result.img" v-bind:alt="result.title" class="image">
+	<h3> {{result.title}} </h3>
+	<p> {{result.text1}} </p>
+	<router-link :to="{name: 'detail', params: {id: result.id}}"> <button>Číst více</button> </router-link>
 </div>
 
 </template>
 
 <script>
 export default {
-
-}
+	props: ["result"]
+};
 </script>
 
 <style scoped>
-
-.main-article img {
-	width: 300px;
+.article {
+  border-radius: 20px;
+  background-color: #fff;
+  width: 400px;
+	text-align: center;
+  margin: 30px 20px;
+  padding: 25px;
+  font-size: 16px;
 }
 
-.main-article {
-	margin: 30px;
+.article h3 {
+  color: #f83600;
 }
 
-#readMore {
-	display: none;
-	margin-left: 20px;
+.image {
+	width: 100%;
 }
-
-.article-holder button {
-	margin-left: 20px
-}
-
-@media (min-width: 650px) {
-
-	.main-article {
-		display: flex;
-	}
-
-	.text {
-		margin-left: 20px;
-	}
-}
-
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <div class="blog">
-		<h1>Blog</h1>
-		<hr>
-    
-		<div class="content">
-      <mainarticle
+  <div class="sportoviste">
+    <h1>Sportoviště</h1>
+    <hr class="har" />
+
+    <div class="content">
+      <fitnessCenter
         v-for="(result, index) in results"
         v-bind:key="index"
         v-bind:result="result"
@@ -14,20 +14,23 @@
 </template>
 
 <script>
-import MainArticle from "./../components/MainArticle.vue";
+import FitnessCenter from "@/components/FitnessCenter.vue";
+import { utcToZonedTime, format } from "date-fns-tz";
+import { endOfDay } from "date-fns";
 
 export default {
   components: {
-    mainarticle: MainArticle,
-	},
-	
+    fitnessCenter: FitnessCenter,
+  },
+
   data() {
     return {
       results: [],
     };
   },
+
   mounted() {
-		const url = "/articles.json";
+    const url = `${process.env.VUE_APP_API_URL}/fitness`;
 
     return axios.get(url).then((response) => {
       this.results = response.data;
@@ -38,7 +41,7 @@ export default {
 </script>
 
 <style scoped>
-.blog h1 {
+.sportoviste h1 {
   text-align: center;
   color: #fcfbff;
   text-transform: uppercase;
@@ -61,7 +64,7 @@ export default {
 }
 
 @media (min-width: 1000px) {
-  .blog h1 {
+  .sportoviste h1 {
     font-size: 70px;
     margin-top: 80px;
   }

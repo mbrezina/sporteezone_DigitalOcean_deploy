@@ -30,7 +30,7 @@
       <label for="subject">Zpráva</label>
       <textarea v-model="message" id="subject" name="subject" placeholder="Prosím zadejte svou zprávu" style="height:200px"></textarea>
 
-      <button>Odeslat</button>
+      <buttonDefault>Odeslat</buttonDefault>
 
 	</form>
 
@@ -39,11 +39,11 @@
 </template>
 
 <script>
-  import Button from './../components/Button.vue'
+  import ButtonDefault from './../components/ButtonDefault.vue'
 
   export default {
     components: {
-      "button": Button
+      buttonDefault: ButtonDefault
 	},
 	data() {
     return {

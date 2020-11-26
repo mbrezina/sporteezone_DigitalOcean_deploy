@@ -23,8 +23,8 @@
 .logo {
     margin: 0;
     padding-left: 30px;
-    padding: 20px;
-    font-size: 25px;
+    padding: 10px;
+    font-size: 22px;
     flex-wrap: nowrap;
     position: relative;
 }
