@@ -28,7 +28,6 @@
               <li><router-link to="/sportoviste">Sportoviště</router-link></li>
               <li><router-link to="/blog">Blog</router-link></li>
               <li><router-link to="/projekt">O projektu</router-link></li>
-              <li><router-link to="/kontakt">Přihlásit se</router-link></li>
             </ul>
           </div>
         </div>
