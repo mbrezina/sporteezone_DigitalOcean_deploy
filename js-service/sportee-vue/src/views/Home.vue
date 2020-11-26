@@ -1,133 +1,119 @@
 <template>
-<div>
-	<div id="cover-photo">
-		<div class="text-cover-photo">
-			<h1>Sportuj s námi</h1>
-			<p>Sportuješ často a nebaví tě pořád sledovat rozvrhy jednotlivých sportovišť? Vyzkoušej naši aplikaci a
-				hned zjistíš, kde se co cvičí.</p>
-		</div>
-	</div>
-
-   <activityform />
-
-  <div class="container">
-
-  <mainarticle />
-
-   <div class="testimonials">
-    <div class="inner">
-      <div class="row">
-
-
-          <div class="col">
-             <router-link to="/recenze">
-            <div class="testimonial">
-              <img src="../assets/afit.png" alt="afit logo">
-              <div class="name">Ludmila</div>
-              <p>"Skvělé místo dát si pořádně do těla. Vybavení posilovny na jedničku, sprchy by zasloužily
-                častější pořádek. Oceňuji možnost využití multisportky."
-              </p>
-              <div class="stars">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-              </div>
-            </div>
-            </router-link>
-          </div>
-
-
-        <div class="col">
-          <router-link to="/recenze">
-          <div class="testimonial">
-            <img src="../assets/bluegym.png" alt="Bluegym logo">
-            <div class="name">Veronika</div>
-            <p>"V Blue Gym cvičím několikrát do týdne. Oceňuji především různorodost sálových lekcí a v mém případě
-              výbornou dostupnost do centra."
-            </p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-          </router-link>
-        </div>
-
-
-        <div class="col">
-           <router-link to="/recenze">
-          <div class="testimonial">
-            <img src="../assets/bfit.jpg" alt="bfit logo">
-            <div class="name">Zuzka</div>
-            <p>"Je to místo, kde mám rozhodně pocit, že něco dělám! Rozhodně oceňuji prostředí a vřele doporučuji všem,
-              kteří se rozhodli cvičit."
-            </p>
-            <div class="stars">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-            </div>
-          </div>
-           </router-link>
-        </div>
+  <div>
+    <div id="cover-photo">
+      <div class="text-cover-photo">
+        <h1 class="display">Sportuj s námi</h1>
+        <p class="display">
+          Sportuješ často a nebaví tě pořád sledovat rozvrhy jednotlivých
+          sportovišť? Vyzkoušej naši aplikaci a hned zjistíš, kde se co cvičí.
+        </p>
       </div>
+      <activityform v-on:eventResults="getResults" class="form" />
+    </div>
+
+    <div class="content">
+      <lecture
+        v-for="(result, index) in results"
+        v-bind:key="index"
+        v-bind:result="result"
+      />
+
+      <h1 v-if="this.results.length == 0" class="no-lectures">
+        Pro tento den bohužel nejsou žádné lekce vypsány 😢
+      </h1>
     </div>
   </div>
-
-  <pagefooter />
-
-  </div>
-</div>
-
 </template>
 
 <script>
-
-import ActivityForm from './../components/ActivityForm.vue'
-import SignPost from './../components/SignPost.vue'
-import PageFooter from './../components/PageFooter.vue'
-import MainArticle from './../components/MainArticle.vue'
+import ActivityForm from "./../components/ActivityForm.vue";
+import Lecture from "@/components/Lecture.vue";
+import { utcToZonedTime, format } from "date-fns-tz";
+import { endOfDay } from "date-fns";
 
 export default {
   components: {
-    "activityform": ActivityForm,
-    "signpost": SignPost,
-    "pagefooter": PageFooter,
-    "mainarticle": MainArticle
-  }
-}
+    activityform: ActivityForm,
+    lecture: Lecture,
+  },
 
+  data() {
+    return {
+      results: [],
+    };
+  },
+
+  mounted() {
+    let startDate = new Date();
+    let endDate = endOfDay(startDate);
+
+    startDate = format(startDate, "yyyy-M-d'T'HH:mm:ss", {
+      timeZone: "Europe/Prague",
+    });
+    endDate = format(endDate, "yyyy-M-d'T'HH:mm:ss", {
+      timeZone: "Europe/Prague",
+    });
+
+    const url = `${process.env.VUE_APP_API_URL}/lekce/byDatum?zacatek=${startDate}&konec=${endDate}&hledaneKategorie=`;
+
+    return axios.get(url).then((response) => {
+      this.results = response.data;
+      console.log(this.results);
+    });
+  },
+
+  methods: {
+    getResults(results) {
+      this.results = results;
+    },
+  },
+};
 </script>
 
 <style scoped>
+.content h1 {
+  padding-right: 20px;
+  padding-left: 40px;
+}
+
 #cover-photo {
   height: 550px;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/cover.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../assets/cover.jpg);
   background-position: 30% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#app {
-  background-color: #fcfbff;
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-cover-photo {
-  padding: 30px;
-  padding-top: 150px;
   color: white;
-  font-size: 25px;
+  text-align: left;
+
+  margin: 10px 60px;
 }
 
-h1 {
+.text-cover-photo h1 {
+  text-transform: uppercase;
+  font-weight: 100;
   text-align: left;
+}
+
+.text-cover-photo p {
+  text-align: left;
+  font-style: italic;
+}
+
+.form {
+  margin: 20px;
 }
 
 a {
@@ -150,46 +136,60 @@ a {
   padding-bottom: 60px;
 }
 
-@media (min-width: 650px) {
+.no-lectures {
+  text-align: center;
+  color: #fcfbff;
+}
 
-  .text-cover-photo {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+.display {
+  display: none;
+}
+
+@media (min-width: 650px) {
   .row {
     display: flex;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
 @media (min-width: 860px) {
-  .container {
+  .display {
+    display: flex;
+  }
+  .article {
     background-color: #f1f1f1;
-   }
-   .main-article {
-     max-width: 1000px;
-     margin: auto;
-     margin-top: 60px;
-   }
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .main-article {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 60px;
+  }
+  #cover-photo {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .text-cover-photo {
+    width: 382px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1000px) {
-  #cover-photo {
-    display: flex;
-   }
+  .main-article img {
+    width: 100%;
+    max-width: 500px;
+  }
 
-    .text-cover-photo p {
-      width: 500px;
-    }
-
-    .main-article img {
-      width: 100%;
-      max-width: 500px;
-    }
-
-
-
-    .article-holder {
-      max-width: 500px;
-    }
+  .article-holder {
+    max-width: 500px;
+  }
 }
 </style>

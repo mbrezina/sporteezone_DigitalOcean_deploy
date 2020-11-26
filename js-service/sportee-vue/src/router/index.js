@@ -5,8 +5,10 @@ import Blog from '../views/Blog.vue'
 import Project from '../views/Project.vue'
 import Contact from '../views/Contact.vue'
 import Review from '../views/Review.vue'
+import Sportoviste from '../views/Sportoviste.vue'
 import SearchResults from '../views/SearchResults.vue'
 import BlogDetail from '../views/BlogDetail.vue'
+import ArticleDetail from '../views/ArticleDetail.vue'
 
 Vue.use(VueRouter)
 
@@ -37,14 +39,19 @@ const routes = [
     component: Review
   },
   {
+    path: '/sportoviste',
+    name: 'sportoviste',
+    component: Sportoviste
+  },
+  {
     path: '/vysledky',
     name: 'search',
     component: SearchResults
   },
   {
     path: '/clanek/:id',
-    name: 'article',
-    component: BlogDetail
+    name: 'detail',
+    component: ArticleDetail
   }
 ]
 
