@@ -82,6 +82,11 @@
             <version>1.18.12</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.openhtmltopdf</groupId>
+            <artifactId>openhtmltopdf-core</artifactId>
+            <version>0.0.1-RC9</version>
+        </dependency>
 
     </dependencies>
 

@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.sql.Blob;
 import java.util.List;
 
 @Entity
@@ -29,10 +30,10 @@ public class Fitness {
     private Boolean obcerstveni;
     private Boolean muzi;
     private Boolean pomucky;
-   
-    
+
     //@Lob
     //@Basic(fetch = FetchType.LAZY)
+    //private Blob logo;
     //private byte[] logo;
 
     //@OneToMany(mappedBy = "lekce", fetch = FetchType.EAGER)
