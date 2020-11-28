@@ -1,14 +1,7 @@
-# potřeba přepsat do Vue
 
-
-FROM node:12.19.0-alpine3.12
-
-WORKDIR /usr/src/js-service
-
-COPY package*.json ./
-
-RUN npm install --only=production
-
-COPY ./src .
-
-CMD [ "node", "app.js" ]
+FROM node:lts-alpine
+WORKDIR /usr/src/js-service/sportee-vue
+COPY ./sportee-vue .
+RUN npm install
+EXPOSE 8081
+CMD [ "npm", "run", "serve" ]
