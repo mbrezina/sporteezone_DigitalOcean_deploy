@@ -19,6 +19,7 @@ import java.util.Optional;
 
 @Slf4j
 @RestController
+@CrossOrigin(origins = "http://sporteezone.na-webu.info", maxAge = 3600)
 @RequestMapping(path = "/api/v1/pref")
 public class PreferenceController {
 
