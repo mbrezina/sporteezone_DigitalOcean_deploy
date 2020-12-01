@@ -14,7 +14,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
-
 @Slf4j
 @RestController
 @CrossOrigin(origins = "http://sporteezone.na-webu.info", maxAge = 3600)
@@ -40,7 +39,7 @@ public class LekceController {
         @RequestParam(required = false) List<String> hledaneKategorie) {
 
         log.info("hledané kategorie jsou: " + hledaneKategorie);
-        
+
         log.debug("datum je " + zacatek);
         log.debug(String.valueOf(zacatek.getClass()));
 
@@ -60,7 +59,6 @@ public class LekceController {
     @PostMapping(path = "/addMore", consumes = "application/json")
     public @ResponseBody
     void pridejVicLekci(@RequestBody List<Lekce> noveLekce) {
-        log.debug("jsem v kontroleru");
         log.debug("toto jsou nové lekci, které projdou funckí pro přidání_:" + noveLekce.toString());
         lekceService.pridejVicLekci(noveLekce);
     }

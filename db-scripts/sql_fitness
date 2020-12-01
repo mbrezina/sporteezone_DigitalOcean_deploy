@@ -16,9 +16,9 @@ mhd BOOLEAN,
 wellness BOOLEAN,
 obcerstveni BOOLEAN,
 muzi BOOLEAN,
-pomucky BOOLEAN,
-logo blob
+pomucky BOOLEAN
 );
+
 
 
 INSERT INTO fitness

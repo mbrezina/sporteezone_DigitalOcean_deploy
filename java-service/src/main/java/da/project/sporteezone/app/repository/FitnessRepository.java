@@ -12,4 +12,6 @@ public interface FitnessRepository extends JpaRepository<Fitness, Integer> {
     List<Fitness> findByNazev(String nazev);
 
 
+
+
 }
