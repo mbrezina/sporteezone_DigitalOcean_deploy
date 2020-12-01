@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface LogoRepository extends JpaRepository<Logo, Integer> {
 
     //@Query("FROM Logo WHERE nazev = ?1")
-    Optional<Logo> findById(Integer id);
+    Logo findByFitnessId(Integer id);
 
 
 }

@@ -1,8 +1,12 @@
 package da.project.sporteezone.app.service;
 
 import da.project.sporteezone.app.entity.Fitness;
+import da.project.sporteezone.app.entity.Lekce;
+import da.project.sporteezone.app.entity.Logo;
 import da.project.sporteezone.app.repository.FitnessRepository;
+import da.project.sporteezone.app.repository.LogoRepository;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,6 +14,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.Lob;
+import javax.servlet.http.HttpServletResponse;
 import java.awt.*;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -21,33 +26,18 @@ import java.util.Optional;
 public class LogoService {
 
     @Autowired
-    FitnessRepository fitnessRepository;
+    LogoRepository logoRepository;
 
-    //@Override
-    /* @Transactional
-    public void saveLogoFile(Integer fitnessId, MultipartFile file) {
-
-        try {
-            Fitness fitness = fitnessRepository.findById(fitnessId).get();
-
-            //Byte[] byteObjects = new Byte[file.getBytes().length];
-            Blob byteObjects = new Byte[file.getBytes()];
-
-            int i = 0;
-            for (byte b : file.getBytes()) {
-                byteObjects[i++] = b;
-            }
-
-            fitness.setLogo(byteObjects);
-            fitnessRepository.save(fitness);
-
-        } catch (IOException e) {
-            log.error("Error occurred", e);
-            e.printStackTrace();
-        }
+    public void saveFitnessLogo(int fitnessId, MultipartFile logoFile) throws IOException {
+        Logo img = new Logo(logoFile.getOriginalFilename(), logoFile.getContentType(), fitnessId, logoFile.getBytes());
+        logoRepository.save(img);
     }
 
-     */
-
-
+    public void viewFitnessLogo(int fitnessId, HttpServletResponse response) throws IOException {
+        Logo retrievedImage = logoRepository.findByFitnessId(fitnessId);
+        response.setContentType("image/png");
+        IOUtils.copy(new ByteArrayInputStream(retrievedImage.getPicByte()), response.getOutputStream());
+        response.flushBuffer();
+    }
+    
 }

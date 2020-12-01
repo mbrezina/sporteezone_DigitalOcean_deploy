@@ -2,10 +2,10 @@ DROP table logo;
 
 CREATE TABLE logo
      (id INT PRIMARY KEY AUTO_INCREMENT,
-     username VARCHAR(50),
-     password VARCHAR(80),
-     active INT,
-     roles VARCHAR(50)
+     file_name VARCHAR(50),
+     file_type VARCHAR(80),
+     fitness_id INT,
+     pic_byte BLOB
      );
 
 
