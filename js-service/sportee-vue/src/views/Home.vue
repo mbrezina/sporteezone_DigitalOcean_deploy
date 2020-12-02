@@ -58,7 +58,6 @@ export default {
 
     return axios.get(url).then((response) => {
       this.results = response.data;
-      console.log(this.results);
     });
   },
 
@@ -116,26 +115,6 @@ export default {
   margin: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.row {
-  display: block;
-}
-
-.main-article {
-  margin-top: 0;
-  padding-top: 30px;
-  text-align: center;
-}
-
-.testimonials {
-  padding-top: 100px;
-  padding-bottom: 60px;
-}
-
 .no-lectures {
   text-align: center;
   color: #fcfbff;
@@ -146,10 +125,6 @@ a {
 }
 
 @media (min-width: 650px) {
-  .row {
-    display: flex;
-  }
-
   .content {
     display: flex;
     flex-wrap: wrap;
@@ -161,17 +136,6 @@ a {
   .display {
     display: flex;
   }
-  .article {
-    background-color: #f1f1f1;
-    max-width: 700px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .main-article {
-    max-width: 1000px;
-    margin: auto;
-    margin-top: 60px;
-  }
   #cover-photo {
     flex-direction: row;
     justify-content: space-evenly;
@@ -179,17 +143,6 @@ a {
   .text-cover-photo {
     width: 382px;
     text-align: center;
-  }
-}
-
-@media (min-width: 1000px) {
-  .main-article img {
-    width: 100%;
-    max-width: 500px;
-  }
-
-  .article-holder {
-    max-width: 500px;
   }
 }
 </style>

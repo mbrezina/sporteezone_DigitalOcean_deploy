@@ -231,7 +231,6 @@ export default {
   text-transform: uppercase;
   width: 420px;
   border-radius: 20px;
-  /*background: #ff3e78 linear-gradient(to right, #ff3e78, #ffbd2e);*/
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   color: white;
 }

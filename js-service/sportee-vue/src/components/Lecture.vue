@@ -17,6 +17,13 @@
 export default {
   props: ["result"],
 
+  data () {
+    return {
+      startMinutesRight,
+      endMinutesRight
+    }
+  },
+
   computed: {
     den() {
       const date = new Date(this.result.zacatek);
@@ -25,7 +32,22 @@ export default {
     cas() {
       const start = new Date(this.result.zacatek);
       const end = new Date(this.result.konec);
-      return `${start.getHours()}:${start.getMinutes()} - ${end.getHours()}:${end.getMinutes()}`;
+      const startMinutes = start.getMinutes();
+      const endMinutes = end.getMinutes();
+
+      if (startMinutes < 10) {
+        this.startMinutesRight = `0${startMinutes}`
+      } else {
+        this.startMinutesRight = startMinutes
+      }
+
+      if (endMinutes < 10) {
+        this.endMinutesRight = `0${endMinutes}`
+      } else {
+        this.endMinutesRight = endMinutes
+      }
+      
+      return `${start.getHours()}:${this.startMinutesRight} - ${end.getHours()}:${this.endMinutesRight}`;
     },
   },
 };

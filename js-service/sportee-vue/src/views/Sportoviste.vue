@@ -52,7 +52,8 @@ export default {
 }
 
 .har {
-  color: white;
+  border-top: 1px solid #ffff;
+  border-bottom: none;
   width: 50%;
   margin-bottom: 30px;
 }

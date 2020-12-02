@@ -1,7 +1,7 @@
 <template>
   <div class="projekt">
     <h1>O projektu</h1>
-    <hr />
+    <hr class="har" />
     <div class="content">
       <p class="text">
         Projekt Sporteezone byl pokračováním webové digitální akademie
@@ -35,59 +35,6 @@
       </div>
       
     </div>
-
-    <!--
-    <h2>Kdo stojí za projektem?</h2>
-
-
-    <div class="medailonky">
-      <div id class="medailonek">
-        <div class="obal">
-          <img class="foto" src="../assets/lenka.jpg" alt="Lenka Florišová">
-        </div>
-        <h3 class="text">Lenka Florišová</h3>
-        <p class="text">Člověk s velkým smyslem pro detail a design. Akademie mi otevřela nové obzory do světa
-          programování, UX a UI spojující interakci mezi zkušenostmi zákazníků a designem.
-        </p>
-        <div class="icony">
-          <a href="mailto:l.florisova(zav)gmail.com" target="_top">
-            <i class="fas fa-envelope-open-text fa-2x"></i>
-          </a>
-          <a href="https://www.facebook.com/lenka.florisova.5" target="_blank">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/lenkaflorisova" target="_blank">
-            <i class="fab fa-linkedin-in fa-2x"></i>
-          </a>
-        </div>
-      </div>
-
-      <div id class="medailonek">
-        <div class="obal">
-          <img class="foto" src="../assets/katka.jpg" alt="Kateřina Blatná">
-        </div>
-        <h3 class="text">Kateřina Blatná</h3>
-        <p class="text">Velká nadšenkyně do informačních technologií, která si oblíbila kouzla s webovým kódem.
-          Digitální akademie mi otevřela další zajímavou a neprobádanou oblast. Jsem vděčná za tuto
-          příležitost.
-        </p>
-        <div class="icony">
-          <a href="mailto:katerina.blatna(zav)email.cz" target="_top">
-            <i class="fas fa-envelope-open-text fa-2x"></i>
-          </a>
-          <a href="https://www.facebook.com/katerina.blatna.9" target="_blank">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/katerinablatna" target="_blank">
-            <i class="fab fa-linkedin-in fa-2x"></i>
-          </a>
-
-        </div>
-      </div>
-    </div>
-    -->
   </div>
 </template>
 
@@ -104,7 +51,8 @@
 }
 
 .har {
-  color: white;
+  border-top: 1px solid #ffff;
+  border-bottom: none;
   width: 50%;
   margin-bottom: 30px;
 }
@@ -137,49 +85,12 @@ h2 {
   position: relative;
 }
 
-.obal {
-  margin: 0 auto;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.foto {
-  width: 100%;
-}
-.logo {
-  width: 50%;
-  min-width: 50px;
-  max-width: 150px;
-}
-
-.icony {
-  text-align: center;
-}
-.icony i {
-  padding: 40px;
-  width: 30%;
-
-  min-width: 50px;
-
-  max-width: 70px;
-}
-.icony a {
-  text-decoration: none;
-  color: black;
-}
-
 .button {
   text-align: center;
   margin: 30px;
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
-  .medailonky .text {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
   .content {
     margin-top: 30px;
   }
@@ -188,9 +99,6 @@ h2 {
 @media (min-width: 1000px) {
   .projekt {
     width: 960px;
-  }
-  .medailonky {
-    display: flex;
   }
   .content {
     padding: 40px 60px;

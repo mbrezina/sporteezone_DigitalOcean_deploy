@@ -1,7 +1,7 @@
 <template>
   <div class="blog">
 		<h1>Blog</h1>
-		<hr>
+		<hr class="har" />
     
 		<div class="content">
       <mainarticle
@@ -49,7 +49,8 @@ export default {
 }
 
 .har {
-  color: white;
+  border-top: 1px solid #ffff;
+  border-bottom: none;
   width: 50%;
   margin-bottom: 30px;
 }
