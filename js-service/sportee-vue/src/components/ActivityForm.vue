@@ -140,10 +140,10 @@ export default {
       let startDate = Date.parse(`${this.date}T${this.time}`);
       let endDate = endOfDay(startDate);
 
-      startDate = format(startDate, "yyyy-M-d'T'HH:mm:ss", {
+      startDate = format(startDate, "yyyy-MM-dd'T'HH:mm:ss", {
         timeZone: "Europe/Prague",
       });
-      endDate = format(endDate, "yyyy-M-d'T'HH:mm:ss", {
+      endDate = format(endDate, "yyyy-MM-dd'T'HH:mm:ss", {
         timeZone: "Europe/Prague",
       });
 
@@ -231,7 +231,6 @@ export default {
   text-transform: uppercase;
   width: 420px;
   border-radius: 20px;
-  /*background: #ff3e78 linear-gradient(to right, #ff3e78, #ffbd2e);*/
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   color: white;
 }

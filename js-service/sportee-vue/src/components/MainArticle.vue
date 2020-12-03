@@ -1,16 +1,19 @@
 <template>
-<div class="article">
-	<img v-bind:src="result.img" v-bind:alt="result.title" class="image">
-	<h3> {{result.title}} </h3>
-	<p> {{result.text1}} </p>
-	<router-link :to="{name: 'detail', params: {id: result.id}}"> <button>Číst více</button> </router-link>
-</div>
-
+  <div class="article">
+    <div class="content">
+      <img v-bind:src="result.img" v-bind:alt="result.title" class="image" />
+      <h3>{{ result.title }}</h3>
+      <p>{{ result.text1 }}</p>
+    </div>
+    <router-link :to="{ name: 'detail', params: { id: result.id } }">
+      <button>Číst více</button>
+    </router-link>
+  </div>
 </template>
 
 <script>
 export default {
-	props: ["result"]
+  props: ["result"],
 };
 </script>
 
@@ -19,10 +22,14 @@ export default {
   border-radius: 20px;
   background-color: #fff;
   width: 400px;
-	text-align: center;
+  text-align: center;
   margin: 30px 20px;
   padding: 25px;
   font-size: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .article h3 {
@@ -30,6 +37,6 @@ export default {
 }
 
 .image {
-	width: 100%;
+  width: 100%;
 }
 </style>

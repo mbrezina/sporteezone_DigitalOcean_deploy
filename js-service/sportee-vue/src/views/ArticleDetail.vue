@@ -67,9 +67,10 @@ export default {
 }
 
 .har {
-	color: white;
-	width: 65%;
-	margin-bottom: 30px;
+  border-top: 1px solid #ffff;
+  border-bottom: none;
+  width: 65%;
+  margin-bottom: 30px;
 }
 
 .content {

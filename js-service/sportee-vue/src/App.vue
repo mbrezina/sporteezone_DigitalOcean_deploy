@@ -3,17 +3,8 @@
     <div class="main-content">
       <div id="kontejner" class="header">
         <div class="logo-sportee">
-          <!--  <logo /> -->
           <img src="./assets/logo-bile.png" alt="sportee-logo" />
         </div>
-
-        <!-- 
-          <div id="uvod" v-on:mouseover="cancelMenu">
-            <div class="perex">
-              <p class="info"></p>
-            </div>
-          </div> 
-        -->
 
         <div>
           <div class="hamburger" v-on:click="displayMenu">
@@ -41,13 +32,11 @@
 </template>
 
 <script>
-import Logo from "@/components/Logo.vue";
 import PageFooter from "@/components/PageFooter.vue";
 
 export default {
   name: "app",
   components: {
-    logo: Logo,
     pagefooter: PageFooter,
   },
   methods: {
@@ -90,16 +79,10 @@ body {
   font-size: 18px;
   margin: 0;
   min-width: 300px;
-  /*background: #ff3e78 linear-gradient(to top, #ff3e78, #ffbd2e); */
   background-image: linear-gradient(to top, #f83600 0%, #f9d423 100%);
 }
 
-/*.info {
-  display: none;
-}*/
-
 .header {
-  /*background: #ff3e78 linear-gradient(to right, #ff3e78, #ffbd2e);*/
   background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
   border-bottom: 2px solid white;
   display: flex;
@@ -111,7 +94,6 @@ body {
 .logo-sportee {
   display: flex;
   align-items: center;
-  /*box-shadow: inset 20px 20px 34px -43px rgba(0, 0, 0, 0.56);*/
 }
 
 .logo-sportee img {
