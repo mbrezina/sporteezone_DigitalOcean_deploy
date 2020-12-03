@@ -18,6 +18,7 @@ import java.io.*;
 
 @Slf4j
 @RestController
+@CrossOrigin(origins = "http://sporteezone.na-webu.info", maxAge = 3600)
 @RequestMapping(path = "/api/v1/logo")
 public class LogoController {
 
