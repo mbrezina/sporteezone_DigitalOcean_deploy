@@ -140,10 +140,10 @@ export default {
       let startDate = Date.parse(`${this.date}T${this.time}`);
       let endDate = endOfDay(startDate);
 
-      startDate = format(startDate, "yyyy-M-d'T'HH:mm:ss", {
+      startDate = format(startDate, "yyyy-MM-dd'T'HH:mm:ss", {
         timeZone: "Europe/Prague",
       });
-      endDate = format(endDate, "yyyy-M-d'T'HH:mm:ss", {
+      endDate = format(endDate, "yyyy-MM-dd'T'HH:mm:ss", {
         timeZone: "Europe/Prague",
       });
 
