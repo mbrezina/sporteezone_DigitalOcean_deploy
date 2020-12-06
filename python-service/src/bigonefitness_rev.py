@@ -38,7 +38,7 @@ def scraping_obf():
 
     rozvrh = pd.DataFrame.from_records(response.json())
     rozvrh = rozvrh[['title','start','end']]
-    rozvrh['kod_fitko'] = 6
+    rozvrh['kodFitko'] = 6
     rozvrh['obsazenost'] = 0
     rozvrh['kapacita'] = 0
     rozvrh['cena'] = int(str(table.loc[2].iloc[1]).replace('-',''))
