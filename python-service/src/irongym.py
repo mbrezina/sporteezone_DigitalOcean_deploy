@@ -3,8 +3,7 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
-import datetime
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 
 def mesicnik(date):
     if 'ledna' in date:
@@ -35,13 +34,14 @@ def mesicnik(date):
 
 
 def scraping():
-    i = datetime.date.today()
+    i = date.today()
     mesic_konec = i + timedelta(31)
     lesson = []
     obsazenost = []
     capacity = []
     date_iso = []
     kodFitka = []
+    odkaz = []
 
     while mesic_konec > i:
         day = i.strftime("%d.%m.%Y")
@@ -58,6 +58,7 @@ def scraping():
 
         for lek in lekce:
             lesson.append(lek.get_text())
+            odkaz.append(url)
         for cap in kapacity:
             v = cap.get_text().strip().split('/')
             capacity.append(v[-1])
@@ -72,16 +73,16 @@ def scraping():
         kodFitka.append(8)
 
         # s číslem fitka:
-        nadpisy = ['kodFitka', 'nazev', 'obsazeno', 'kapacita', 'zacatek']
+        nadpisy = ['kodFitka', 'nazev', 'obsazeno', 'kapacita', 'zacatek', 'url']
         kodFitka.append(int(8))
 
         # s číslem fitka:
-        nadpisy = ['kodFitka', 'nazev', 'obsazenost', 'kapacita', 'zacatek']
+        nadpisy = ['kodFitka', 'nazev', 'obsazenost', 'kapacita', 'zacatek', 'url']
         # nadpisy = ['název', 'kapacita', 'začátek']
 
         i = i + timedelta(1)
 
-    df1 = pd.DataFrame(data=(kodFitka, lesson, obsazenost, capacity, date_iso), index=nadpisy)
+    df1 = pd.DataFrame(data=(kodFitka, lesson, obsazenost, capacity, date_iso, odkaz), index=nadpisy)
 
 
     vysledek = df1.T.to_json(force_ascii=False, orient='records')
