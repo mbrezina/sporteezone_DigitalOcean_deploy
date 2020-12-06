@@ -5,7 +5,7 @@ from datetime import date, timedelta, datetime, time
 
 def best_gym():
     dnes = datetime.today()
-    sloupecky = ['zacatek', 'konec', 'nazev', 'kapacita', 'cena', 'obsazenost', 'trener']
+    sloupecky = ['zacatek', 'konec', 'nazev', 'kapacita', 'cena', 'obsazenost', 'trener', 'url']
     seznam = []
     while dnes < datetime.today()+timedelta(days = 14):
         datum = dnes.strftime('%Y-%m-%d')
@@ -23,7 +23,7 @@ def best_gym():
             'X-Requested-With': 'XMLHttpRequest',
             'X-XSRF-TOKEN': 'CfDJ8C5WYVI_SPZOvSeVmzt0O_rJC44b_Qf44Fkzd_MOdE-mDCtyoKB6ZX9gck7kzTyHQK4g9mrm2i7BYteyMTimN30ov3NiMeItCOtmgl8hXmWC9zN1B-dUP-jio6YEYYA3gUh-WGgmbeVZWAcbQUy1su4',
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-            #   'Content-Type': 'multipart/form-data',
+         #   'Content-Type': 'multipart/form-data',
             'Origin': 'http://rezervace.bestgym.cz',
             'Connection': 'keep-alive',
             'Referer': 'http://rezervace.bestgym.cz',
@@ -42,7 +42,7 @@ def best_gym():
             #'filter.resource.id':"3751",
             #'filter.resource.type':"1",
             #"filter.matchTermName":'false'
-        }
+         }
 
         response = requests.post('http://rezervace.bestgym.cz/cs/api/Term/List', headers=headers, cookies=cookies, data=data)
 
@@ -55,7 +55,7 @@ def best_gym():
                 if 'price' in eventy[x]['priceVariants'][0]:
                     eventy[x]['priceVariants'] = eventy[x]['priceVariants'][0]['price']
                 else:
-                    eventy[x]['priceVariants'] = 0
+                    eventy[x]['priceVariants'] = 'neuvedena'
                 x+=1
 
             x = 0
@@ -63,22 +63,40 @@ def best_gym():
                 if eventy[x]['reservations']:
                     eventy[x]['reservations'] = eventy[x]['reservations'][0]['capacity']
                 else:
-                    eventy[x]['reservations'] = 0
+                    eventy[x]['reservations'] = 'neznamo'
                 x+=1
 
+            x = 0
+            while x < len(eventy):
+                if eventy[x]['resources']['1']:
+                    eventy[x]['url'] = eventy[x]['resources']['1'][0]['name']
+                else:
+                    eventy[x]['url'] = 'neuvedeno'
+                x+=1
 
+            x = 0
+            while x < len(eventy):
+                if eventy[x]['url'] == 'Sál 1':
+                    eventy[x]['url'] = 'http://rezervace.bestgym.cz/cs/#/place/sal-1-3751/' + datum + ';viewMode=day'
+                elif eventy[x]['url'] == 'Sál 2':
+                    eventy[x]['url'] = 'http://rezervace.bestgym.cz/cs/#/place/sal-2-3751/' + datum + ';viewMode=day'
+                else:
+                    eventy[x]['url'] = 'http://rezervace.bestgym.cz/cs/#/service/squash-2626/' + datum + ';viewMode=day'
+                x+=1
+
+                
             x = 0
             while x < len(eventy):
                 if eventy[x]['resources']['2']:
                     eventy[x]['resources'] = eventy[x]['resources']['2'][0]['name']
                 else:
-                    eventy[x]['resources'] = 0
+                    eventy[x]['resources'] = 'neuvedeno'
                 x+=1
 
 
 
             frame = pd.DataFrame(eventy)
-            sloupce = frame[['start', 'end', 'name', 'maxCapacity', 'priceVariants', 'reservations', 'resources']]
+            sloupce = frame[['start', 'end', 'name', 'maxCapacity', 'priceVariants', 'reservations', 'resources', 'url']]
             seznam.append(sloupce[1:].values.tolist())
             dnes = dnes + timedelta(days = 1)
 
@@ -88,14 +106,15 @@ def best_gym():
     flat_list = []
     for sublist in seznam:
         for item in sublist:
-            flat_list.append(item)
+            flat_list.append(item)        
 
     data = pd.DataFrame(data = flat_list, columns=sloupecky)
     data['kod_fitko'] = 11
 
     vysledek = data.to_json(force_ascii=False, orient = 'records')
-
+    
     return vysledek
+
 
 if __name__ == "__main__":
     best_gym()
