@@ -58,9 +58,10 @@ def velky_pruvan():
     df['nazev'] = df['nazev'].apply(lambda x: ' '.join(x.split()[:3]))
     df['kodFitko'] = 10
     df['cena'] = 100
+    df['url'] = 'http://velkypruvan.cz/kontakt.html'
 
     #vyhozeni pomocnych sloupcu
-    df = df[['nazev', 'zacatek', 'konec', 'trener', 'kodFitko', 'cena']]
+    df = df[['nazev', 'zacatek', 'konec', 'trener', 'kodFitko', 'cena', 'url']]
     vysledek = df.to_json(force_ascii=False, orient='records')
     
     return vysledek
