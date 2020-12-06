@@ -109,7 +109,7 @@ def best_gym():
             flat_list.append(item)        
 
     data = pd.DataFrame(data = flat_list, columns=sloupecky)
-    data['kod_fitko'] = 11
+    data['kodFitko'] = 11
 
     vysledek = data.to_json(force_ascii=False, orient = 'records')
     
