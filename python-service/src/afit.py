@@ -62,7 +62,7 @@ def afit():
     df['url'] = 'http://rezervace.afit.cz:18080/timeline/week?criteriaTimestamp&resetFilter=true#timelineCalendar'
     df.rename(columns={'column2': 'trener'}, inplace = True)
 
-    df = df[['nazev', 'zacatek', 'konec', 'trener','obsazenost', 'cena', 'kod_fitko']]
+    df = df[['nazev', 'zacatek', 'konec', 'trener','obsazenost', 'cena', 'kodFitko']]
 
     vysledek = df.to_json(force_ascii=False, orient='records')
     return vysledek
