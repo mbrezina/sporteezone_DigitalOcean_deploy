@@ -3,8 +3,7 @@
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
-import datetime
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 
 def mesicnik(date):
     if 'ledna' in date:
@@ -35,7 +34,7 @@ def mesicnik(date):
 
 
 def scraping():
-    i = datetime.date.today()
+    i = date.today()
     mesic_konec = i + timedelta(31)
     lesson = []
     obsazenost = []
@@ -66,7 +65,7 @@ def scraping():
 
         for hod in hodiny:
             date_iso.append(
-                datetime.datetime.strptime(mesicnik(datumy) + hod.get_text().strip(), '%d. %B %Y%H:%M').isoformat())
+                datetime.strptime(mesicnik(datumy) + hod.get_text().strip(), '%d. %B %Y%H:%M').isoformat())
 
 
         kodFitka.append(8)
