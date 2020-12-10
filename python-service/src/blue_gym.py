@@ -4,7 +4,7 @@ from datetime import date, datetime, timedelta
 import pandas as pd
 import re
 
-def bluegym():
+def blue_gym():
     i = date.today()
     zacatek = []
     konec = []
@@ -51,4 +51,4 @@ def bluegym():
     return vysledek
 
 if __name__ == "__main__":
-    bluegym()
+    blue_gym()
