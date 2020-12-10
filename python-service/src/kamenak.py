@@ -5,7 +5,7 @@ import re
 import json
 
 def kamenak():
-    url = 'https://clients6.google.com/calendar/v3/calendars/o.s.fitkokamenak@gmail.com/events?calendarId=o.s.fitkokamenak%40gmail.com&singleEvents=true&timeZone=Europe%2FPrague&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2020-10-26T00%3A00%3A00%2B01%3A00&timeMax=2020-12-07T00%3A00%3A00%2B01%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs'
+    url = 'https://clients6.google.com/calendar/v3/calendars/o.s.fitkokamenak@gmail.com/events?calendarId=o.s.fitkokamenak%40gmail.com&singleEvents=true&timeZone=Europe%2FPrague&maxAttendees=1&maxResults=250&sanitizeHtml=true&timeMin=2020-11-30T00%3A00%3A00%2B01%3A00&timeMax=2021-01-04T00%3A00%3A00%2B01%3A00&key=AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs'
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -18,11 +18,12 @@ def kamenak():
     rozvrh['zacatek'] = rozvrh['start'].apply(lambda x: x.split('+')[0])
     rozvrh['konec'] = rozvrh['end'].apply(lambda x: x.split('+')[0])
     rozvrh['kodFitko'] = 9
+    rozvrh['url'] = 'http://fitkokamenak.cz/kurzy/'
 
     rozvrh['trener'] = rozvrh['summary'].apply(lambda x: re.split('-|,', x)[1] if '-' in x else 'neuvedeno')
     rozvrh['nazev'] = rozvrh['summary'].apply(lambda x: re.split('-|,', x)[0])
 
-    rozvrh = rozvrh[['kodFitko', 'nazev', 'trener', 'zacatek', 'konec']]
+    rozvrh = rozvrh[['kodFitko', 'nazev', 'trener', 'zacatek', 'konec', 'url']]
 
     vysledek = rozvrh.to_json(force_ascii=False, orient='records')
     

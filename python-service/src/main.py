@@ -7,6 +7,8 @@ import bigonefitness_rev
 import kamenak
 import velky_pruvan
 import best_gym
+import bluegym
+import afit
 
 import send_data_to_api
 
@@ -17,6 +19,8 @@ def execute():
     vysledek_kamenak = kamenak.kamenak()
     vysledek_velky_pruvan = velky_pruvan.velky_pruvan()
     vysledek_best_gym = best_gym.best_gym()
+    vysledek_bluegym = bluegym.blue_gym()
+    vysledek_afit = afit.afit()
 
 
     print("***********************")
@@ -34,6 +38,12 @@ def execute():
     print("***********************")
     print("best gym:")
     send_data_to_api.send_data(vysledek_best_gym)
+    print("***********************")
+    print("blue gym:")
+    send_data_to_api.send_data(vysledek_bluegym)
+    print("***********************")
+    print("afit:")
+    send_data_to_api.send_data(vysledek_afit)
 
 
 if __name__=="__main__":
